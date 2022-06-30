@@ -70,40 +70,36 @@
 
 <body>
     <div id="gameWindow" style="display: grid;">
-        <div id="statsBox" class="smallmodal" style="min-height: 20vh;">
-          <div style="padding: 0.5% 0; margin: 0; width: 100%; background: black; color: white; font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 110%;">PROGRAM</div>
-          <p><b>Placeholder-Reynders Ontological Generator for Reconstitution of Annihilated Multiverse</b></p>
+        <div id="programBox" class="smallmodal" style="min-height: 20vh;">
+            <div style="padding: 0.5% 0; margin: 0; width: 100%; background: black; color: white; font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 110%;">PROGRAM</div>
+            
+            <button onclick="genUni()" id="genUniButton">» initialize random universe «</button>
 
-          <p></p>
+            <p></p>
 
-          <p id="uniScore">0 universes created.</p>
-
-          <p></p>
-
-          <button onclick="genUni()" id="genUniButton">» generate random universe «</button>
-          <button onclick="buyGen()">» generate another generator «</button>
+            <button onclick="buyGen()">» generate another generator «</button>
         </div>
   
-        <p></p>
+        <div style="height: 10vh"></div>
   
-        <div id="playBox">
-          <div style="width: 100%; text-align: center;">
-            <button class="tabButton tablink tabSelected" onclick="openTab(event,'synthesis')">SYNTHESIS</button>
-            <button class="tabButton tablink" onclick="openTab(event,'analysis')">ANALYSIS</button>
-            <button class="tabButton tablink" onclick="openTab(event,'optimization')">OPTIMIZATION</button>
-          </div>
+        <div id="terminalBox" style="min-height: 30vh;">
+            <div style="width: 100%; text-align: center;">
+                <button class="tabButton tablink tabSelected" onclick="openTab(event,'files')">FILES</button>
+                <button class="tabButton tablink" onclick="openTab(event,'analysis')">ANALYSIS</button>
+                <button class="tabButton tablink" onclick="openTab(event,'stats')">STATS</button>
+            </div>
   
-          <div id="synthesis" class="tabContainer function">
-
-          </div>
+            <div id="files" class="tabContainer function">
+                <p><i>Placeholder-Reynders Ontological Generator for Reconstitution of Annihilated Multiverse</i></p>
+            </div>
   
-          <div id="analysis" class="tabContainer function" style="display:none">
-            <p>test 2</p>
-          </div>
+            <div id="analysis" class="tabContainer function" style="display:none">
+                <p id="uniScore">0 universes generated.</p>
+            </div>
       
-          <div id="optimization" class="tabContainer function" style="display:none">
-            <p>test 3</p>
-          </div>
+            <div id="stats" class="tabContainer function" style="display:none">
+                <p>test 3</p>
+            </div>
         </div>
 
         <script src="main.js" charset="utf-8" type="text/javascript"></script>

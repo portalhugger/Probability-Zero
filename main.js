@@ -19,8 +19,6 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " tabSelected";
 }
 
-/// TAB 1: COMPUTER TERMINAL
-
 function genUni() {
   gameData.uni += gameData.gen,
   document.getElementById("uniScore").innerHTML = gameData.uni + " universes generated"
@@ -35,5 +33,3 @@ function buyGen() {
     document.getElementById("uniScore").innerHTML = gameData.uni + " universes generated"
   }
 }
-
-///TAB 2: 
