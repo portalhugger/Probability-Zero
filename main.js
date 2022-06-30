@@ -8,6 +8,7 @@ window.onload = loadSave
 function loadSave() {
   if (localStorage.uni) {
     gameData.uni = Number(localStorage.uni);
+    document.getElementById("uniScore").innerHTML = gameData.uni + " universes generated"
   }
 }
 
