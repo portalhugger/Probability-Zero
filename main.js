@@ -3,6 +3,14 @@ var gameData = {
   accuracy: 0,
   }
 
+window.onload = loadSave
+
+function loadSave() {
+  if (localStorage.uni) {
+    gameData.uni = localStorage.uni;
+  }
+}
+
 function openTab(evt, tabName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("function");
