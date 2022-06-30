@@ -15,29 +15,31 @@
             
             <p></p>
 
-            <button class="pressButton" onclick="genUni()" id="genUniButton">» initialize random universe «</button>
+            <button class="pressButton" onclick="genUni()" id="genUniButton">GENERATE UNIVERSE</button>
 
             <p></p>
+
+            <p id="genUniResult">Results unavailable.</p>
         </div>
   
         <div style="height: 5vh"></div>
   
         <div id="terminalBox" style="min-height: 35vh;">
             <div style="width: 100%; text-align: center;">
-                <button class="tabButton tablink tabSelected" onclick="openTab(event,'files')">FILES</button>
-                <button class="tabButton tablink" onclick="openTab(event,'analysis')">ANALYSIS</button>
+                <button class="tabButton tablink tabSelected" onclick="openTab(event,'analysis')">ANALYSIS</button>
+                <button class="tabButton tablink" onclick="openTab(event,'files')">FILES</button>
             </div>
   
+            <div id="analysis" class="tabContainer function" style="display:none">
+                <p id="uniScore">0 universes generated.</p>
+            </div>
+
             <div id="files" class="tabContainer function">
                 <div class="">
 
 
                     <p><i>Placeholder-Reynders Ontological Generator for Reconstitution of Annihilated Multiverse</i></p>
                 </div>
-            </div>
-  
-            <div id="analysis" class="tabContainer function" style="display:none">
-                <p id="uniScore">0 universes generated.</p>
             </div>
         </div>
 
