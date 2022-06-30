@@ -12,6 +12,12 @@ function loadSave() {
   document.getElementById("uniScore").innerHTML = gameData.uni + " universes generated"
 }
 
+function resetSave() {
+  gameData.uni = 0,
+  localStorage.uni = 0
+  document.getElementById("uniScore").innerHTML = gameData.uni + " universes generated"
+}
+
 function openTab(evt, tabName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("function");
