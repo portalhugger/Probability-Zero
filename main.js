@@ -1,8 +1,6 @@
 var gameData = {
   uni: 0,
   accuracy: 0,
-  gen: 1,
-  genCost: 10
   }
 
 function openTab(evt, tabName) {
@@ -20,6 +18,9 @@ function openTab(evt, tabName) {
 }
 
 function genUni() {
-  gameData.uni += gameData.gen,
+  gameData.uni += 1,
   document.getElementById("uniScore").innerHTML = gameData.uni + " universes generated"
+  if (typeof(Storage) !== "undefined") {
+    localStorage.uni = gameData.uni;
+  }
 }
