@@ -57,7 +57,6 @@
     .tabContainer {
       border: none;
       padding: 3.5px;
-      min-height: 400px;
     }
 
     .smallmodal {
@@ -72,10 +71,6 @@
 
 <body>
     <p id="uniScore">0 universes created.</p>
-    <button onclick="genUni()" id="genUniButton">» generate random universe «</button>
-
-    <button onclick="buyGen()">» generate another generator «</button>
-
     <div id="gameWindow" style="display: grid;">
         <div id="statsBox" class="smallmodal" style="min-height: 20vh;">
           <div style="padding: 0.5% 0; margin: 0; width: 100%; background: black; color: white; font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 110%;">STATUS</div>
@@ -92,7 +87,9 @@
           </div>
   
           <div id="synthesis" class="tabContainer function">
-            <p>test 1</p>
+            <button onclick="genUni()" id="genUniButton">» generate random universe «</button>
+
+            <button onclick="buyGen()">» generate another generator «</button>
           </div>
   
           <div id="analysis" class="tabContainer function" style="display:none">
