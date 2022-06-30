@@ -70,7 +70,6 @@
 </style>
 
 <body>
-    <p id="uniScore">0 universes created.</p>
     <div id="gameWindow" style="display: grid;">
         <div id="statsBox" class="smallmodal" style="min-height: 20vh;">
           <div style="padding: 0.5% 0; margin: 0; width: 100%; background: black; color: white; font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 110%;">STATUS</div>
@@ -87,8 +86,12 @@
           </div>
   
           <div id="synthesis" class="tabContainer function">
-            <button onclick="genUni()" id="genUniButton">» generate random universe «</button>
+            <p id="uniScore">0 universes created.</p>
 
+            <p></p>
+
+            <button onclick="genUni()" id="genUniButton">» generate random universe «</button>
+            <p></p>
             <button onclick="buyGen()">» generate another generator «</button>
           </div>
   
