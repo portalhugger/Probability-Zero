@@ -39,8 +39,8 @@ tt {
 }
 
 .tabButton:hover, .tabSelected {
-    color: white;
-    background-color: black;
+    color: #eee;
+    background-color: #333;
   }
 
 .pressButton {
@@ -58,12 +58,13 @@ tt {
     font-size: 110%;
     margin: 2px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    background-color: #eee;
     transition-property: background-color;
     transition-duration: 0.1s;
   }
  
 .pressButton:hover {
-    background-color: #ccc;
+    background-color: #ddd;
 }
 
 .tabContainer {
