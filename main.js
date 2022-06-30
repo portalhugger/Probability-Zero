@@ -19,4 +19,19 @@ var gameData = {
       document.getElementById("uniScore").innerHTML = gameData.uni + " universes generated"
     }
   }
+
+  function openTab(evt, tabName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("function");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" tabSelected", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " tabSelected";
+  }
+
   
