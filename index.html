@@ -10,7 +10,6 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
     body {
       text-align: center;
@@ -72,11 +71,20 @@
 <body>
     <div id="gameWindow" style="display: grid;">
         <div id="statsBox" class="smallmodal" style="min-height: 20vh;">
-          <div style="padding: 0.5% 0; margin: 0; width: 100%; background: black; color: white; font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 110%;">STATUS</div>
-          <p>test 0</p>
+          <div style="padding: 0.5% 0; margin: 0; width: 100%; background: black; color: white; font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 110%;">PROGRAM</div>
+          <p><b>Placeholder-Reynders Ontological Generator for Reconstitution of Annihilated Multiverse</b></p>
+
+          <p></p>
+
+          <p id="uniScore">0 universes created.</p>
+
+          <p></p>
+
+          <button onclick="genUni()" id="genUniButton">» generate random universe «</button>
+          <button onclick="buyGen()">» generate another generator «</button>
         </div>
   
-        <div style="height: 50px;"></div>
+        <p></p>
   
         <div id="playBox">
           <div style="width: 100%; text-align: center;">
@@ -86,13 +94,7 @@
           </div>
   
           <div id="synthesis" class="tabContainer function">
-            <p id="uniScore">0 universes created.</p>
 
-            <p></p>
-
-            <button onclick="genUni()" id="genUniButton">» generate random universe «</button>
-            <p></p>
-            <button onclick="buyGen()">» generate another generator «</button>
           </div>
   
           <div id="analysis" class="tabContainer function" style="display:none">
