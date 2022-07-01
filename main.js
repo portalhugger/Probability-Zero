@@ -14,6 +14,7 @@ function loadSave() {
 
 function resetSave() {
   gameData.uni = 0,
+  localStorage.uni = 0,
   document.getElementById("uniScore").innerHTML = gameData.uni + " universes generated"
 }
 
