@@ -80,3 +80,39 @@ tt {
   background: rgb(253, 253, 253);
   border: solid 2px #5D5D5D;
 }
+
+.temporalMemo {
+    background: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/DELTA_T_LIGHTLOGO.png) #ffffff;
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
+    border: double 3px lightgrey;
+    width: 90%;
+    min-height: 4rem;
+    max-height: 100rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    word-break: break-word;
+}
+
+.temporalMemo>p:nth-child(1)::before {
+    content: "TEMPORAL ANOMALIES DEPARTMENT\00000a";
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 130%;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+    border-bottom: dotted 0.13rem darkslategrey;
+    max-width: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    align-items: center;
+}

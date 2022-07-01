@@ -5,6 +5,6 @@
 
 > # "PROBABILITY ZERO"
 >
-> In case of imminent catastrophic multiversal reality collapse whereby all other relevant protocols and contingencies have failed, the Temporal Anomalies Department shall activate an undisclosed eigenmachine to compact the remainder
+> In case of imminent catastrophic multiversal reality collapse whereby all other relevant protocols and contingencies have failed, the Temporal Anomalies Department shall activate an undisclosed eigenmachine to compact the remainder of 
 
 Placeholder-Reynders Ontological Generator for Reconstitution of Annihilated Multiverse
