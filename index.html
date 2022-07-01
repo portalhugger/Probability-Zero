@@ -9,28 +9,28 @@
 </head>
 
 <body>
-    <div id="gameWindow" style="display: grid;">
-        <div id="programBox" class="smallmodal" style="min-height: 20vh;">
-            <div style="padding: 0.5% 0; margin: 0; width: 100%; background: black; color: white; font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 110%;">P. R. O. G. R. A. M.</div>
-            
-            <p></p>
-
-            <button class="pressButton" onclick="genUni()" id="genUniButton">GENERATE UNIVERSE</button>
-
-            <p></p>
-
-            <p id="genUniResult">Results unavailable.</p>
-        </div>
-  
-        <div style="height: 5vh"></div>
-  
+    <div id="gameWindow" style="display: grid;">  
         <div id="terminalBox" style="min-height: 35vh;">
             <div style="width: 100%; text-align: center;">
-                <button class="tabButton tablink tabSelected" onclick="openTab(event,'analysis')">ANALYSIS</button>
-                <button class="tabButton tablink" onclick="openTab(event,'files')">FILES</button>
+                <button class="tabButton tablink" onclick="openTab(event,'generator')">GENERATOR</button>
+                <button class="tabButton tablink tabselected" onclick="openTab(event,'SCP-7000-initial')">'PROCEDURES.txt'</button>
             </div>
   
-            <div id="analysis" class="tabContainer function">
+            <div id="generator" class="tabContainer function" style="display: none">
+                <p></p>
+
+                <div id="programBox" class="smallmodal" style="min-height: 20vh;">
+                    <div style="padding: 0.5% 0; margin: 0; width: 100%; background: black; color: white; font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 110%;">P. R. O. G. R. A. M.</div>
+                    
+                    <p></p>
+        
+                    <button class="pressButton" onclick="genUni()" id="genUniButton">GENERATE UNIVERSE</button>
+        
+                    <p></p>
+        
+                    <p id="genUniResult">Results unavailable.</p>
+                </div>
+
                 <p id="uniScore">0 universes generated.</p>
 
                 <p></p>
@@ -38,36 +38,30 @@
                 <button onclick="resetSave()">RESET</button>
             </div>
 
-            <div id="files" class="tabContainer function" style="display:none">
-                <p></p>
-
-                <button class="tabButton">"README.txt"</button>
-
+            <div id="SCP-7000-initial" class="tabContainer function">
                 <p></p>
 
                 <div class="notation" id="fileViewer">
-                    <div id="SCP-7000-initial">
-                        <p><span class="bt">DESIGNATION:</span> SCP-7000</p>
-                        <p><span class="bt">CLASS:</span> Metapollyon</p>
+                    <p><span class="bt">DESIGNATION:</span> SCP-7000</p>
+                    <p><span class="bt">CLASS:</span> Metapollyon</p>
+
+                    <hr></hr>
+
+                    <div style="text-align: left">
+                        <p><span class="bt">CONTAINMENT PROCEDURES:</span> SCP-7000 is uncontainable, and actively induces an omniversal causality failure. As SCP-7000 has progressed to an extent deemed irreversible, SCP Foundation Temporal Anomalies Department Iteration-Prime has engaged Metafoundation <span class="bt">CONTINGENCY-ZK/7000.</span></p>
+                            
+                        <p></p>
+
+                        <div class="temporalMemo">
+                             <h2><u>CONTINGENCY-ZK/7000:</u></h2> <h3>&quot;Eternity Protocol&quot;</h3>
+                            <p style="text-align: left;">In case of imminent catastrophic loss of multiversal metastability, whereby all other relevant protocols and contingencies have failed: the remainder of causality shall be compacted into a single reinforced manifold of synthetic spacetime which cannot be externally collapsed, thereby subjecting the event to inverted containment protocols. As available causality may be extremely limited, this manifold shall harbor the absolute minimum necessary personnel and equipment required for eventually generating a metastable variation of the Prime-Timeline. Upon successful reconstitution, SCP Foundation Iteration-Prime will proceed to restore the known multiverse by more efficient means.</p>
+                        </div>
 
                         <hr></hr>
 
-                        <div style="text-align: left">
-                            <p><span class="bt">CONTAINMENT PROCEDURES:</span> SCP-7000 is uncontainable, and actively induces an omniversal causality failure. As SCP-7000 has progressed to an extent deemed irreversible, SCP Foundation Temporal Anomalies Department Iteration-Prime has engaged Metafoundation <span class="bt">CONTINGENCY-ZK/7000.</span></p>
-                            
-                            <p></p>
+                        <p><span class="bt">DESCRIPTION:</span> SCP-7000 is an ongoing metaprobabilistic phenomenon prohibiting the collapse of wave functions into definite states. </p>
 
-                            <div class="temporalMemo">
-                                <h2><u>CONTINGENCY-ZK/7000:</u></h2> <h3>&quot;Eternity Protocol&quot;</h3>
-                                <p style="text-align: left;">In case of imminent catastrophic loss of multiversal metastability, whereby all other relevant protocols and contingencies have failed: the remainder of causality shall be compacted into a single reinforced manifold of synthetic spacetime which cannot be externally collapsed, thereby subjecting the event to inverted containment protocols. As available causality may be extremely limited, this manifold shall harbor the absolute minimum necessary personnel and equipment required for eventually generating a metastable variation of the Prime-Timeline. Upon successful reconstitution, SCP Foundation Iteration-Prime will proceed to restore the known multiverse by more efficient means.</p>
-                            </div>
-
-                            <hr></hr>
-
-                            <p><span class="bt">DESCRIPTION:</span> SCP-7000 is an ongoing metaprobabilistic phenomenon prohibiting the collapse of wave functions into definite states. </p>
-
-                        </div>    
-                    </div>   
+                    </div>    
                 </div>
             </div>
         </div>
@@ -76,3 +70,4 @@
     <script src="main.js" charset="utf-8" type="text/javascript"></script>
 </body>
 </html>
+  
