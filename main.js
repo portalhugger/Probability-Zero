@@ -1,6 +1,6 @@
 var gameData = {
   uni: 0,
-  accuracy: 0,
+  accuracy: 1,
   }
 
 window.onload = loadSave
@@ -17,7 +17,7 @@ function resetSave() {
   localStorage.uni = 0,
   document.getElementById("uniScore").innerHTML = gameData.uni + " universes generated"
 }
-
+ 
 function openTab(evt, tabName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("function");

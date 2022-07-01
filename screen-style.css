@@ -24,7 +24,7 @@ h6 {
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    color: black;
+    color: #444;
     letter-spacing: unset;
 }
 
@@ -35,11 +35,7 @@ h6 {
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
     width: 75%;
     margin: auto;
-    background: #f7f7f7;
-}
-
-tt {
-  font-size: 140%;
+    background: #eee;
 }
 
 .tabButton {
@@ -63,7 +59,7 @@ tt {
 
 .tabButton:hover, .tabSelected {
     color: #eee;
-    background-color: #333;
+    background-color: #444;
   }
 
 .pressButton {
