@@ -109,8 +109,6 @@ tt {
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 110%;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
     border: double 3px #cae;
     width: 90%;
@@ -121,4 +119,10 @@ tt {
     text-align: center;
     padding: 10px 20px 20px 20px;
     word-break: break-word;
+}
+
+.bt {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    text-decoratioN: underline;
 }
