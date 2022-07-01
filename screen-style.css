@@ -15,6 +15,29 @@ hr {
   border-top: 1px #000 solid;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: unset;
+}
+
+.notation {
+    border-left: solid 3px rgb(30, 30, 30);
+    border-right: solid 3px rgb(30, 30, 30);
+    padding: 25px 25px 25px 25px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    width: 75%;
+    margin: auto;
+    background: #f7f7f7;
+}
+
 tt {
   font-size: 140%;
 }
@@ -82,13 +105,13 @@ tt {
 }
 
 .temporalMemo {
-    background: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/DELTA_T_LIGHTLOGO.png) #ffffff;
+    background: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/DELTA_T_LIGHTLOGO.png) #edf;
     background-size: contain;
     background-position: top center;
     background-repeat: no-repeat;
     font-family: 'Work Sans', sans-serif;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
-    border: double 3px lightgrey;
+    border: double 3px #cae;
     width: 90%;
     min-height: 4rem;
     max-height: 100rem;
@@ -97,22 +120,4 @@ tt {
     text-align: center;
     padding: 10px 20px 20px 20px;
     word-break: break-word;
-}
-
-.temporalMemo>p:nth-child(1)::before {
-    content: "TEMPORAL ANOMALIES DEPARTMENT\00000a";
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 900;
-    font-size: 130%;
-    text-align: center;
-    margin-bottom: 1rem;
-    padding-bottom: 0.3rem;
-    border-bottom: dotted 0.13rem darkslategrey;
-    max-width: 49rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: stretch;
-    align-items: center;
 }
