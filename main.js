@@ -36,11 +36,11 @@ if (savegame !== null) {
 }
 
 function resetSave() {
-  probability = 7.77 * 10^7777,
-  uniTotal = 0,
-  document.getElementById("uniScore").innerHTML = "Universes generated: 0",
-  fabric = 0,
-  document.getElementById("fabricScore").innerHTML = "Total causality fabricated: 0",
+  gameData.probability = 7.77 * 10^7777,
+  gameData.uniTotal = 0,
+  document.getElementById("uniTotalScore").innerHTML = "Universes generated: 0",
+  gameData.fabric = 0,
+  document.getElementById("fabricScore").innerHTML = "Causal fabric: 0",
   manualSave()
 }
 
