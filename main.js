@@ -5,20 +5,22 @@ var gameData = {
   fabricTotal: 0
 }
 
+var MainGameLoop = window.setInterval(function() {
+  document.getElementById("fabricScore").innerHTML = "Causal fabric: " + (Math.round(gameData.fabric * 100) / 100),
+  document.getElementById("uniTotalScore").innerHTML = "Universes generated: " + Math.round(gameData.uniTotal)
+}, 50)
+
 var STATSloop = window.setInterval(function() {genFabric()}, 1000)
 
 function genFabric() {
   gameData.fabric += 0.1,
-  gameData.fabricTotal += 0.1,
-  document.getElementById("fabricScore").innerHTML = "Causal fabric: " + (Math.round(gameData.fabric * 100) / 100)
+  gameData.fabricTotal += 0.1
 }
 
 function genUni() {
   if (gameData.fabric >= 1) {
     gameData.fabric -= 1,
-    document.getElementById("fabricScore").innerHTML = "Causal fabric: " + (Math.round(gameData.fabric * 100) / 100)
-    gameData.uniTotal += 1,
-    document.getElementById("uniTotalScore").innerHTML = "Universes generated: " + gameData.uniTotal
+    gameData.uniTotal += 1
   }
 }
 
@@ -38,9 +40,8 @@ if (savegame !== null) {
 function resetSave() {
   gameData.probability = 7.77 * 10^7777,
   gameData.uniTotal = 0,
-  document.getElementById("uniTotalScore").innerHTML = "Universes generated: 0",
   gameData.fabric = 0,
-  document.getElementById("fabricScore").innerHTML = "Causal fabric: 0",
+  gameData.fabricTotal = 0
   manualSave()
 }
 
