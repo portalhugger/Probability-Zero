@@ -41,12 +41,11 @@ Recovered files:
 (unlocked initially)
 
 Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe generator
+    *Available causal fabric: 0*
+    **ACTION:** Generate (cost: 1 causal fabric; cooldown: 10sec) -> __universes__ + 1
+    *Universe status: collapsed*
+        universes initially have ~100% chance of collapsing -> __universes__ - 1
     *Estimated probability of generating the Prime-Timeline: 1 in __probability__* -> unlock 'canon' ending and final Prestige when probability = 1
-    *Available causal fabric: 1 googolplex*
-    **ACTION:** Generate (cost: 1 googolplex causal fabric; cooldown: 10sec) -> __universes__ + 1
-    *Universe status: collapsed / unknown / etc*
-        universes initially have ~100% chance of collapsing into inert causal fabric due to non-functional laws of physics -> __universes__ - 1, __dead universe__
-    **ACTION:** Reset (cooldown: none; cost: 1 dead universe) -> __causal fabric__ - 1 googolplex, 
 
 
 ## STATS

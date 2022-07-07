@@ -13,14 +13,11 @@
         <div id="terminalBox" style="min-height: 35vh;">
             <p></p>
 
-            <button onclick="resetSave()">RESET</button>
-
-            <p></p>
-
             <div style="width: 100%; text-align: center;">
                 <button class="tabButton tablink tabselected" onclick="openTab(event,'Files')">Files</button>
                 <button class="tabButton tablink" onclick="openTab(event,'LUCK')">LUCK</button>
                 <button class="tabButton tablink" onclick="openTab(event,'STATS')">STATS</button>
+                <button id="researchTab" class="tabButton tablink" style="display: none" onclick="openTab(event,'research')">Research</button>
             </div>
   
             <div id="Files" class="tabContainer function">
@@ -60,22 +57,33 @@
             <div id="LUCK" class="tabContainer function" style="display: none">
                 <p></p>
 
-                <p id="uniScore">You have generated 0 universes.</p>
-                <p id="primeChance">1 in 7.77x10<sup>7777</sup> chance of reconstituting the Prime-Timeline.</p>
+                <p id="fabricScore">Causal fabric: 0</p>
+                <p id="uniTotalScore">Universes generated: 0</p>
 
-                <button class="pressButton" onclick="genUni()" id="genUniButton">GENERATE UNIVERSE</button>
-        
-                <p></p>
-        
-                <p id="genUniResult">Universe status: n/a</p>
+                <button class="pressButton" onclick="genUni()" id="genUniButton">GENERATE UNIVERSE<br><span style="font-weight: normal; font-size: 90%;">cost: 1 causal fabric</span></button>
 
                 <p></p>
+
+                <p id="probability">1 in 7.77x10<sup>7777</sup> chance of reconstituting the Prime-Timeline.</p>
             </div>
 
             <div id="STATS" class="tabContainer function" style="display: none">
                 <p></p>
 
+                <p>[cool loading gif]</p>
 
+                <p id="fabricRateScore">STATS is harnessing 0.1 causal fabric per second from quantum fluctuations.</p>
+
+                <hr></hr>
+
+                <p style="text-align: center"><h2>OPTIONS</h2></p>
+
+                <button onclick="manualSave()">SAVE GAME</button>
+                <button onclick="resetSave()">RESET</button>
+            </div>
+
+            <div id="Research" class="tabContainer function" style="display: none">
+                stuff
             </div>
         </div>
     </div>

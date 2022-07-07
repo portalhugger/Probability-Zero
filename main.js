@@ -1,23 +1,51 @@
 var gameData = {
-  uni: 0,
-  accuracy: 1,
-  }
+  probability: 7.77 * 10^7777,
+  uniTotal: 0,
+  fabric: 0,
+  fabricTotal: 0
+}
 
-window.onload = loadSave
+var STATSloop = window.setInterval(function() {genFabric()}, 1000)
 
-function loadSave() {
-  if (localStorage.uni) {
-    gameData.uni = Number(localStorage.uni);
+function genFabric() {
+  gameData.fabric += 0.1,
+  gameData.fabricTotal += 0.1,
+  document.getElementById("fabricScore").innerHTML = "Causal fabric: " + (Math.round(gameData.fabric * 100) / 100)
+}
+
+function genUni() {
+  if (gameData.fabric >= 1) {
+    gameData.fabric -= 1,
+    document.getElementById("fabricScore").innerHTML = "Causal fabric: " + (Math.round(gameData.fabric * 100) / 100)
+    gameData.uniTotal += 1,
+    document.getElementById("uniTotalScore").innerHTML = "Universes generated: " + gameData.uniTotal
   }
-  document.getElementById("uniScore").innerHTML = gameData.uni + " universes generated"
+}
+
+// saving
+
+function manualSave() {
+  localStorage.setItem("pZeroSave", JSON.stringify(gameData))
+}
+
+var saveGameLoop = window.setInterval(function() {manualSave()}, 120000)
+
+var savegame = JSON.parse(localStorage.getItem("pZeroSave"))
+if (savegame !== null) {
+  gameData = savegame
 }
 
 function resetSave() {
-  gameData.uni = 0,
-  localStorage.uni = 0,
-  document.getElementById("uniScore").innerHTML = gameData.uni + " universes generated"
+  probability = 7.77 * 10^7777,
+  uniTotal = 0,
+  document.getElementById("uniScore").innerHTML = "Universes generated: 0",
+  fabric = 0,
+  document.getElementById("fabricScore").innerHTML = "Total causality fabricated: 0",
+  manualSave()
 }
- 
+
+// tab stuff
+
 function openTab(evt, tabName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("function");
@@ -30,12 +58,4 @@ function openTab(evt, tabName) {
   }
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " tabSelected";
-}
-
-function genUni() {
-  gameData.uni += 1,
-  document.getElementById("uniScore").innerHTML = gameData.uni + " universes generated"
-  if (typeof(Storage) !== "undefined") {
-    localStorage.uni = Number(gameData.uni);
-  }
 }
