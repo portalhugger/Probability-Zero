@@ -13,63 +13,69 @@
         <div id="terminalBox" style="min-height: 35vh;">
             <p></p>
 
+            <button onclick="resetSave()">RESET</button>
+
+            <p></p>
+
             <div style="width: 100%; text-align: center;">
-                <button class="tabButton tablink" onclick="openTab(event,'generator')">GENERATOR</button>
-                <button class="tabButton tablink tabselected" onclick="openTab(event,'SCP-7000-initial')">'PROCEDURES.txt'</button>
+                <button class="tabButton tablink tabselected" onclick="openTab(event,'Files')">Files</button>
+                <button class="tabButton tablink" onclick="openTab(event,'LUCK')">LUCK</button>
+                <button class="tabButton tablink" onclick="openTab(event,'STATS')">STATS</button>
             </div>
   
-            <div id="generator" class="tabContainer function" style="display: none">
-                <p></p>
-
-                <div id="programBox" class="smallmodal" style="min-height: 30vh;">
-                    <div style="padding: 0.5% 0; margin: 0; width: 100%; background: #444; color: #eee; font-family: 'Work Sans', sans-serif; font-weight: 600; font-size: 110%;">Liminal Universe Creation Keystone (Mark VII)</div>
-                    
-                    <div style="height: 5vh"></div>
-        
-                    <button class="pressButton" onclick="genUni()" id="genUniButton">GENERATE UNIVERSE</button>
-        
-                    <p></p>
-        
-                    <p id="genUniResult">Results unavailable.</p>
-                </div>
-
-                <p id="uniScore">0 universes generated.</p>
-
-                <p></p>
-
-                <button onclick="resetSave()">RESET</button>
-            </div>
-
-            <div id="SCP-7000-initial" class="tabContainer function">
+            <div id="Files" class="tabContainer function">
                 <p></p>
 
                 <div class="notation" id="fileViewer">
                     <p><span class="bt">DESIGNATION:</span> SCP-7000</p>
-                    <p><span class="bt">CLASS:</span> Metapollyon<sup><strong><a href="#footnote-1">i</a></strong></sup></p>
+                    <p><span class="bt">CLASS:</span> Metapollyon<sup><strong><a href="#footnote-1">[1]</a></strong></sup></p>
 
                     <hr></hr>
 
                     <div style="text-align: left">
-                        <p><span class="bt">CONTAINMENT PROCEDURES:</span> SCP-7000 has induced an omniversal causality failure. As SCP-7000 has progressed to an extent deemed irreversible, SCP Foundation Temporal Anomalies Department Iteration-Prime has engaged <span class="bt">CONTINGENCY-ZK/7000.</span></p>
-                            
-                        <p></p>
+                        <p><span class="bt">CONTAINMENT PROCEDURES:</span> SCP-7000 maintains a near-omniversal causality failure, and is<sup><strong><a href="#footnote-2">[2]</a></strong></sup> currently subject to <a href="https://scp-wiki.wikidot.com/scp-3125">inverted containment protocols</a>; prior to total annihilation, SCP Foundation Temporal Anomalies Department Iteration-Prime compactified all remaining realities into the <b>Infinitely-Fortified Reality for Annihilated Multiverse Events</b> (IFRAME), a single reinforced pocket-universe impervious to structural collapse. Due to limited causal resources, its interior consists of very few elements:</p>
 
-                        <div class="temporalMemo">
-                             <h2><u>CONTINGENCY-ZK/7000:</u></h2> <h3>&quot;Eternity Protocol&quot;</h3>
-                            <p style="text-align: left;">In case of imminent catastrophic loss of multiversal metastability, whereby all other relevant protocols and contingencies have failed: the remainder of causality shall be compacted into a single reinforced manifold of synthetic spacetime which cannot be externally collapsed, thereby subjecting the event to inverted containment protocols. As available causality may be extremely limited, this manifold shall harbor the absolute minimum necessary personnel and equipment required for eventually generating a metastable variation of the Prime-Timeline. Upon successful reconstitution, SCP Foundation Iteration-Prime will proceed to restore the known multiverse by more efficient means.</p>
-                        </div>
+                        <ul>
+                            <li>a closed structure resembling Temporal Site-01's research offices, containing;</li>
+                            <li>the <b>Liminal Universe Creation Keystone</b> (LUCK) Mk. VII, which generates a single randomized universe upon activation;</li>
+                            <li>the <b>Scranton-Tarioux Autonomous Topological Sink</b> (STATS), which indefinitely maintains the IFRAME's existence;</li>
+                            <li>D-7000, a member of Foundation personnel augmented with comprehensive static immortality;</li>
+                            <li>One low-grade computer terminal, upon which this file is stored.</li>
+                        </ul>
+
+                        <p>D-7000 is to repeatedly generate randomized universes (and maintain related equipment as necessary) until, if at all possible, a variation of the Prime-Timeline is generated with immunity to SCP-7000's effect.</p>
+
+                        <p style="text-align: center"><span class="bt">[DESCRIPTION OMITTED FOR EFFICACY OF CONTAINMENT]</span></p>
 
                         <hr></hr>
 
-                        <p><span class="bt">DESCRIPTION:</span> SCP-7000 is an ongoing metaprobabilistic phenomenon prohibiting the collapse of wave functions into definite states. </p>
-
-                        <hr></hr>
-
-                        <div style="font-size: 90%">
-                            <p id="footnote-1"><strong>i.</strong> Anomaly is uncontainable on a multiversal scale and is actively causing the end of all worlds.</p>
-                        </div>
+                        <blockquote style="font-size: 90%">
+                            <p id="footnote-1"><strong>1.</strong> Anomaly is uncontainable on a multiversal scale and is actively causing the end of all worlds.</p>
+                            <p id="footnote-2"><strong>2.</strong> As SCP-7000 may or may not transcend standard notions of causality, its existence is technically uncertain. This document's use of the SCP-7000 designation may or may not reinforce the hypothetical anomaly it references, possibly necessitating the interjection of uncertainty into any authoritative statement regarding its potential properties. The presence of said uncertainty (or lack thereof) is not necessarily indicative of any particular anomaly's existence.</p>
+                        </blockquote>
                     </div>    
                 </div>
+            </div>
+
+            <div id="LUCK" class="tabContainer function" style="display: none">
+                <p></p>
+
+                <p id="uniScore">You have generated 0 universes.</p>
+                <p id="primeChance">1 in 7.77x10<sup>7777</sup> chance of reconstituting the Prime-Timeline.</p>
+
+                <button class="pressButton" onclick="genUni()" id="genUniButton">GENERATE UNIVERSE</button>
+        
+                <p></p>
+        
+                <p id="genUniResult">Universe status: n/a</p>
+
+                <p></p>
+            </div>
+
+            <div id="STATS" class="tabContainer function" style="display: none">
+                <p></p>
+
+
             </div>
         </div>
     </div>
