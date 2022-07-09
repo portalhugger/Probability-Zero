@@ -51,9 +51,9 @@ var savegame = JSON.parse(localStorage.getItem("pZeroSave"))
 function loadSave() {
   if (savegame !== null) {
     gameData = savegame
-  }
-  if (researchUnlock == 1) {
-    document.getElementById("researchTab").style.display = "inline-block";
+    if (researchUnlock == 1) {
+      document.getElementById("researchTabButton").style.display = "inline-block";
+    }
   }
 }
 
