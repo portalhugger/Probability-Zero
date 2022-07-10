@@ -9,7 +9,7 @@ This is the authoritative document on what the game should be like, and will be 
 ## PHASE I
 "automation / programming phase"
 
-* 1 in 7.7e77777 chance of reconstituting the Multiverse.
+* "1 in 7.7e77777 chance of reconstituting the Multiverse"
 
 * read initial document (intro)
  * SCP-7000 is an undisclosed phenomenon which destroyed nearly all of existence. before it could do so, all remaining universes were harnessed by the Temporal Anomalies Dept. to form a special pocket universe in which the reader/player resides. they, made immortal by the Foundation, must eternally click on a random universe generation machine until it creates a universe in which some version of the Foundation can withstand SCP-7000 
@@ -77,12 +77,15 @@ possible endings:
 
 TBD
 ----
-
+a
 
 GAMEPLAY OUTLINE
 
-*1 in __probability__ chance of generating the Prime-Timeline* -> unlock 'main' ending and final Prestige when probability = 1
+*Estimated chance of reconstituting the Prime-Timeline:*
+*__universes/activation__ in __primeChance__ per __activations/sec__*
+(initially: 1 in 7.7e77777 per activation)
 (This should always be at the top of the window)
+unlock 'main ending' upon generation of a valid Prime-Timeline -> when all prior content is unlocked, (primeChance / (universes/activation) * activations/sec)
 
 # TABS:
 ## Files
