@@ -1,5 +1,5 @@
 var gameData = {
-  probability: 7.77 * 10^7777,
+  probability: 7.7 * 10^77777, // displayed as 7.7e77777
   uniTotal: 0,
   fabric: 0,
   fabricTotal: 0,
@@ -58,7 +58,7 @@ function loadSave() {
 }
 
 function resetSave() {
-  gameData.probability = 7.77 * 10^7777,
+  gameData.probability = 7.7 * 10^77777,
   gameData.uniTotal = 0,
   gameData.fabric = 0,
   gameData.fabricTotal = 0,

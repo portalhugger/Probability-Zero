@@ -1,43 +1,62 @@
+WORKING TITLE: **Improbiverse**
+
+# NOTES 
+
+This is the authoritative document on what the game should be like, and will be updated per eventual discussions. That way, we can focus on making sure the game just properly does whatever's listed here and there's less potential confusion.
+
+
 # STORY PROGRESSION
 ## PHASE I
-* 1 in 7.7 * 10^10^7777 chance of reconstituting the Multiverse.
+"automation / programming phase"
 
-* read initial document + guide (intro)
+* 1 in 7.7e77777 chance of reconstituting the Multiverse.
+
+* read initial document (intro)
+ * SCP-7000 is an undisclosed phenomenon which destroyed nearly all of existence. before it could do so, all remaining universes were harnessed by the Temporal Anomalies Dept. to form a special pocket universe in which the reader/player resides. they, made immortal by the Foundation, must eternally click on a random universe generation machine until it creates a universe in which some version of the Foundation can withstand SCP-7000 
  * frustrated/confused by lack of SCP-7000 description
+* read maintenance guide (tutorial/guide)
+ * there are special maintenance codes which can be used to access the STATS' features (Statistics, Options)
 
 * generate a few universes
 * stare at STATS while it generates causal fabric
-* generate a few more universes, get bored
+* generate a few more universes, unlocking Research
 
-* unlock Research, start studying to generate research
-* use research to purchase Programming, unlocking Automation Tab + encrypted files
+* start studying to generate research
+* learn Programming, unlocking Automation Tab + encrypted files
 
-* unlock Automation, start programming
-* program Auto-Clicker v1 to partially automate the LUCK, unlocking 
-* program Optimizer v1 
+* program Auto-Clicker v1 to partially automate the LUCK, unlocking Auto-Clicker v2, which requires more computational resources/sec
+* 
 
 unlocks "Complete STATS schematics" for a lot of research
-    
+
+
 
 ## PHASE II
+"fabrication / upgrading phase"
 
-
+* mass fabrication is now unlocked
 
 
 ## PHASE III
-
+"scanning phase"
 
 
 
 ## PHASE IV
-
+""
 
 
 
 ## PHASE V
-
+""
 
 * Recover true SCP-7000 description
+ * SCP-7000 is a metaprobabilistic phenomenon whereby wave functions are prohibited to collapse into definite states, rendering causality entirely indeterminate
+ * SCP-7000 was the annihilation of Karma/Luck/Fortune, an intrinsic property of reality informing wave functions of their states' probability distributions. The fact that this property is essential to reality implies that the chance that anything should exist at all is essentially zero
+ * possibly:
+  * SCP-7000 was instigated by an alternate (non-Prime) Foundation who also created the IFRAME with intent to reset the multiverse with themselves in control
+  * SCP-7000 was the may 2022 wikidot outage (but described in-universe)
+
 * Upon generating Prime-Timeline (probability = 1 in 1), receive a message from Foundation-Prime saying you've succeeded (you beat the game!)
  * you have a choice to let the Foundation reset you for the next cycle ('main' ending), or to ignore them
  * you've also unlocked the final Prestige layer, allowing you to proceed to Phase VI
@@ -45,8 +64,20 @@ unlocks "Complete STATS schematics" for a lot of research
 
 ## PHASE VI
 
+* keep raising the chance of generating the Prime-timeline, all the way to 1 in 0
+
+possible endings:
+* keep creating prime-timeline variations to populate the entire multiverse on your own
+* something to do with 2747
+* creating your own version of the multiverse / becoming your own prime-timeline
+* breaking out of the scpverse simulation
+* fully reset IFRAME with some sort of cosmetic prestige
+* eliminate the SCP Foundation from the multiverse
+
+
 TBD
 ----
+
 
 GAMEPLAY OUTLINE
 
@@ -61,50 +92,59 @@ Files will be listed on the left side of this tab (vertical tabview), click to v
 
 If file is encrypted / incomplete, viewer says *[FILE CANNOT BE DISPLAYED]*
 
-Initially available:
-    "README.txt": SCP-7000 containment procedures (intro)
-    "MANUAL.txt": Improbabilistic Fortified Reality for Annihilated Multiverse Events operating manual (guide)
-Decrypted files:
-    "luckyyou.txt": File from the previous IFRAME operator (previous D-7000)
-Reconstructed files:
+* Initially available:
+ * "README.txt": SCP-7000 containment procedures (intro)
+ * "MANUAL.txt": Improbabilistic Fortified Reality for Annihilated Multiverse Events operating manual (guide)
+  * has STATS codes for Options and Statistics menus
 
-    SCP-7000 true description (end of Phase 6)
+* hidden files (encrypted):
+ * "luckyyou.txt": File from the previous IFRAME operator (previous D-7000) and their attempts to restore deleted files
+
+* deleted files (corrupted):
+ * <stuff>
+ * SCP-7000 true description (end of Phase 6)
 
 
 ## LUCK
 (unlocked initially)
 
 Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe generator
-    *Causal fabric: 0*
-    *Universes generated: 0*
-    **ACTION:** Generate (cost: 1 causal fabric; cooldown: 10sec) -> __universes__ + 1
+    *Causal fabric: __fabric__ (__fabricpersecond__)*
+    *Universes generated: __universes__ (__universespersecond__)*
+    **BUTTON:** Generate (cost: 1 causal fabric; cooldown: 10sec) -> __universes__ + 1
 
 
 ## STATS
 (unlocked initially)
 
-Scranton-Tarioux Autonomous Temporal Sink (STATS) -> highly advanced reality-anchor / generator that maintains the IFRAME
-    *STATS is harnessing 0.1 causal fabric per second from quantum fluctuations*
-prestige mechanics to unlock next phase (initially hidden)
+* Scranton-Tarioux Autonomous Temporal Sink (STATS) -> highly advanced reality-anchor/generator that maintains the IFRAME
+ * *STATS is fabricating causality from hyperquantum fluctuations.*
 
-options menu: manual saving/loading/resetting, swapping light/dark theme, etc.
-stats: playtime, best probability, total universes, etc.
+* A keypad interface where codes can be entered to unlock new features
+ * options menu
+  * manual save/load/total reset/import save/export save
+  * swapping light/dark theme
+  * $ customizing number formatting
+ * stats
+  * playtime, time since last of each prestige layer
+  * best probability, total universes, etc.
+
+* prestige mechanics to unlock next phase (initially hidden)
+
 
 
 ## Research 
-(unlocked at 7 universes generated)
+(unlocked at 10 universes generated)
 
-**ACTION:** Study (cooldown: 1sec) -> generate 1 __research__
-__research__ can be spent to unlock new studies with increasing costs presented in tech-tree style
-    Programming (cost: 200 research) -> unlocks hidden files and Automation
-    Engineering (cost: much higher cost)
-
+* Study -> generate 1 __research__ per second while tab is kept open
+* __research__ can be spent to learn new stuff
+ * Programming (cost: 100 research) -> unlocks hidden files (encrypted) and Automation Tab
+ * Cryptography (cost: 300 research) -> 
 
 ## Automation
-(unlocked via Research)
+(unlocked by researching Programming)
 
 -> **ACTION:** Program: [algorithm] (cost: idle time) -> program selected algorithm by clicking and holding
--> *Programming Level: *
 -> list of unlocked algorithms
 -> "you are using __ / [max] latent __computations/sec__"
 -> list of programmed algorithms -> algorithms can independently be toggled active/inactive unless doing so would exceed max total computations/sec
