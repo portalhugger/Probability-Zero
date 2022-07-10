@@ -7,13 +7,11 @@ This is the authoritative document on what the game should be like, and will be 
 
 # STORY PROGRESSION
 ## PHASE I
-"automation / programming phase"
-
-* "1 in 7.7e77777 chance of reconstituting the Multiverse"
+"automation phase"
 
 * read initial document (intro)
- * SCP-7000 is an undisclosed phenomenon which destroyed nearly all of existence. before it could do so, all remaining universes were harnessed by the Temporal Anomalies Dept. to form a special pocket universe in which the reader/player resides. they, made immortal by the Foundation, must eternally click on a random universe generation machine until it creates a universe in which some version of the Foundation can withstand SCP-7000 
- * frustrated/confused by lack of SCP-7000 description
+ * SCP-7000 is an undisclosed phenomenon which destroyed nearly all of existence. Before it could do so, all remaining universes were harnessed by the Temporal Anomalies Dept. to form a special pocket universe in which you reside. You, made immortal by the Foundation, must eternally click on a random universe generation machine until it happens to create a universe possessing some variation of the Foundation  
+
 * read maintenance guide (tutorial/guide)
  * there are special maintenance codes which can be used to access the STATS' features (Statistics, Options)
 
@@ -32,7 +30,7 @@ unlocks "Complete STATS schematics" for a lot of research
 
 
 ## PHASE II
-"fabrication / upgrading phase"
+"fabrication phase"
 
 * mass fabrication is now unlocked
 
@@ -55,16 +53,22 @@ unlocks "Complete STATS schematics" for a lot of research
  * SCP-7000 was the annihilation of Karma/Luck/Fortune, an intrinsic property of reality informing wave functions of their states' probability distributions. The fact that this property is essential to reality implies that the chance that anything should exist at all is essentially zero
  * possibly:
   * SCP-7000 was instigated by an alternate (non-Prime) Foundation who also created the IFRAME with intent to reset the multiverse with themselves in control
+   * there's an endless omniversal cycle of this specific alt-Foundation rolling the cosmic dice until it becomes the Prime-Timeline
+   * the Alt-Foundation was the ADMONITION timeline (implied)
   * SCP-7000 was the may 2022 wikidot outage (but described in-universe)
 
-* Upon generating Prime-Timeline (probability = 1 in 1), receive a message from Foundation-Prime saying you've succeeded (you beat the game!)
+### FINAL STRETCH
+
+
+
+* Upon generating Prime-Timeline, receive a message from Foundation-Prime saying you've succeeded (you beat the game!)
  * you have a choice to let the Foundation reset you for the next cycle ('main' ending), or to ignore them
  * you've also unlocked the final Prestige layer, allowing you to proceed to Phase VI
 
-
 ## PHASE VI
 
-* keep raising the chance of generating the Prime-timeline, all the way to 1 in 0
+ideas:
+* keep improving your setup to create more 'accurate' iterations of the Prime-Timeline
 
 possible endings:
 * keep creating prime-timeline variations to populate the entire multiverse on your own
@@ -74,10 +78,8 @@ possible endings:
 * fully reset IFRAME with some sort of cosmetic prestige
 * eliminate the SCP Foundation from the multiverse
 
-
 TBD
 ----
-a
 
 GAMEPLAY OUTLINE
 
@@ -85,7 +87,7 @@ GAMEPLAY OUTLINE
 *__universes/activation__ in __primeChance__ per __activations/sec__*
 (initially: 1 in 7.7e77777 per activation)
 (This should always be at the top of the window)
-unlock 'main ending' upon generation of a valid Prime-Timeline -> when all prior content is unlocked, (primeChance / (universes/activation) * activations/sec)
+At the end of Phase V, when all prior content is unlocked, the player has a 1 in (primeChance / ((universes/activation) * (activations/sec))) chance each second to win and generate the Prime-Timeline (the final stretch)
 
 # TABS:
 ## Files
