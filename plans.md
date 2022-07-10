@@ -57,13 +57,15 @@ unlocks "Complete STATS schematics" for a lot of research
    * the Alt-Foundation was the ADMONITION timeline (implied)
   * SCP-7000 was the may 2022 wikidot outage (but described in-universe)
 
-### FINAL STRETCH
+**FINAL STRETCH**
 
 
 
 * Upon generating Prime-Timeline, receive a message from Foundation-Prime saying you've succeeded (you beat the game!)
  * you have a choice to let the Foundation reset you for the next cycle ('main' ending), or to ignore them
  * you've also unlocked the final Prestige layer, allowing you to proceed to Phase VI
+
+
 
 ## PHASE VI
 
