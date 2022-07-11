@@ -1,4 +1,10 @@
-WORKING TITLE: ****
+WORKING TITLE: **Probability Zero**
+
+TITLE IDEAS:
+**A Cosmic Gambler**
+**Multiverse Maintenance**
+**Reality Randomizer**
+
 
 # NOTES 
 
@@ -30,12 +36,13 @@ ie. if a change is to be made, first ensure it is reflected in this document
 * learn Basic Programming, unlocking Automation
 
 * program and activate Auto-Clicker v1 to partially automate the LUCK, unlocking Advanced Programming
-* learn Advanced Programming, unlocking Optimizer v1 and hidden files
-* optimize Auto-Clicker to reduce its resources/sec (applies to current version and all future versions)
-* program Auto-Clicker v2 to fully automate the LUCK (for now, since you're consuming fabric at the rate it's produced)
+* learn Advanced Programming, unlocking Optimizer v1 and encrypted files
+* optimize Auto-Clicker v1 to unlock Auto-Clicker v2
+* program and activate Auto-Clicker v2 to fully automate the LUCK (for now, since you're consuming fabric at the rate it's produced)
 
+* attempt to view encrypted files -> unlock Cryptography
 * learn Cryptography, unlocking Decryption v1
-* program and activate Decryption v1 (which requires)
+* program and activate Decryption v1 to start
 
 unlocks "Complete STATS schematics" for a lot of research
 
@@ -57,10 +64,13 @@ unlocks "Complete STATS schematics" for a lot of research
 ## PHASE IV
 ""
 
+* 
 
 
 ## PHASE V
 ""
+
+* 
 
 * Recover true SCP-7000 description
  * SCP-7000 is a metaprobabilistic phenomenon whereby wave functions are prohibited to collapse into definite states, rendering causality entirely indeterminate
@@ -73,7 +83,7 @@ unlocks "Complete STATS schematics" for a lot of research
 
 **FINAL STRETCH**
 
-
+* 
 
 * Upon generating Prime-Timeline, receive a message from Foundation-Prime saying you've succeeded (you beat the game!)
  * you have a choice to let the Foundation reset you for the next cycle ('main' ending), or to ignore them
@@ -92,6 +102,7 @@ possible endings:
 * breaking out of the scpverse simulation
 * fully reset IFRAME with some sort of cosmetic prestige
 * eliminate the SCP Foundation from the multiverse
+* An incomprehensible metacosmic being is using the multiverse as hyperdimensional dice
 
 TBD
 ----
@@ -117,7 +128,8 @@ If file is encrypted / incomplete, viewer says *[FILE CANNOT BE DISPLAYED]*
   * has STATS codes for Options and Statistics menus
 
 * encrypted files:
- * "hidden" -> "luckyyou.txt": File from the previous IFRAME operator (previous D-7000) and their attempts to restore deleted files
+ * "[hidden]" -> "luckyyou.txt": File from the previous IFRAME operator (previous D-7000) and their attempts to restore deleted files
+ * "[hidden] (1)" ->  
 * if viewed before decryption, they're just a jumble of random characters
 
 * corrupted files:
