@@ -1,29 +1,41 @@
-WORKING TITLE: **Improbiverse**
+WORKING TITLE: ****
 
 # NOTES 
 
 This is the authoritative document on what the game should be like, and will be updated per eventual discussions. That way, we can focus on making sure the game just properly does whatever's listed here and there's less potential confusion.
 
+ie. if a change is to be made, first ensure it is reflected in this document
+
+($) indicates that a feature need only be implemented if contest time should allow
+----
 
 # STORY PROGRESSION
 ## PHASE I
 "automation phase"
 
+* ambient music plays when player first clicks on the IFRAME (can be disabled in Options Menu)
+
 * read initial document (intro)
- * SCP-7000 is an undisclosed phenomenon which destroyed nearly all of existence. Before it could do so, all remaining universes were harnessed by the Temporal Anomalies Dept. to form a special pocket universe in which you reside. You, made immortal by the Foundation, must eternally click on a random universe generation machine until it happens to create a universe possessing some variation of the Foundation  
+ * SCP-7000 is an undisclosed phenomenon which destroyed nearly all of existence. Before it could do so, all remaining universes were harnessed by the Temporal Anomalies Dept. to form a special pocket universe in which you reside. You, made immortal by the Foundation, must eternally click on a random universe generation machine until it happens to create a universe possessing some variation of the Foundation which can withstand SCP-7000.
 
 * read maintenance guide (tutorial/guide)
- * there are special maintenance codes which can be used to access the STATS' features (Statistics, Options)
+ * The Liminal Universe Creation Keystone (LUCK) is a machine which, when activated, generates one of 7.7 * 10^77777 possible unique universes at random, with the caveat that it will not repeat a previously-generated universe. The Prime-Timeline cannot be created directly, as the necessary data for its reconstruction far exceeds the IFRAME's available informational storage.
+ * The Scranton-Tarioux Autonomous Topological Sink (STATS) is a highly advanced reality anchor + generator that maintains the IFRAME's hyperdense, hyperreal structure. It also serves as the IFRAME's power generator, and it idly fabricates a little causality from hyperquantum fluctuations to supply the LUCK. In the event that the STATS, or any other element of the IFRAME breaks down, there are maintenance codes which can be used to access the STATS' features (Statistics, Options) and repair / reset the IFRAME.
 
-* generate a few universes
-* stare at STATS while it generates causal fabric
+* spend causal fabric to generate a few universes
+* stare at STATS while it generates more causal fabric
 * generate a few more universes, unlocking Research
 
-* start studying to generate research
-* learn Programming, unlocking Automation Tab + encrypted files
+* start studying to generate research points
+* learn Basic Programming, unlocking Automation
 
-* program Auto-Clicker v1 to partially automate the LUCK, unlocking Auto-Clicker v2, which requires more computational resources/sec
-* 
+* program and activate Auto-Clicker v1 to partially automate the LUCK, unlocking Advanced Programming
+* learn Advanced Programming, unlocking Optimizer v1 and hidden files
+* optimize Auto-Clicker to reduce its resources/sec (applies to current version and all future versions)
+* program Auto-Clicker v2 to fully automate the LUCK (for now, since you're consuming fabric at the rate it's produced)
+
+* learn Cryptography, unlocking Decryption v1
+* program and activate Decryption v1 (which requires)
 
 unlocks "Complete STATS schematics" for a lot of research
 
@@ -32,12 +44,14 @@ unlocks "Complete STATS schematics" for a lot of research
 ## PHASE II
 "fabrication phase"
 
-* mass fabrication is now unlocked
+* all progress is destroyed
+* mass fabrication is now unlocked, but research is re-locked
 
 
 ## PHASE III
 "scanning phase"
 
+* scanning is now unlocked, 
 
 
 ## PHASE IV
@@ -66,7 +80,6 @@ unlocks "Complete STATS schematics" for a lot of research
  * you've also unlocked the final Prestige layer, allowing you to proceed to Phase VI
 
 
-
 ## PHASE VI
 
 ideas:
@@ -83,7 +96,7 @@ possible endings:
 TBD
 ----
 
-GAMEPLAY OUTLINE
+# GAMEPLAY OUTLINE
 
 *Estimated chance of reconstituting the Prime-Timeline:*
 *__universes/activation__ in __primeChance__ per __activations/sec__*
@@ -91,8 +104,7 @@ GAMEPLAY OUTLINE
 (This should always be at the top of the window)
 At the end of Phase V, when all prior content is unlocked, the player has a 1 in (primeChance / ((universes/activation) * (activations/sec))) chance each second to win and generate the Prime-Timeline (the final stretch)
 
-# TABS:
-## Files
+## Files Tab
 (unlocked initially)
 
 Files will be listed on the left side of this tab (vertical tabview), click to view file.
@@ -104,60 +116,81 @@ If file is encrypted / incomplete, viewer says *[FILE CANNOT BE DISPLAYED]*
  * "MANUAL.txt": Improbabilistic Fortified Reality for Annihilated Multiverse Events operating manual (guide)
   * has STATS codes for Options and Statistics menus
 
-* hidden files (encrypted):
- * "luckyyou.txt": File from the previous IFRAME operator (previous D-7000) and their attempts to restore deleted files
+* encrypted files:
+ * "hidden" -> "luckyyou.txt": File from the previous IFRAME operator (previous D-7000) and their attempts to restore deleted files
+* if viewed before decryption, they're just a jumble of random characters
 
-* deleted files (corrupted):
- * <stuff>
- * SCP-7000 true description (end of Phase 6)
+* corrupted files:
+ * "[deleted]" -> "codes.txt": codes for the STATS from a previous D-7000. unlocks prestige mechanics 1 & 2.
+ * "[deleted] (1)" -> "schematic.jpg": STATS blueprint
+ * "[deleted] (X)" -> "SCP-7000.txt": SCP-7000 true description
 
 
-## LUCK
+## LUCK Tab
 (unlocked initially)
 
 Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe generator
-    *Causal fabric: __fabric__ (__fabricpersecond__)*
-    *Universes generated: __universes__ (__universespersecond__)*
-    **BUTTON:** Generate (cost: 1 causal fabric; cooldown: 10sec) -> __universes__ + 1
 
+* *Causal fabric: __fabric__ (__fabricpersecond__)*
+* *Universes generated: __universes__ (__universespersecond__)*
+* **Generate** (cost: 1 causal fabric; cooldown: 10sec) -> __universes__ + 1
+    
 
-## STATS
+## STATS Tab
 (unlocked initially)
 
 * Scranton-Tarioux Autonomous Temporal Sink (STATS) -> highly advanced reality-anchor/generator that maintains the IFRAME
  * *STATS is fabricating causality from hyperquantum fluctuations.*
 
-* A keypad interface where codes can be entered to unlock new features
+* A keypad interface where codes can be entered to unlock other menus
+ * prestige mechanics
+  * 
+  * 
+  * 
+  * 
+  * 
+  * 
+ * achievements menu ($)
  * options menu
-  * manual save/load/total reset/import save/export save
+  * manual save/load/hard reset/import save/export save
   * swapping light/dark theme
   * $ customizing number formatting
- * stats
+ * stats menu
   * playtime, time since last of each prestige layer
-  * best probability, total universes, etc.
+  * best probability, total universes, etc
 
 * prestige mechanics to unlock next phase (initially hidden)
 
 
-
-## Research 
+## Research Tab
 (unlocked at 10 universes generated)
 
-* Study -> generate 1 __research__ per second while tab is kept open
+* **Study** -> generate 1 __research__ per second while tab is kept open
 * __research__ can be spent to learn new stuff
- * Programming (cost: 100 research) -> unlocks hidden files (encrypted) and Automation Tab
+ * Programming (cost: 100 research) -> unlocks Automation Tab
  * Cryptography (cost: 300 research) -> 
+
 
 ## Automation
 (unlocked by researching Programming)
 
--> **ACTION:** Program: [algorithm] (cost: idle time) -> program selected algorithm by clicking and holding
--> list of unlocked algorithms
--> "you are using __ / [max] latent __computations/sec__"
--> list of programmed algorithms -> algorithms can independently be toggled active/inactive unless doing so would exceed max total computations/sec
+* **Program** [algorithm] (cost: time spent programming that algorithm) -> program selected algorithm by clicking and holding
+ * list of unlocked algorithms yet to be programmed
 
+* "you have __maxcomputations__ total computational resources"
+ * each algorithm can be assigned between 0 and __maxcomputations__ computational resources, but no more than the max can be assigned across all algorithms at any given time (like a point system). algorithms perform at a proportional rate to their assigned computational resources (inactive when assigned computations = 0). Initial __maxcomputations__ = 40.
 
-## Upgrades
+ * list of algorithms in unlock order:
+  * Auto-Clicker: Generates once per (__clickRate__ / assigned computations) seconds
+   * v1: clickRate = 1200
+   * v2: clickRate = 400
+  * Optimizer: Spends time to unlock better versions of existing programs
+   * v1: unlocks v2 of selected
+   * v2: unlocks v3 of selected
+   * etc
+  * 
+
+## Fabrication Tab
 (unlocked via Research)
 
 -> "you have [
@@ -166,7 +199,7 @@ Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe 
 -> Upgrade STATS to harness more causal fabric from the Void -> 
 
 
-## Scanner
+## Scanner Tab
 (unlocked Research)
 
 -> eerie dynamic map of multiverse space around you (you start as just a single point in the Void)
