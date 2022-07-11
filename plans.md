@@ -25,7 +25,7 @@ ie. if a change is to be made, first ensure it is reflected in this document
  * SCP-7000 is an undisclosed phenomenon which destroyed nearly all of existence. Before it could do so, all remaining universes were harnessed by the Temporal Anomalies Dept. to form a special pocket universe in which you reside. You, made immortal by the Foundation, must eternally click on a random universe generation machine until it happens to create a universe possessing some variation of the Foundation which can withstand SCP-7000.
 
 * read maintenance guide (tutorial/guide)
- * The Liminal Universe Creation Keystone (LUCK) is a machine which, when activated, generates one of 7.7 * 10^77777 possible unique universes at random, with the caveat that it will not repeat a previously-generated universe. The Prime-Timeline cannot be created directly, as the necessary data for its reconstruction far exceeds the IFRAME's available informational storage.
+ * The Liminal Universe Creation Keystone (LUCK) is a machine which, when activated, generates one of 7.7 * 10^77777 possible unique universes at random, with the caveat that it will not repeat any identical universe configurations. The Prime-Timeline cannot be created directly, as the necessary data for its reconstruction far exceeds the IFRAME's available informational storage.
  * The Scranton-Tarioux Autonomous Topological Sink (STATS) is a highly advanced reality anchor + generator that maintains the IFRAME's hyperdense, hyperreal structure. It also serves as the IFRAME's power generator, and it idly fabricates a little causality from hyperquantum fluctuations to supply the LUCK. In the event that the STATS, or any other element of the IFRAME breaks down, there are maintenance codes which can be used to access the STATS' features (Statistics, Options) and repair / reset the IFRAME.
 
 * spend causal fabric to generate a few universes
@@ -105,14 +105,20 @@ possible endings:
 * An incomprehensible metacosmic being is using the multiverse as hyperdimensional dice
 
 TBD
-----
+---
+---
+
 
 # GAMEPLAY OUTLINE
 
-*Estimated chance of reconstituting the Prime-Timeline:*
-*__universes/activation__ in __primeChance__ per __activations/sec__*
-(initially: 1 in 7.7e77777 per activation)
-(This should always be at the top of the window)
+* *Estimated chance of reconstituting the Prime-Timeline:*
+* *__universesPerActivation__ in __primeChance__ (rate of activation)*
+ * (initially: 1 in 7.7e77777 per activation)
+  * (with Auto-Clicker v1: 1 in 7.7e77777 every 30 seconds)
+  * (with Auto-Clicker v2: 1 in 7.7e77777 every per 10 seconds)
+  * (if LUCK made two universes per activation: 2 in 7.7e77777 per activation)
+  * (etc)
+ * (This should always be at the top of the window)
 At the end of Phase V, when all prior content is unlocked, the player has a 1 in (primeChance / ((universes/activation) * (activations/sec))) chance each second to win and generate the Prime-Timeline (the final stretch)
 
 ## Files Tab
@@ -143,25 +149,23 @@ If file is encrypted / incomplete, viewer says *[FILE CANNOT BE DISPLAYED]*
 
 Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe generator
 
-* *Causal fabric: __fabric__ (__fabricpersecond__)*
-* *Universes generated: __universes__ (__universespersecond__)*
-* **Generate** (cost: 1 causal fabric; cooldown: 10sec) -> __universes__ + 1
+* *Causal fabric: __fabric__ (__fabricPerSecond__)*
+* *Universes generated: __universes__ (__universesPerSecond__)*
+* **Generate** (initial cost: 1 causal fabric; cooldown: 10sec) -> __universes__ + 1
     
 
 ## STATS Tab
 (unlocked initially)
 
 * Scranton-Tarioux Autonomous Temporal Sink (STATS) -> highly advanced reality-anchor/generator that maintains the IFRAME
- * *STATS is fabricating causality from hyperquantum fluctuations.*
+ * *STATS is fabricating (__fabricPerSecond__) causality from hyperquantum fluctuations.*
+
+Upon initating phase I
+* **Hypermatter Generator** (initial cost: 0.1 causality/sec) -> toggleable. while active, generates 10 hypermatter/sec
+ * *STATS is generating (__hyperMatterhypermatter
 
 * A keypad interface where codes can be entered to unlock other menus
- * prestige mechanics
-  * 
-  * 
-  * 
-  * 
-  * 
-  * 
+ * codes to unlock next phases
  * achievements menu ($)
  * options menu
   * manual save/load/hard reset/import save/export save
@@ -202,10 +206,10 @@ Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe 
    * etc
   * 
 
-## Fabrication Tab
-(unlocked via Research)
+## Upgrades Tab
+(unlocked by fabricating Basic Tools)
 
--> "you have [
+-> "you have 
 -> *Engineering:*
 -> 
 -> Upgrade STATS to harness more causal fabric from the Void -> 
