@@ -14,9 +14,9 @@ if there's any conflict between what's described in the PROGRESSION and GAMEPLAY
 
 # PROGRESSION
 
-## PHASE I
+## PHASE I: Automation
 
-t = 0 minutes
+0 minutes
 
 * read initial document (intro)
   * SCP-7000 is an undisclosed phenomenon which destroyed nearly all of existence. Before it could do so, all remaining universes were harnessed by the Temporal Anomalies Dept. to form a special pocket universe in which you reside. You, made immortal by the Foundation, must eternally click on a random universe generation machine until it happens to create a universe possessing some variation of the Foundation which can withstand SCP-7000.
@@ -28,7 +28,7 @@ t = 0 minutes
   * The Scranton-Tarioux Autonomous Topological Sink (STATS) is a highly advanced reality anchor + generator that maintains the IFRAME's hyperdense, hyperreal structure. It also serves as the IFRAME's power generator, and it idly fabricates causality from hyperquantum fluctuations to supply the LUCK. If some element of the IFRAME breaks down, there are maintenance codes which can be inputted on a keypad (in STATS tab) to repair / reset the IFRAME.
   * You're given a few codes at the start, unlocking options, statistics menus
 
-t + 5 minutes
+5 minutes
 
 * spend causal fabric to generate a few universes
 * stare at STATS while it generates more causal fabric
@@ -37,12 +37,13 @@ t + 5 minutes
 * start studying to generate research points
 * spend research points to learn Basic Programming, unlocking Automation Tab
 
-* select, program and activate Auto-Clicker v1 to partially automate the LUCK, unlocking research item Inspection
-* learn Inspection to unlock encrypted files and Cryptography
+* select, program and activate Auto-Clicker v1 to partially automate the LUCK, unlocking encrypted files
+  * you're only generating enough fabric to make 1 universe per 10 sec, so the LUCK will be fully automated when the auto-clicker clicks once per 10 sec
+* attempt to view encrypted files to unlock Cryptography
 
-t + 10 minutes
+10 minutes
 
-* learn Cryptography, unlocking Decryption v1 program
+* learn Cryptography, unlocking Decryption v1
 * program and activate Decryption v1 to start decrypting files (in order)
 
 * after ~60sec, the first hidden file is decrypted
@@ -53,27 +54,29 @@ t + 10 minutes
 
 * Advanced Programming research is unlocked but greyed out as it requires more computational resources
 
-t + 20 minutes
+20 minutes
 
-* input the implied code into STATS keypad -> unlock the Repair Module
+* input the implied code into STATS keypad unlocks the Repair Module, which costs 100 causal fabric and all previous progress to unlock the MAKe Tab and gain 1000 hypermatter
 * disable Auto-Clicker (unless you've already done so) and save up 100 causal fabric
-* activate the Repair Module to revert all previous progress but gain hypermatter and unlock the Assembly Tab
+* activate the Repair Module to revert all previous progress but gain hypermatter and unlock the MAKe Tab
  * it resets D-7000's memory as well, which is why you have to re-research stuff -- this will be stated in-universe somewhere, prolly in the manual addendum
 
 
-## PHASE II
+## PHASE II: Upgrading
 
-t + ~30 minutes
+30 minutes
 
 * at any point, you can re-enter the code and reset again, but this has no benefit (yet)
 
-* Research and Programming Tabs are gone, but now there's an Assembly Tab
-* you've also unlocked an addendum file to the Manual which explains the Assembler
-  * the Assembler is configured to create replacement parts for the LUCK and/or STATS in case of malfunction
+* Research and Programming Tabs are gone, but now there's a MAKe Tab
+* you've also unlocked an addendum file to the Manual which explains the MAKe
+  * the Matter Assembly Kaleidoscope (MAKe) is configured to actively detect when any IFRAME component is damaged or malfunctioning and assemble a replacement part from provided hypermatter. In absence of any detectable defects, it creates generalized spare parts.
 
 * Generate universes to unlock research, use research to learn Programming, etc. gradually regaining your progress up to unlocking Advanced Programming
 
-* break down parts from the assembler to gain microchips
+* activate the MAKe to convert hypermatter into spare parts
+* dissassemble parts to gain microchips, unlocking Basic Upgrades: Terminal
+* learn Basic Upgrades: Terminal to unlock Basic Upgrades in the MAKe Tab
 * spend microchips to gain additional computational resources, speeding up the regaining of progress
 * by using all hypermatter, breaking down all parts, and spending all microchips, you have enough computational resources to unlock Advanced Programming
   * Advanced programming description says something about evolutionary neural networking capacity
@@ -83,28 +86,54 @@ t + ~30 minutes
   * Optimization v1 can be used on v1 programs to unlock their respective v2
     * very slow, especially when used on itself (probably 10^(4 + version number) seconds / computational resources)
 
-t + ~45 minutes
+45 minutes
 
-* optimize programs and eventually restore corrupted file
- * The file contains detailed schematics 
+* optimize programs and eventually restore first corrupted file, unlocking Basic Upgrading: STATS
+ * The file contains a wireframe schematic of the STATS. it's signed by D-7000
 
+* learn Basic Upgrades: STATS, unlocking:
+ * microchips can now be spent on the STATS to speed up its internal clock, marginally increasing the entire IFRAME's tickrate (so it's a multipler to all durations)
+ * the Repair Module can now grant more than 1000 hypermatter if you have more than 100 causal fabric, allowing you to reset again with more hypermatter than before
 
-## PHASE III
+* continue to optimize and restore but, since all microchips were spent earlier, the STATS can't be upgraded so it's very slow
+* save up more causal fabric and reset again with more hypermatter
+
+~1 hour into the game
+
+* spend only as many microchips as needed to regain progress
+
+1h25m
+
+* spend all remaining microchips on the STATS to speed up programs and fabric generation
+* optimize the now-accelerated programs to eventually recover the second file, unlocking Basic Upgrading: LUCK
+  * the second file contains a wireframe schematic of the LUCK
+
+* learn Basic Upgrades: LUCK, unlocking:
+  * a LOT of microchips can now be spent on the LUCK to generate slightly more universes per activation
+
+* optimizing + recovering third file is still really slow, reset for even more hypermatter
+
+* spend extra chips on computational resources to speed up Phase I, then spend the rest on STATS once it's unlocked
+* recover the third file to unlock 
+
+2h
+
+## PHASE III: Observation
 
 *  
 
 
-## PHASE IV
+## PHASE IV: Reconstruction
 
 * 
 
 
-## PHASE V
+## PHASE V: Stabilization
 
 * 
 
-* Recover true SCP-7000 description
-  * SCP-7000 was the annihilation of Fortune (aka. Karma, Luck) (hereafter SCP-7000-A), a metaprobabilistic phenomenon of narra-temporal interaction informing wave functions of their states' probability distributions. While SCP-7000-A is commonly conceived dualistically (ie. desirable and undesirable outcomes), it has been shown to operate  In absence of SCP-7000-A, no event may be meaningfully observed and causal failure occurs; reality's dependence on SCP-7000-A implies it can only exist due to being "lucky" 
+* Reconstruct true SCP-7000 description
+  * SCP-7000 was the annihilation of Fortune (aka. Karma, Luck) (hereafter SCP-7000-A), a metaprobabilistic phenomenon of narra-temporal interaction informing wave functions of their states' probability distributions. While SCP-7000-A is commonly conceived dualistically (ie. desirable and undesirable outcomes), it has been shown to operate in a hypercyclical continuum which permeates all known dimensions and aspects of ontology. In absence of SCP-7000-A, no event may be meaningfully observed and causal failure occurs; reality's dependence on SCP-7000-A implies it can only exist due to being "lucky", and is otherwise extremely unlikely
   * SCP-7000 was instigated by an alternate (non-Prime) Foundation who also created the IFRAME with intent to reset the multiverse with themselves in control
     * there's an endless omniversal cycle of this specific alt-Foundation rolling the cosmic dice until it becomes the Prime-Timeline
     * SCP-7000 is executed by allowing reality to be consumed by the Constants, the eldritch informational meta-beings which are essentially intrinsic properties/algorithms of the SCPverse simulation
@@ -122,16 +151,12 @@ t + ~45 minutes
 **MAIN ENDING:** 
 
 
+
+
 ## PHASE VI
 
-
-ideas:
-* keep improving your setup to create more 'accurate' iterations of the Prime-Timeline
-* defend yourself against the alt-found
-
-possible ending elements:
+possible ideas:
 * keep creating prime-timeline variations to populate the entire multiverse on your own
-* something to do with 2747
 * creating your own version of the multiverse / becoming your own prime-timeline
 * breaking out of the scpverse simulation
 * fully reset IFRAME with some sort of cosmetic prestige
@@ -227,7 +252,7 @@ Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe 
     * best probability, total universes, etc
   * 777777: achievements menu ($)
 
-* **Activate Repair Modifier** -> Reset all previous progress to unlock Assembly Tab and 1000g of hypermatter (cost: 100 causal fabric)
+* **Activate Repair Modifier** -> Reset all previous progress to unlock MAKE Tab and 1000 hypermatter (cost: 100 causal fabric)
 * 
 
 
@@ -259,7 +284,6 @@ Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe 
   * so, like a dnd stats creator, there should be numbers with plus and minus buttons on either side of them for each program, indicating how many are being used
 
   * list of algorithms
-    * PHASE I:
       * Auto-Clicker: Generates once per (__clickRate__ / assigned computations) seconds
       * unlocked initially (when you unlock the tab)
         * v1: clickRate = 3000
@@ -277,23 +301,33 @@ Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe 
         * using the optimizer on itself unlocks its next version but it's extremely slow without more computational resources 
 
 
-## Assembly Tab
+## MAKe Tab
 (unlocked by Repair Modifier code)
 
-* **Assemble**
+* **Assemble:** convert __hypermatter__ into selected part (dropdown menu)
+  * unlocked initially
+    * General Computer Part (cost: 100 matter)
+
+* **Disassemble:** convert certain parts into their core components (dropdown menu)
+  * General Computer Part -> 10 microchips
+
+* "Basic Upgrades" centered header
+* flexbox with buttons to spend microchips on Basic Upgrades
+  * Terminal: add more computations
+  * STATS: speed up internal clock of the entire game
+  * LUCK: generate more universes per activation
+
+* "Advanced Upgrades"
 
 
 ## Observation Tab
 (unlocked at Phase III)
 
-
-
-## Mapping Tab
-(unlocked at Phase IV)
-
 * eerie dynamic map of multiverse space around you (you start as just a single point in the Void)
-
 * **Scan** (cost: ) -> you can scan the surrounding Void for trace data from the dead multiverse
+
+
+## Reconstruction Tab
 
 
 ## Stabilization Tab
