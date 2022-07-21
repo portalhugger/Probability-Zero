@@ -26,7 +26,7 @@ if there's any conflict between what's described in the PROGRESSION and GAMEPLAY
 * read maintenance manual (tutorial/guide)
   * The Liminal Universe Creation Keystone (LUCK) is a machine which, when activated, generates one of 7.7 * 10^77777 possible unique universes at random, with the caveat that it will not repeat any identical universe configurations. The Prime-Timeline cannot be created directly, as the necessary data for its reconstruction far exceeds the IFRAME's available informational storage.
   * The Scranton-Tarioux Autonomous Topological Sink (STATS) is a highly advanced reality anchor + generator that maintains the IFRAME's hyperdense, hyperreal structure. It also serves as the IFRAME's power generator, and it idly fabricates causality from hyperquantum fluctuations to supply the LUCK. If some element of the IFRAME breaks down, there are maintenance codes which can be inputted on a keypad (in STATS tab) to repair / reset the IFRAME.
-  * You're given a few codes at the start, unlocking options, statistics menus
+  * You're given a few codes at the start, unlocking options, statistics menus. for some reason the rest of the codes are not included, ie. the manual is visibly incomplete
 
 5 minutes
 
@@ -35,7 +35,7 @@ if there's any conflict between what's described in the PROGRESSION and GAMEPLAY
 * generate a few more universes, unlocking Research
 
 * start studying to generate research points
-* spend research points to learn Basic Programming, unlocking Automation Tab
+* spend research to learn Basic Programming, unlocking Automation Tab
 
 * select, program and activate Auto-Clicker v1 to partially automate the LUCK, unlocking encrypted files
   * you're only generating enough fabric to make 1 universe per 10 sec, so the LUCK will be fully automated when the auto-clicker clicks once per 10 sec
@@ -76,14 +76,15 @@ if there's any conflict between what's described in the PROGRESSION and GAMEPLAY
 
 * activate the MAKe to convert hypermatter into spare parts
 * dissassemble parts to gain microchips, unlocking Basic Upgrades: Terminal
-* learn Basic Upgrades: Terminal to unlock Basic Upgrades in the MAKe Tab
+* learn Basic Upgrades: Terminal to unlock Upgrades in the MAKe Tab
 * spend microchips to gain additional computational resources, speeding up the regaining of progress
-* by using all hypermatter, breaking down all parts, and spending all microchips, you have enough computational resources to unlock Advanced Programming
+* by using all hypermatter, breaking down all parts, and spending all microchips, you have enough computational resources to learn Advanced Programming
   * Advanced programming description says something about evolutionary neural networking capacity
 
-* Advanced Programming unlocks Restoration v1, Optimization v1
+* Advanced Programming unlocks Auto-Study v1, Restoration v1, Optimization v1
+  * Auto-Study is a neural net that researches for you automatically, though it's initially significantly slower than you are
   * Restoration is essentially Decryption for corrupted files, but it's way slower
-  * Optimization v1 can be used on v1 programs to unlock their respective v2
+  * Optimization vN can be used on any vN (or lower) program to unlock their respective v(N+1)
     * very slow, especially when used on itself (probably 10^(4 + version number) seconds / computational resources)
 
 45 minutes
@@ -92,8 +93,9 @@ if there's any conflict between what's described in the PROGRESSION and GAMEPLAY
  * The file contains a wireframe schematic of the STATS. it's signed by D-7000
 
 * learn Basic Upgrades: STATS, unlocking:
- * microchips can now be spent on the STATS to speed up its internal clock, marginally increasing the entire IFRAME's tickrate (so it's a multipler to all durations)
- * the Repair Module can now grant more than 1000 hypermatter if you have more than 100 causal fabric, allowing you to reset again with more hypermatter than before
+  * microchips can now be spent on the STATS to speed up its internal clock, marginally increasing the entire IFRAME's tickrate (so it's a multipler to all durations)
+    * so LUCK cooldown, research time etc all get sped up
+  * the Repair Module can now grant more than 1000 hypermatter if you have more than 100 causal fabric, allowing you to reset again with more hypermatter than before
 
 * continue to optimize and restore but, since all microchips were spent earlier, the STATS can't be upgraded so it's very slow
 * save up more causal fabric and reset again with more hypermatter
@@ -114,13 +116,44 @@ if there's any conflict between what's described in the PROGRESSION and GAMEPLAY
 * optimizing + recovering third file is still really slow, reset for even more hypermatter
 
 * spend extra chips on computational resources to speed up Phase I, then spend the rest on STATS once it's unlocked
-* recover the third file to unlock 
+* recover the third file, obtaining a code
+  * unsigned blueprint for an unknown device. it has a new STATS code written on it
 
 2h
 
-## PHASE III: Observation
+* input new STATS code to unlock the Observation Module, which requires a high # of universes generated so far
+  * (this is to catch players who have rightfully assumed that generating universes has yet to be useful and force them to program + optimize the auto-clicker)
+* The player may need to reset again for more hypermatter in order to reach that many universes
+  * though, the growth is exponentional, so I'm not really sure. I have a vague idea of what the numbers will look like but as we move forward there's more potential for variation. the gameplay should be mostly linear regardless though due to how new phases are unlocked. we should essentially just make sure a player can't speedrun the game faster than we want them to
+* activate Observation Module -> lose all previous progress (and gain no hypermatter!) to unlock the SCANR Tab and gain 1 interreal ray
 
-*  
+
+## PHASE III: SCAnR
+
+~2h30m
+
+* back to square one except you've got the SCANR Tab, and a new file explaining the Observation Module
+  * the SCAnR can be toggled on/off and consumes interreal rays to image and analyze data from other functional universes, producing Functionality Data
+  * new research can be unlocked in the SCAnR corresponding to Total Functionality Data gained
+  * initially there is only 1 unscanned functional universe: the IFRAME itself
+
+* activate the SCAnR, consuming 1 interreal ray and 1 unscanned functional universe -> gain 1 Functionality Data
+  * When 1 Total Functionality Data is reached -> instantly re-learn all research up to Advanced Programming, allowing you to effectively skip Phase I. Research is no longer reset by the Repair Module
+
+* activate Repair Module to gain hypermatter (does not reset SCAnR, rays, or Total Functionality Data)
+* gradually regain all progress back, but faster now that you're not losing any research
+
+* when you reach the Observation Module requirement again, you've started to very rarely generate functional universes (1 or 2 at this point)
+* can't be scanned for lack of interreal rays
+
+* eventually you have enough universes to re-activate the Observation Module for 2 interreal rays
+* regain all previous progress and scan another functional universe
+
+~3h - 3h30m
+
+* 2 Total Functionality Data -> unlocks Enhanced Programming
+* learn Enhanced Programming -> unlocks Design v1, Synthesis v1
+  * Design v1
 
 
 ## PHASE IV: Reconstruction
@@ -153,7 +186,7 @@ if there's any conflict between what's described in the PROGRESSION and GAMEPLAY
 
 
 
-## PHASE VI
+## PHASE VI: 
 
 possible ideas:
 * keep creating prime-timeline variations to populate the entire multiverse on your own
@@ -202,9 +235,13 @@ TBD
 Files will be listed on the left side of the tab (vertical tabview); click to view file.
 
 * Initially available:
-  * "README.txt": SCP-7000 containment procedures (intro)
-  * "MANUAL.txt": Improbabilistic Fortified Reality for Annihilated Multiverse Events operating manual (guide)
+  * "README.doc": SCP-7000 containment procedures (intro)
+  * "MANUAL.doc": Improbabilistic Fortified Reality for Annihilated Multiverse Events operating manual (guide)
     * has STATS codes for Options and Statistics menus
+
+* Unlocked by modules:
+  * "REPAIR.doc": MAKe operating manual
+  * "OBSERVATION.doc" SCAnR operating manual
 
 * encrypted files (unlocked by learning Inspection):
   * "[hidden]" -> "luckyyou.txt": introductory note from a previous D-7000
@@ -212,10 +249,12 @@ Files will be listed on the left side of the tab (vertical tabview); click to vi
 * if viewed before decryption, they're just a jumble of random characters
 
 * corrupted files:
-  * "[deleted]" -> "schematic.jpg": STATS blueprint -> can be researched to unlock STATS upgrades
+  * "[deleted]" -> "anchor.png": STATS blueprint -> unlocks Basic Upgrades: STATS upon viewing
+  * "[deleted] (1)" -> "keystone.png": LUCK blueprint -> unlocks Basic Upgrades: LUCK
+  * "[deleted] (2)" -> "scanner.png": blueprint for an unknown device with second prestige code attached
 * if viewed before restoration, they're heavily distorted and rearranged versions of their actual versions (not random)
 
-* recovered files (unlocked by Reconstruction in Phase V):
+* recovered files (unlocked by Reconstruction in Phase IV):
  * TBD
  * SCP-7000 true description (initiates Final Stretch)
 
@@ -252,8 +291,11 @@ Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe 
     * best probability, total universes, etc
   * 777777: achievements menu ($)
 
-* **Activate Repair Modifier** -> Reset all previous progress to unlock MAKE Tab and 1000 hypermatter (cost: 100 causal fabric)
-* 
+* **Activate Repair Module** -> Reset all previous progress to unlock MAKe Tab and gain 1000 hypermatter (cost: 100 causal fabric)
+  * more fabric -> more hypermatter
+
+* **Activate Observation Module** -> Reset all previous progress to unlock SCAnR Tab and gain 1 interreal ray (cost: high # of universes generated)
+  * more universes generated -> more interreal rays
 
 
 ## Research Tab
@@ -270,7 +312,7 @@ Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe 
   * Basic Programming (cost: 30 research) -> unlocks Automation Tab (initially available)
   * Inspection -> 
   * Cryptography (cost: 120 research) -> unlocks Decryption v1 (unlocked by clicking on encrypted files)
-  * Advanced Programming (cost: 300 research) -> 
+  * Advanced Programming (cost: 300 research, 200 computational resources) -> 
 
 
 ## Automation Tab
@@ -283,26 +325,27 @@ Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe 
   * each algorithm can be assigned between 0 and __maxcomputations__ computational resources, but no more than the max can be assigned across all algorithms at any given time (like a point system). algorithms perform at a proportional rate to their assigned computational resources (inactive when assigned computations = 0). Initial __maxcomputations__ = 100.
   * so, like a dnd stats creator, there should be numbers with plus and minus buttons on either side of them for each program, indicating how many are being used
 
-  * list of algorithms
-      * Auto-Clicker: Generates once per (__clickRate__ / assigned computations) seconds
-      * unlocked initially (when you unlock the tab)
-        * v1: clickRate = 3000
-        * v2: clickRate = 1000
+Basic Programs:
+  * Auto-Clicker: Generates once per (__clickRate__ / assigned computations) seconds (unlocked initially)
+    * v1: clickRate = 3000
+    * vn: 0.8 of the previous (probably?)
+    * etc
 
-      * Decryption: Spends time to decrypt encrypted files
-        * unlocked by 
-        * v2: double speed of v1
-        * v3: triple speed of v2
-        * v4: quadruple speed of v3
-        * etc
+  * Decryption: Spends time to decrypt encrypted files (unlocked )
+    * vn: double speed of previous version
+    * etc
 
-      * Optimizer: Spends time to unlock better versions of existing programs
+Advanced Programs:
+
+
+
+  * Optimizer: Spends time to unlock better versions of existing programs
         * vN: unlocks v(N+1) of a selected program of the same or lower version (eg. optimizer v2 unlocks v3 of any v1 or v2 program, optimizer v3 unlocks v4 of any v1, v2, or v3 program, etc)
         * using the optimizer on itself unlocks its next version but it's extremely slow without more computational resources 
 
 
 ## MAKe Tab
-(unlocked by Repair Modifier code)
+(unlocked by Repair Module)
 
 * **Assemble:** convert __hypermatter__ into selected part (dropdown menu)
   * unlocked initially
@@ -311,20 +354,24 @@ Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe 
 * **Disassemble:** convert certain parts into their core components (dropdown menu)
   * General Computer Part -> 10 microchips
 
-* "Basic Upgrades" centered header
-* flexbox with buttons to spend microchips on Basic Upgrades
-  * Terminal: add more computations
-  * STATS: speed up internal clock of the entire game
-  * LUCK: generate more universes per activation
+* "Upgrades" centered header, followed by flexbox with buttons that stay centered as they unlock
+  * "BASIC:" 
+    * Terminal: add more computations
+    * STATS: speed up internal clock of the entire game
+    * LUCK: generate more universes per activation
+  * "ADVANCED:"
+ 
 
-* "Advanced Upgrades"
+## SCAnR Tab
+(unlocked by Observation Module)
 
+* "Spacetime-Continuum Arborization Radar (SCAnR)"
 
-## Observation Tab
-(unlocked at Phase III)
+* cool liminal universe visualizer (initially inactive)
+* **Internal Scan:** analyze functional universes to generate Functionality Data (cost: 1 interreal ray/universe, has some initial cooldown)
 
 * eerie dynamic map of multiverse space around you (you start as just a single point in the Void)
-* **Scan** (cost: ) -> you can scan the surrounding Void for trace data from the dead multiverse
+* **External Scan:**
 
 
 ## Reconstruction Tab
