@@ -1,19 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
 
+:root {
+  --bground: #eee;
+  --bmground: #ccc;
+  --mground: #aaa;
+  --fmground: #666;
+  --fground: #333;
+}
+
 body {
-  background-color: transparent;
+  background-color: var(--bground);
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-size: 0.92em;
-  color: #111;
+  color: var(--fground);
   font-weight: normal;
 }
 
 hr {
   margin: 3%;
   border: none;
-  border-top: 1px #000 solid;
+  border-top: 2px var(--fmground) solid;
 }
 
 h1,
@@ -25,21 +33,45 @@ h6 {
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    color: #444;
+    color: var(--fmground);
     letter-spacing: unset;
 }
 
 .notation {
-    border-left: solid 3px rgb(30, 30, 30);
-    border-right: solid 3px rgb(30, 30, 30);
+    border-left: solid 3px var(--fmground);
+    border-right: solid 3px var(--fmground);
     padding: 25px 25px 25px 25px;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-    width: 75%;
+    box-shadow: 0px 0px 3px var(--fmground);
+    width: 100%;
     margin: auto;
-    background: #eee;
+    background: var(--bmground);
 }
 
-.tabButton {
+.generalButton {
+  user-select: none;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: 'Work Sans', sans-serif;
+  padding: 0.5% 1%;
+  font-weight: 600;
+  font-size: 110%;
+  margin: 2px;
+  background-color: var(--bmground);
+  border: 2px solid var(--fmground);
+  transition-property: background-color, border;
+  transition-duration: 0.1s;
+}
+
+.generalButton:hover, .tabSelected {
+  background-color: var(--bground);
+  border: 2px solid var(--fground);
+}
+
+.fileButton {
   user-select: none;
   vertical-align: middle;
   overflow: hidden;
@@ -48,85 +80,29 @@ h6 {
   cursor: pointer;
   white-space: nowrap;
   border: none;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Inter';
   padding: 0.5% 1%;
   font-weight: 600;
   font-size: 110%;
   margin: 2px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  background-color: var(--bmground);
   transition-property: background-color;
   transition-duration: 0.1s;
 }
 
-.tabButton:hover, .tabSelected {
-    color: #eee;
-    background-color: #444;
-  }
-
-.pressButton {
-  white-space: normal;
-  user-select: none;
-  vertical-align: middle;
-  overflow: hidden;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  white-space: nowrap;
-  border: none;
-  font-family: 'Work Sans', sans-serif;
-  padding: 0.5% 1%;
-  font-weight: 600;
-  font-size: 110%;
-  margin: 2px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
-  background-color: #eee;
-  transition-property: background-color;
-  transition-duration: 0.1s;
-}
- 
-.pressButton:hover {
-    background-color: #ddd;
+.fileButton:hover, .fileSelected {
+  background-color: var(--bground);
 }
 
 .tabContainer {
   border: none;
-  padding: 3.5px;
-}
-
-.smallmodal {
-  padding: 0px;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
-  width: 75%;
-  margin: auto;
-  background: rgb(253, 253, 253);
-  border: solid 2px #5D5D5D;
-}
-
-.temporalMemo {
-    background: url(https://scp-wiki.wikidot.com/local--files/theme:basalt/DELTA_T_LIGHTLOGO.png) #edf;
-    background-size: contain;
-    background-position: top center;
-    background-repeat: no-repeat;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.16);
-    border: double 3px #cae;
-    width: 90%;
-    min-height: 4rem;
-    max-height: 100rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 10px 20px 20px 20px;
-    word-break: break-word;
-}
-
-.bt {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 700;
+  padding: 3.5px 0px;
 }
 
 blockquote, div.blockquote {
-  background-color: #F8F8F8;
-  border: solid 1px #F8F8F8;
-  box-shadow: 0px 0px 4px #999999;
-  padding: 0 1em;
+  background-color: var(--bmground);
+  border: solid 1px var(--fmground);
+  box-shadow: none;
+  padding: 1em;
+  margin: 0.5em;
 }

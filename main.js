@@ -1,3 +1,5 @@
+// YOU SHOULD PROBABLY REWRITE ALL OF THIS
+
 var gameData = {
   probability: 7.7 * 10^77777, // displayed as 7.7e77777
   uniTotal: 0,
@@ -75,10 +77,24 @@ function openTab(evt, tabName) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  tablinks = document.getElementsByClassName("tablink");
+  tablinks = document.getElementsByClassName("tabLink");
   for (i = 0; i < x.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" tabSelected", "");
   }
   document.getElementById(tabName).style.display = "inline";
   evt.currentTarget.className += " tabSelected";
+}
+
+function openFile(evt, fileName) {
+  var i, x, fileLinks;
+  x = document.getElementsByClassName("function1");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  fileLinks = document.getElementsByClassName("fileLink");
+  for (i = 0; i < x.length; i++) {
+    fileLinks[i].className = fileLinks[i].className.replace(" fileSelected", "");
+  }
+  document.getElementById(fileName).style.display = "block";
+  evt.currentTarget.className += " fileSelected";
 }
