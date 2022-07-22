@@ -265,22 +265,20 @@ if there's any conflict between what's described in the PROGRESSION and GAMEPLAY
   * spend Trace Data to increase LUCK's accuracy
 * replay the entire game so far except much faster since hypermatter and Upgrades are no longer reset by anything + other buffs
 
-7h30m
+~8h
 
 * due to spending Trace Data earlier, primeChance is higher, allowing you to reset for 2 retrocausal rays
   * 2 Total Trace Data -> Observation Module is permanently reconstructed; all interreal ray gain is multiplied by Total Trace Data -> permanently unlocks Reconstructed file 2
 * replay but even faster
 
-8h
-
 * spend Trace Data -> higher primeChance -> exponentially more retrocausal rays
   * 4 Total Trace Data -> Stability Module is permanently reconstructed; all patastability gain is exponentiated by Total Trace Data -> permanently unlocks Reconstructed file 3
 * replay but, you guessed it, even faster
 
-8h15
-
 * 7 Total Trace Data -> Gain a small percentage of Total Trace Data each second based on primeChance -> permanently unlocks Reconstructed file 4, THE TRUE SCP-7000 DESCRIPTION
 * Trace Data starts increasing exponentially, thereby increasing primeChance exponentially and finally beginning to approach a 100% chance of reconstituting the Prime-Timeline
+
+~9h
 
 * 100 Total Trace Data -> permanently unlocks Reconstructed file 5: the original SCP-7000 document
 * "Finally, the Description." or other humorous label
@@ -328,7 +326,7 @@ TBD
 (Always at top of window)
 
 * *Estimated chance to reconstitute a valid Prime-Timeline:*
-* "__universesPerActivation__ in __primeChance__ (rate of activation)"
+* "# in __primeChance__ (rate of activation)"
   * (initially: 1 in 7.7e77777 per activation)
     * (with Auto-Clicker: 1 in 7.7e77777 every (1 / ) seconds)
     * (if LUCK made two universes per activation: 2 in 7.7e77777 per activation)
@@ -347,7 +345,7 @@ Files will be listed on the left side of the tab (vertical tabview); click to vi
   * "MANUAL.doc": Improbabilistic Fortified Reality for Annihilated Multiverse Events operating manual (guide)
     * has STATS codes for Options and Statistics menus
 
-* Manual addenda (unlocked by modules):
+* Manual addenda (unlocked by activating corresponding modules):
   * "REPAIR.doc": MAKe operating manual
   * "OBSERVATION.doc": SCAnR operating manual
   * "STABILITY.doc": AEGIS operating manual
@@ -355,22 +353,25 @@ Files will be listed on the left side of the tab (vertical tabview); click to vi
 
 * encrypted files (unlocked by activating Auto-Clicker):
   * "[hidden]" -> "luckyyou.txt": introductory note from a previous D-7000
-  * "[hidden] (1)" -> "log.txt": log from a previous D-7000 mentioning corrupted files and hinting at the first prestige code
+  * "[hidden] (1)" -> "log_22.txt": log from a previous D-7000 mentioning corrupted files and hinting at the first prestige code
 * if viewed before decryption, they're just a jumble of random characters
 
 * corrupted files (unlocked by decrypting second encrypted file):
-  * "[deleted]" -> "anchor.png": STATS blueprint -> unlocks Basic Upgrades: STATS upon viewing
-  * "[deleted] (1)" -> "keystone.png": LUCK blueprint -> unlocks Basic Upgrades: LUCK
-  * "[deleted] (2)" -> "radar.png": blueprint for an unknown device with second prestige code attached
+  * "[deleted]" -> "anchor.png": STATS schematic -> unlocks Basic Upgrades: STATS upon viewing
+  * "[deleted] (1)" -> "keystone.png": LUCK schematic -> unlocks Basic Upgrades: LUCK
+  * "[deleted] (2)" -> "radar.png": schematic for an unknown device with second prestige code attached
 * if viewed before restoration, they're heavily distorted and rearranged versions of their actual versions (not random)
 
 * unstable files (unlocked at 8 Total Functionality Data)
-  * 
-  * 
+  * "[undefined]" -> "9045582399276273.txt": notes from a researcher during development of the IFRAME
+  * "[undefined] (1)" -> "2430583475823429.svg": ChARM blueprint and corresponding code
 
-* reconstructed files (unlocked by CHARM):
- * TBD
- * SCP-7000 true description (initiates Final Stretch)
+* reconstructed files (unlocked and immediately viewable by ChARM):
+ * 1: TBD
+ * 2: TBD
+ * 3: TBD
+ * 4: TBD
+ * 5: SCP-7000 true description (initiates Final Stretch)
 
 
 ## LUCK Tab
@@ -381,6 +382,8 @@ Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe 
 * *Causal fabric: __fabric__ (__fabricPerSecond__)*
 * **Generate** (initial cost: 1 causal fabric; cooldown: 10sec) -> __universes__ + 1
 * *Universes generated since last reset: __universes__ (__universesPerSecond__)*
+
+* if ChARM Tab is active
 
 
 ## STATS Tab
@@ -397,18 +400,24 @@ Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe 
     * 555512 -> unlocks Reconstruction Module
   * 000000: options menu
     * manual save/load/hard reset/import save/export save
-    * swapping light/dark theme
+    * $ swapping light/dark theme
     * $ customizing number formatting
   * 012345: stats menu
     * playtime, time since last of each prestige layer
     * best probability, total universes, etc
   * 777777: achievements menu ($)
 
-* **Activate Repair Module** -> Reset all previous progress to unlock MAKe Tab and gain 500g hypermatter (cost: 50 causal fabric)
+* **Activate Repair Module** -> Reset all previous progress to unlock MAKe Tab and gain 500g hypermatter (requirement: 50 causal fabric)
+  * unlocked by corresponding code
   * more fabric -> more hypermatter
 
-* **Activate Observation Module** -> Reset all previous progress to unlock SCAnR Tab and gain 1 interreal ray (cost: high # of universes generated)
+* **Activate Observation Module** -> Reset all previous progress to unlock SCAnR Tab and gain 1 interreal ray (requirement: high # of universes generated)
+  * unlocked by corresponding code
   * more universes generated -> more interreal rays
+
+* **Activate Stability Module** -> Reset all previous progress to unlock AEGIS Tab (requirement: 20 Functionality Data)
+  * unlocked by corresponding code
+  * 
 
 
 ## Research Tab
@@ -422,8 +431,7 @@ Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe 
 
 * **Study** -> generate 1 __research__ per second while tab is kept open
 * __research__ can be spent to learn new mechanics and technologies
-  * Basic Programming (cost: 30 research) -> unlocks Automation Tab (initially available)
-  * Inspection -> 
+  * Basic Programming (cost: 60 research) -> unlocks Automation Tab (initially available)
   * Cryptography (cost: 120 research) -> unlocks Decryption v1 (unlocked by clicking on encrypted files)
   * Advanced Programming (cost: 300 research, 200 computational resources) -> 
 
@@ -492,7 +500,7 @@ Advanced Programs:
 (unlocked by Stability Module)
 
 
-## CHARM Tab 
+## ChARM Tab 
 (unlocked by Reconstruction Module; replaces LUCK Tab)
 
 * eerie dynamic map of multiverse space around you (you start as just a single point in the Void)
