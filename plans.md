@@ -285,7 +285,7 @@ if there's any conflict between what's described in the PROGRESSION and GAMEPLAY
   * SCP-7000 was the annihilation of Fortune (aka. Karma, Luck) (hereafter SCP-7000-A), a metaprobabilistic phenomenon of narra-temporal interaction informing wave functions of their states' probability distributions. While SCP-7000-A is commonly conceived dualistically (ie. desirable and undesirable outcomes), it has been shown to operate in a hypercyclical continuum which permeates all known dimensions and aspects of ontology. In absence of SCP-7000-A, no event may be meaningfully observed and causal failure occurs; reality's dependence on SCP-7000-A implies it can only exist due to being "lucky", and is otherwise extremely unlikely.
   * The file reveals a bunch of shady stuff about the Foundation responsible for the creation of the IFRAME
 
-* As you read the file, the Final Stretch is happening; there's no more content to be unlocked until the left side of primeChance equals the right side and the Prime-Timeline is generated. Should probably take 10-15 more minutes.
+* As you read the file, the **Final Stretch** is happening; there's no more content to be unlocked until the left side of primeChance equals the right side and the Prime-Timeline is generated. Should probably take 10-15 more minutes.
 
 * Upon generating Prime-Timeline, receive a message from Foundation-Prime saying you've succeeded (you beat the game!)
   * you can hand control over to the Foundation and allow yourself to be reset -> you get the 'main ending' document (content TBD) and can play again from the beginning
@@ -383,7 +383,8 @@ Liminal Universe Creation Keystone Mk. VII (LUCK) -> extremely limited universe 
 * **Generate** (initial cost: 1 causal fabric; cooldown: 10sec) -> __universes__ + 1
 * *Universes generated since last reset: __universes__ (__universesPerSecond__)*
 
-* if ChARM Tab is active
+* if ChARM Tab is active:
+  * **
 
 
 ## STATS Tab
