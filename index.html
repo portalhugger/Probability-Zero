@@ -14,7 +14,11 @@
             <p></p>
 
             <p>Chance to reconstitute a valid Prime-Timeline:</p>
-            <p style="margin-top: -1vh;" id="probability">1 in 7.7e77777 per activation</p>
+            <p id="primeChance" style="margin-top: -1vh;" id="probability">1 in 7.7e77777 per activation</p>
+            <p></p>
+            <p id="uniScore">0 universes generated since IFRAME's initialization.</p>
+
+            <br>
 
             <div style="height: 1vh;">
             </div>
@@ -34,12 +38,12 @@
             <p></p>
 
             <div id="filesTab" class="tabContainer function">
-                <div style="display: flex; flex-direction: row; flex-wrap: wrap; width: 100%; text-align: center;">
-                    <div id="fileList" class="blockquote" style="display: flex; flex-direction: column; width: 20%; margin-right: 1vw;">
+                <div id="fileWindow" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; width: 75%; margin: auto; text-align: center;">
+                    <div id="fileList" class="blockquote" style="display: flex; flex-direction: column; justify-content: center; width: 20%; margin-right: 1vw;">
                         <button class="fileButton fileLink fileSelected" onclick="openFile(event,'introFile')">PROCEDURES.doc</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'guideFile')">MANUAL.doc</button>
 
-                        <button class="fileButton fileLink" onclick="openFile(event,'moduleFile1')">MAINTENANCE.doc</button>
+                        <button class="fileButton fileLink" onclick="openFile(event,'moduleFile1')">REPAIR.doc</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'moduleFile2')">OBSERVATION.doc</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'moduleFile3')">STABILIZATION.doc</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'moduleFile4')">RECONSTRUCTION.doc</button>
@@ -61,15 +65,17 @@
                         <button class="fileButton fileLink" onclick="openFile(event,'unstableFile')">[unstable](1)</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'stableFile2')">PROTOTYPE_131313.svg</button>
 
-                        <button class="fileButton fileLink" onclick="openFile(event,'tracedFile1')">file fragment.doc</button>
-                        <button class="fileButton fileLink" onclick="openFile(event,'tracedFile2')">file fragment(1).doc</button>
-                        <button class="fileButton fileLink" onclick="openFile(event,'tracedFile3')">file fragment(2).doc</button>
-                        <button class="fileButton fileLink" onclick="openFile(event,'tracedFile4')">file fragment(3).doc</button>
-                        <button class="fileButton fileLink" onclick="openFile(event,'tracedFile5')">SCP-7000-clearance-7.doc</button>
+                        <button class="fileButton fileLink" onclick="openFile(event,'tracedFile1')">file_fragment_1.doc</button>
+                        <button class="fileButton fileLink" onclick="openFile(event,'tracedFile2')">file_fragment_2.doc</button>
+                        <button class="fileButton fileLink" onclick="openFile(event,'tracedFile3')">file_fragment_3.doc</button>
+                        <button class="fileButton fileLink" onclick="openFile(event,'tracedFile4')">file_fragment_4.doc</button>
+                        <button class="fileButton fileLink" onclick="openFile(event,'tracedFile5')">SCP-7000_original.doc</button>
                     </div>
 
                     <div id="fileViewer" style="width: 75%;">
                         <p></p>
+
+                    <!-- Initial Files -->
 
                         <div id="introFile" class="notation function1">
                             <p><b>DESIGNATION:</b> SCP-7000<br><b>CLASS:</b> Metapollyon<sup><strong><a href="#footnote-1">[1]</a></strong></sup></p>
@@ -93,45 +99,161 @@
     
                                 <hr></hr>
     
-                                <blockquote style="font-size: 90%">
+                                <blockquote class="footnoteblock" style="font-size: 90%">
                                     <p id="footnote-1"><strong>1.</strong> Anomaly is uncontainable on a multiversal scale and is actively causing the end of all worlds.</p>
                                     <p id="footnote-2"><strong>2.</strong> As SCP-7000 may or may not transcend standard notions of causality, its existence is technically uncertain. This document's use of the SCP-7000 designation may or may not reinforce the hypothetical anomaly it references, possibly necessitating the interjection of uncertainty into any authoritative statement regarding its potential properties. The presence of said uncertainty (or lack thereof) is not necessarily indicative of any particular anomaly's existence.</p>
                                 </blockquote>
                             </div>
                         </div>
-
                         <div id="guideFile" class="notation function1" style="display: none;">
-                            placeholder
+                            IFRAME manual
                         </div>
+
+                    <!-- Manual Addenda -->
+
+                        <div id="moduleFile1" class="notation function1" style="display: none;">
+                            repair module
+                        </div>
+
+                        <div id="moduleFile2" class="notation function1" style="display: none;">
+                            observation module
+                        </div>
+
+                        <div id="moduleFile3" class="notation function1" style="display: none;">
+                            stabilization module
+                        </div>
+
+                        <div id="moduleFile4" class="notation function1" style="display: none;">
+                            reconstruction module
+                        </div>
+
+                    <!-- Encrypted Files -->
+
+                        <div id="encryptedFile" class="notation function1" style="display: none;">
+                            cannot be displayed due to encryption
+                        </div>
+
+                        <div id="decryptedFile1" class="notation function1" style="display: none;">
+                            d-7000 message
+                        </div>
+
+                        <div id="decryptedFile2" class="notation function1" style="display: none;">
+                            d-7000 log
+                        </div>
+
+                    <!-- Corrupted Files -->
+
+                        <div id="corruptedFile" class="notation function1" style="display: none;">
+                            can only partially be displayed due to corruption
+                        </div>
+
+                        <div id="restoredFile1" class="notation function1" style="display: none;">
+                            STATS schematic
+                        </div>
+
+                        <div id="restoredFile2" class="notation function1" style="display: none;">
+                            LUCK schematic
+                        </div>
+
+                        <div id="restoredFile3" class="notation function1" style="display: none;">
+                            SCAnR schematic
+                        </div>
+
+                    <!-- Unstable Files -->
+
+                        <div id="unstableFile" class="notation function1" style="display: none;">
+                            File cannot be displayed due to causal instability
+                        </div>
+
+                        <div id="stableFile1" class="notation function1" style="display: none;">
+                            temporal researcher log
+                        </div>
+
+                        <div id="stableFile2" class="notation function1" style="display: none;">
+                            ChARM prototype blueprint
+                        </div>
+
+                    <!-- Reconstructed Files-->
+
+                        <div id="tracedFile1" class="notation function1" style="display: none;">
+                            placeholder1
+                        </div>
+                    
+                        <div id="tracedFile2" class="notation function1" style="display: none;">
+                            placeholder2
+                        </div>
+
+                        <div id="tracedFile3" class="notation function1" style="display: none;">
+                            placeholder3
+                        </div>
+
+                        <div id="tracedFile4" class="notation function1" style="display: none;">
+                            placeholder4
+                        </div>
+
+                        <div id="tracedFile5" class="notation function1" style="display: none;">
+                            true scp-7000 document
+                        </div>
+                    
                     </div>
                 </div>
             </div>
 
             <div id="luckTab" class="tabContainer function" style="display: none">
-                <p id="fabricScore">Causal fabric: 0</p>
+                <div class="luckWindow">
+                    <h2>Liminal Universe Creation Keystone Mk. VII</h2>
 
-                <button id="genUniButton" class="generalButton" onclick="genUni()">GENERATE UNIVERSE<br><span style="font-weight: normal; font-size: 90%;">cost: 1 causal fabric</span></button>
+                    <p id="fabricScore">0 (0.0/s) causal fabric stored</p>
 
-                <p></p>
+                    <button id="genUniButton" class="generalButton" onclick="genUni()">Generate Universe<br><span style="font-weight: normal; font-size: 90%;">cost: 1 causal fabric</span></button>
+
+                    <br>
+
+                    <button id="refineGenButton" class="generalButton" onclick="refineGen()">Refine Generation<br><span style="font-weight: normal; font-size: 90%;">cost: 1 trace data</span></button>
+                </div>
             </div>
 
             <div id="statsTab" class="tabContainer function" style="display: none">
-                <p>[cool loading gif]</p>
+                <h2>Scranton-Tarioux Autonomous Topological Sink</h2>
 
-                <p id="fabricRateScore">STATS is harnessing 0.1 causal fabric per second from quantum fluctuations.</p>
+                <br>
+
+                <div id="statsWindow" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; width: 100%; margin: auto; text-align: center;">
+                    <div style="width: 600px;">
+                        (causality fabrication gif)
+                    </div>
+                
+                    <div class="numpad">
+                        <button class="padButton" onClick="num1Press">1</button>
+                        <button class="padButton" onClick="num2Press">2</button>
+                        <button class="padButton" onClick="num3Press">3</button>
+                        <button class="padButton" onClick="num4Press">4</button>
+                        <button class="padButton" onClick="num5Press">5</button>
+                        <button class="padButton" onClick="num6Press">6</button>
+                        <button class="padButton" onClick="num7Press">7</button>
+                        <button class="padButton" onClick="num8Press">8</button>
+                        <button class="padButton" onClick="num9Press">9</button>
+                        <button class="padButton" onClick="clrPress">CLEAR</button>
+                        <button class="padButton" onClick="num0Press">0</button>
+                        <button class="padButton" onClick="enterPress">ENTER</button>
+                    </div>
+                </div>
 
                 <hr></hr>
+                <h2>Options</h2>
 
-                <p style="text-align: center"><h2>OPTIONS</h2></p>
-
-                <button onclick="manualSave()">SAVE GAME</button>
-                <button onclick="resetSave()">RESET</button>
+                <div style="display: grid">
+                    <button class="generalButton" onclick="manualSave()">SAVE GAME</button>
+                    <button class="generalButton" onclick="resetSave()">HARD RESET</button>
+                </div>
             </div>
 
             <div id="researchTab" class="tabContainer function" style="display: none">
                 <button class="pressButton" onclick="genResearch()" id="genUniButton">STUDY<br><span style="font-weight: normal; font-size: 90%;">cost: none</span></button>
 
             </div>
+
+
         </div>
     </div>
 

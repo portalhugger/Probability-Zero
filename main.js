@@ -92,7 +92,7 @@ function openFile(evt, fileName) {
     x[i].style.display = "none";
   }
   fileLinks = document.getElementsByClassName("fileLink");
-  for (i = 0; i < x.length; i++) {
+  for (i = 0; i < (x.length + 4); i++) {
     fileLinks[i].className = fileLinks[i].className.replace(" fileSelected", "");
   }
   document.getElementById(fileName).style.display = "block";
