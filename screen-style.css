@@ -49,13 +49,13 @@ h6 {
 }
 
 .generalButton {
+  overflow-wrap: break-word;
   user-select: none;
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  white-space: nowrap;
   font-family: 'Work Sans', sans-serif;
   padding: 8px;
   font-weight: 600;

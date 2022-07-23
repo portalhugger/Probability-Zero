@@ -69,7 +69,7 @@
                         <button class="fileButton fileLink" onclick="openFile(event,'tracedFile5')">SCP-7000_original.doc</button>
                     </div>
 
-                    <div id="fileViewer" style="width: 75%;">
+                    <div id="fileViewer" style="width: 66%;">
                         <p></p>
 
                     <!-- Initial Files -->
@@ -232,7 +232,9 @@
                     </div>
 
                     <div style="width: auto;">
-                        (causality fabrication gif)
+                        [causality fabrication gif]
+
+                        STATS is fabricating causality from macroquantum fluctuations...
                     </div>
 
                     <div id="modulesWindow" style="align-items: center; justify-content: center; width: auto;">
@@ -274,31 +276,33 @@
 
                     <div style="display: inline-grid; grid-template-columns: auto auto auto auto; gap: 1vw;">
                         <button id="cryptoButton" class="generalButton" onclick="learnCrypto()">Cryptography<br><span style="font-weight: normal; font-size: 90%;">cost: 100 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
-                        <button id="basicUpgradeTermButton" class="generalButton" onclick="learnBasicUpgradeTerm()">Basic Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 300 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="learnBUpgradeTermButton" class="generalButton" onclick="learnBasicUpgradeTerm()">Basic Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 300 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
                         <button id="advProgButton" class="generalButton" onclick="learnAdvProg()">Advanced Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 500 research</span><br><span style="font-weight: normal; font-size: 90%;">requires: 200 computational resources</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
-                        <button id="basicUpgradeLuckButton" class="generalButton" onclick="learnBasicUpgradeLuck()">Basic Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">cost: 750 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
-                        <button id="basicUpgradeStatsButton" class="generalButton" onclick="learnBasicUpgradeStats()">Basic Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 1000 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="learnBUpgradeLuckButton" class="generalButton" onclick="learnBasicUpgradeLuck()">Basic Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">cost: 750 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="learnBUpgradeStatsButton" class="generalButton" onclick="learnBasicUpgradeStats()">Basic Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 1000 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
                         <button id="enhProgButton" class="generalButton" onclick="learnEnhProg()">Enhanced Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 5000 research</span><br><span style="font-weight: normal; font-size: 90%;">requires: 1 total functionality data</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
-                        <button id="advUpgradeTermButton" class="generalButton" onclick="learnAdvUpgradeTerm()">Advanced Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 2e4 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
-                        <button id="advUpgradeLuckButton" class="generalButton" onclick="learnAdvUpgradeLuck()">Advanced Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">cost: 3e4 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
-                        <button id="advUpgradeStatsButton" class="generalButton" onclick="learnAdvUpgradeStats()">Advanced Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 4e5 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
-                        <button id="basicUpgradeScanrButton" class="generalButton" onclick="learnBasicUpgradeScanr()">Basic Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">cost: 4000 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
-                        <button id="advUpgradeScanrButton" class="generalButton" onclick="learnAdvUpgradeScanr()">Advanced Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">cost: 1e13 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="learnAdvUpgradeTermButton" class="generalButton" onclick="learnAdvUpgradeTerm()">Advanced Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 2e4 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="learnAdvUpgradeLuckButton" class="generalButton" onclick="learnAdvUpgradeLuck()">Advanced Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">cost: 3e4 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="learnAdvUpgradeStatsButton" class="generalButton" onclick="learnAdvUpgradeStats()">Advanced Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 4e5 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="learnBUpgradeScanrButton" class="generalButton" onclick="learnBasicUpgradeScanr()">Basic Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">cost: 4000 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="learnAdvUpgradeScanrButton" class="generalButton" onclick="learnAdvUpgradeScanr()">Advanced Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">cost: 1e13 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
                         <button id="convProgButton" class="generalButton" onclick="learnConvProg()">Convergent Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 1e16 research</span><br><span style="font-weight: normal; font-size: 90%;">requires: 1 Total Functionality Data</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
-                        <button id="enhUpgradeTermButton" class="generalButton" onclick="learnEnhUpgradeTerm()">Enhanced Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 5e17 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
-                        <button id="enhUpgradeLuckButton" class="generalButton" onclick="learnEnhUpgradeLuck()">Enhanced Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">cost: 5e17 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
-                        <button id="enhUpgradeStatsButton" class="generalButton" onclick="learnEnhUpgradeStats()">Enhanced Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 5e17 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
-                        <button id="enhUpgradeScanrButton" class="generalButton" onclick="learnEnhUpgradeScanr()">Enhanced Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">cost: 1e64 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="learnEnhUpgradeTermButton" class="generalButton" onclick="learnEnhUpgradeTerm()">Enhanced Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 5e17 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="learnEnhUpgradeLuckButton" class="generalButton" onclick="learnEnhUpgradeLuck()">Enhanced Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">cost: 5e17 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="learnEnhUpgradeStatsButton" class="generalButton" onclick="learnEnhUpgradeStats()">Enhanced Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 5e17 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="learnEnhUpgradeScanrButton" class="generalButton" onclick="learnEnhUpgradeScanr()">Enhanced Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">cost: 1e64 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
                     </div>
                 </div>
             </div>
 
             <div id="autoTab" class="tabContainer function" style="display: none">
-                <button id="programButton" class="generalButton holdButton">Program<br><span style="font-weight: normal; font-size: 90%;">click and hold to work on a selected program</span></button>
+                <p></p>
+
+                <p>[insert dropdown menu]</p>
+
+                <button id="programButton" class="generalButton holdButton">Program<br><span style="font-weight: normal; font-size: 90%;">click and hold to develop selected program</span></button>
 
                 <p></p>
-                
-                <p>[insert dropdown menu]</p>
 
                 <div id="programProgress" class="progressBar">
                 </div>
@@ -313,77 +317,77 @@
 
                     <div style="width: 100%; display: inline-grid; grid-template-columns: auto auto auto;">
                         <p style="width: 44%" id="autoClickerScore"><b><u>Auto-Clicker v1</u></b>: attempts to activate the LUCK every (3000/assigned computations) seconds</p>
-                        <div id="programProgress" class="progressBar">
+                        <div id="autoClickerProgress" class="progressBar">
                         </div>
                         <div class="compAssignBox">
                             <button id="subAutoClickerCompsButton" class="tinyButton"> - </button> <p id="autoClickerCompsScore">0%</p> <button id="addAutoClickerCompsButton" class="tinyButton"> + </button>
                         </div>
 
                         <p style="width: 44%" id="decryptionScore"><b><u>Decryption v1</u></b>: decrypts hidden files</p>
-                        <div id="programProgress" class="progressBar">
+                        <div id="decryptionProgress" class="progressBar">
                         </div>
                         <div class="compAssignBox">
                             <button id="subDecryptionCompsButton" class="tinyButton"> - </button> <p id="decryptionCompsScore">0%</p> <button id="addDecryptionCompsButton" class="tinyButton"> + </button>
                         </div>
 
                         <p style="width: 44%" id="autoStudyScore"><b><u>Auto-Study v1</u></b>: studies automatically, producing 0.005/sec research per assigned computation</p>
-                        <div id="programProgress" class="progressBar">
+                        <div id="autoStudyProgress" class="progressBar">
                         </div>
                         <div class="compAssignBox">
                             <button id="subAutoStudyCompsButton" class="tinyButton"> - </button> <p id="autoStudyCompsScore">0%</p> <button id="addAutoStudyCompsButton" class="tinyButton"> + </button>
                         </div>
 
                         <p style="width: 44%" id="restoreScore"><b><u>Restoration v1</u></b>: restores corrupted files</p>
-                        <div id="programProgress" class="progressBar">
+                        <div id="restoreProgress" class="progressBar">
                         </div>
                         <div class="compAssignBox">
                             <button id="subRestoreCompsButton" class="tinyButton"> - </button> <p id="restoreCompsScore">0%</p> <button id="addRestoreCompsButton" class="tinyButton"> + </button>
                         </div>
 
                         <p style="width: 44%" id="optimizerScore"><b><u>Optimization v1</u></b>: optimizes programs of the same or lower version (in unlock order), replacing them with its next respective version.</p>
-                        <div id="programProgress" class="progressBar">
+                        <div id="optimizerProgress" class="progressBar">
                         </div>
                         <div class="compAssignBox">
                             <button id="subOptiCompsButton" class="tinyButton"> - </button> <p id="optiCompsScore">0%</p> <button id="addOptiCompsButton" class="tinyButton"> + </button>
                         </div>
 
                         <p style="width: 44%" id="autoProgramScore"><b><u>Auto-Program v1</u></b>: automatically programs unlocked programs at 0.1% per assigned computation of normal rate</p>
-                        <div id="programProgress" class="progressBar">
+                        <div id="autoProgramProgress" class="progressBar">
                         </div>
                         <div class="compAssignBox">
                             <button id="subAutoProgramCompsButton" class="tinyButton"> - </button> <p id="autoProgramCompsScore">0%</p> <button id="addAutoProgramCompsButton" class="tinyButton"> + </button>
                         </div>
 
                         <p style="width: 44%" id="designScore"><b><u>Design v1</u></b>: unlocks Advanced Upgrades</p>
-                        <div id="programProgress" class="progressBar">
+                        <div id="designProgress" class="progressBar">
                         </div>
                         <div class="compAssignBox">
                             <button id="subDesignCompsButton" class="tinyButton"> - </button> <p id="designCompsScore">0%</p> <button id="addDesignCompsButton" class="tinyButton"> + </button>
                         </div>
 
                         <p style="width: 44%" id="synthScore"><b><u>Synthesis v1</u></b>: increase chance to generate functional universe based on total functionality data multiplied by computations</p>
-                        <div id="programProgress" class="progressBar">
+                        <div id="synthProgress" class="progressBar">
                         </div>
                         <div class="compAssignBox">
                             <button id="subSynthCompsButton" class="tinyButton"> - </button> <p id="synthCompsScore">0%</p> <button id="addSynthCompsButton" class="tinyButton"> + </button>
                         </div>
 
                         <p style="width: 44%" id="autoUpgradeScore"><b><u>Auto-Upgrade v1</u></b>: converts 0.1% per computation of hypermatter gain to microchips, purchases Basic Upgrades automatically</p>
-                        <div id="programProgress" class="progressBar">
+                        <div id="autoUpgradeProgress" class="progressBar">
                         </div>
                         <div class="compAssignBox">
                             <button id="subAutoUpgradeCompsButton" class="tinyButton"> - </button> <p id="autoUpgradeCompsScore">0%</p> <button id="addAutoUpgradeCompsButton" class="tinyButton"> + </button>
                         </div>
 
                         <p style="width: 44%" id="chronoScore"><b><u>Chronolocation v1</u></b>: isolate unstable files to oblique possibilities</p>
-                        <div id="programProgress" class="progressBar">
+                        <div id="chronoProgress" class="progressBar">
                         </div>
                         <div class="compAssignBox">
                             <button id="subChronoCompsButton" class="tinyButton"> - </button> <p id="chronoCompsScore">0%</p> <button id="addChronoCompsButton" class="tinyButton"> + </button>
                         </div>
 
                         <p style="width: 44%" id="redesignScore"><b><u>Redesign v1</u></b>: unlocks Enhanced Upgrades</p>
-                        <div id="programProgress" class="progressBar">
+                        <div id="redesignProgress" class="progressBar">
                         </div>
                         <div class="compAssignBox">
                             <button id="subRedesignCompsButton" class="tinyButton"> - </button> <p id="redesignCompsScore">0%</p> <button id="addRedesignCompsButton" class="tinyButton"> + </button>
@@ -394,7 +398,36 @@
 
             <div id="makeTab" class="tabContainer function" style="display: none">
                 <div id="makeWindow">
-                        MAKe placeholder
+                    <p id="hMatterScore">500g (0.0/s) hypermatter available for assembly.</p>
+
+                    <button id="assembleButton" class="generalButton" onclick="genParts()">Assemble<br><span style="font-weight: normal; font-size: 90%;">cost: 100 hypermatter</span><br><span style="font-weight: normal; font-size: 90%;">construct spare parts</span></button>
+
+                    <p id="spareScore">0 (0.0/s) spare parts available for disassembly.</p>
+
+                    <button id="disassembleButton" class="generalButton">Disassemble<br><span style="font-weight: normal; font-size: 90%;">cost: 1 spare part</span><br><span style="font-weight: normal; font-size: 90%;">recover microchips</span></button>
+
+                    <hr></hr>
+
+                    <div style="width: auto; margin: auto;">
+                        <p id="mChipsScore">0 (0.0/s) microchips available for upgrades.</p>
+
+                        <div id="upgradeWindow" style="width: auto; display: inline-grid; grid-template-columns: auto auto auto auto; gap: 1vw;">
+                            <button id="bUpgradeTermButton" class="generalButton accent1Button" onclick="bUpgradeTerm(1)">Basic Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 1 microchips</span><br><span style="font-weight: normal; font-size: 90%;">gain 20 computations</span></button>
+                            <button id="bUpgradeLuckButton" class="generalButton accent1Button" onclick="bUpgradeLuck(1)">Basic Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">cost: 1 microchips</span><br><span style="font-weight: normal; font-size: 90%;">gain 0.1% chance per activation to generate an extra universe</span></button>
+                            <button id="bUpgradeStatsButton" class="generalButton accent1Button" onclick="bUpgradeStats(1)">Basic Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 10 microchips</span><br><span style="font-weight: normal; font-size: 90%;">decrease IFRAME's global tickrate by 1%</span></button>
+                            <button id="bUpgradeScanrButton" class="generalButton accent1Button" onclick="bUpgradeScanr(1)">Basic Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">cost: 10000 microchips</span><br><span style="font-weight: normal; font-size: 90%;">increase functionality data gain by 10% (compounding)</span></button>
+    
+                            <p id="advUpgradeTermButton" class="generalButton toggledOn accent2Button">Advanced Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">each second, gain 0.1% of total computations per 1% of unallocated computations</span></p>
+                            <p id="advUpgradeLuckButton" class="generalButton toggledOn accent2Button">Advanced Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">LUCK activation cooldown eliminated</span></p>
+                            <p id="advUpgradeStatsButton" class="generalButton toggledOn accent2Button">Advanced Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">causal fabric gain is exponentiated based on hypermatter gain</span></p>
+                            <p id="advUpgradeScanrButton" class="generalButton toggledOn accent2Button">Advanced Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">unstable files detected!</span></p>
+                        </div>
+    
+                        <br>
+                        <p></p>
+    
+                        <button id="maxUpgradeButton" class="generalButton">Max All</button>
+                    </div>
                 </div>
             </div>
 
