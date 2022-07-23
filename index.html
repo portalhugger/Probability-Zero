@@ -27,12 +27,12 @@
                 <button class="generalButton tabLink tabSelected" onclick="openTab(event,'filesTab')">Files</button>
                 <button class="generalButton tabLink" onclick="openTab(event,'luckTab')">LUCK</button>
                 <button class="generalButton tabLink" onclick="openTab(event,'statsTab')">STATS</button>
-                <button class="generalButton tabLink" onclick="openTab(event,'studyTab')">Research</button>
-                <button class="generalButton tabLink" onclick="openTab(event,'programTab')">Automation</button>
-                <button class="generalButton tabLink" onclick="openTab(event,'upgradeTab')">MAKe</button>
-                <button class="generalButton tabLink" onclick="openTab(event,'scannerTab')">SCAnR</button>
-                <button class="generalButton tabLink" onclick="openTab(event,'stabilityTab')">AEGIS</button>
-                <button class="generalButton tabLink" onclick="openTab(event,'traceTab')">ChARM</button>
+                <button class="generalButton tabLink" onclick="openTab(event,'researchTab')">Research</button>
+                <button class="generalButton tabLink" onclick="openTab(event,'autoTab')">Automation</button>
+                <button class="generalButton tabLink" onclick="openTab(event,'makeTab')">MAKe</button>
+                <button class="generalButton tabLink" onclick="openTab(event,'scanrTab')">SCAnR</button>
+                <button class="generalButton tabLink" onclick="openTab(event,'aegisTab')">AEGIS</button>
+                <button class="generalButton tabLink" onclick="openTab(event,'reconTab')">ChARM</button>
             </div>
   
             <p></p>
@@ -209,7 +209,7 @@
 
                     <br>
 
-                    <button id="refineGenButton" class="generalButton" onclick="refineGen()">Refine Generation<br><span style="font-weight: normal; font-size: 90%;">cost: 1 trace data</span></button>
+                    <button id="refineGenButton" class="generalButton" onclick="refineGen()">Refine Generation<br><span style="font-weight: normal; font-size: 90%;">cost: 1 trace data</span><br><span style="font-weight: normal; font-size: 90%;">Significantly refines LUCK's accuracy.</span></button>
                 </div>
             </div>
 
@@ -218,41 +218,73 @@
 
                 <br>
 
-                <div id="statsWindow" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; width: 100%; margin: auto; text-align: center;">
-                    <div style="width: 600px;">
+                <div id="statsWindow" style="display: inline-grid; grid-template-columns: auto auto auto; gap: 3vw; text-align: center;">
+                    <div style="width: 30vw;">
                         (causality fabrication gif)
                     </div>
                 
                     <div class="numpad">
-                        <button class="padButton" onClick="num1Press">1</button>
-                        <button class="padButton" onClick="num2Press">2</button>
-                        <button class="padButton" onClick="num3Press">3</button>
-                        <button class="padButton" onClick="num4Press">4</button>
-                        <button class="padButton" onClick="num5Press">5</button>
-                        <button class="padButton" onClick="num6Press">6</button>
-                        <button class="padButton" onClick="num7Press">7</button>
-                        <button class="padButton" onClick="num8Press">8</button>
-                        <button class="padButton" onClick="num9Press">9</button>
-                        <button class="padButton" onClick="clrPress">CLEAR</button>
-                        <button class="padButton" onClick="num0Press">0</button>
-                        <button class="padButton" onClick="enterPress">ENTER</button>
+                        <button class="padButton" onclick="num1Press()">1</button>
+                        <button class="padButton" onclick="num2Press()">2</button>
+                        <button class="padButton" onclick="num3Press()">3</button>
+                        <button class="padButton" onclick="num4Press()">4</button>
+                        <button class="padButton" onclick="num5Press()">5</button>
+                        <button class="padButton" onclick="num6Press()">6</button>
+                        <button class="padButton" onclick="num7Press()">7</button>
+                        <button class="padButton" onclick="num8Press()">8</button>
+                        <button class="padButton" onclick="num9Press()">9</button>
+                        <button class="padButton" onclick="clrPress()">CLEAR</button>
+                        <button class="padButton" onclick="num0Press()">0</button>
+                        <button class="padButton" onclick="enterPress()">ENTER</button>
+                    </div>
+
+                    <div id="modulesWindow" style="align-items: center; justify-content: center; width: auto;">
+                        <div style="display: grid;">
+                            <button id="activateM1Button" class="generalButton moduleButton" onclick="activateM1()">Activate Repair Module<br><span style="font-weight: normal; font-size: 90%;">requires: 50 causal fabric</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">compress causal fabric into 1000 hypermatter; unlock MAKe</span></button>
+                            <br>
+                            <button id="activateM2Button" class="generalButton moduleButton" onclick="activateM2()">Activate Observation Module<br><span style="font-weight: normal; font-size: 90%;">requires: high # universes generated</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">observe generated universes for 1 interreal ray; unlock SCAnR</span></button>
+                            <br>
+                            <button id="activateM3Button" class="generalButton moduleButton" onclick="activateM3()">Activate Stability Module<br><span style="font-weight: normal; font-size: 90%;">requires: 20 functionality data</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">unlock AEGIS</span></button>
+                            <br>
+                            <button id="activateM3Button" class="generalButton prototypeButton" onclick="activateM4()">Activate Reconstruction Module<br><span style="font-weight: normal; font-size: 90%;">requires: max # of possible hypervolume</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">gain 1 retrocausal ray; unlock ChARM</span></button>
+                        </div>
                     </div>
                 </div>
 
                 <hr></hr>
-                <h2>Options</h2>
+                <p><b>Options</b></p>
 
-                <div style="display: grid">
+                <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
                     <button class="generalButton" onclick="manualSave()">SAVE GAME</button>
                     <button class="generalButton" onclick="resetSave()">HARD RESET</button>
+                    <button class="generalButton">TOGGLE LIGHT/DARKMODE</button>
+                    <button class="generalButton">EXPORT SAVE</button>
+                    <button class="generalButton">TOGGLE AUDIO</button> <!-- this should probably just have an icon label, not text -->
+
                 </div>
             </div>
 
             <div id="researchTab" class="tabContainer function" style="display: none">
-                <button class="pressButton" onclick="genResearch()" id="genUniButton">STUDY<br><span style="font-weight: normal; font-size: 90%;">cost: none</span></button>
+                <button id="studyButton" class="generalButton toggledOn">Study IFRAME<br><span style="font-weight: normal; font-size: 90%;">remains active while Research Tab is open</span></button>
 
+                <p></p>
+                
+                <p id="researchScore">0 (0.0/s) research generated from studying.</p>
+
+                <br>
+
+                <div id="researchList" class="notation" style="width: 66%; margin: auto;">
+                    <div style="display: inline-grid; grid-template-columns: auto auto auto; gap: 1em;">
+                        <button id="res1Button" class="generalButton" onclick="learnRes1()">Basic Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 10 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>It begins...</i></span></button>
+                    </div>
+                </div>
             </div>
 
+            <div id="autoTab" class="tabContainer function" style="display: none">
+                <div id="automationWindow">
+                        automation placeholder
+                </div>
+            </div>
 
         </div>
     </div>
