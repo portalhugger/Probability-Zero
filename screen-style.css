@@ -81,7 +81,8 @@ h6 {
   cursor: pointer;
   border: none;
   font-family: 'Fira Code', monospace;
-  padding: 0.5% 1%;
+  height: 2vh;
+  padding: 0.5% 0.5%;
   margin: 2px;
   background-color: var(--bmground);
   transition-property: background-color;
@@ -128,7 +129,7 @@ blockquote, div.blockquote {
 }
 
 .footnoteblock {
-  background-color: var(--mground);
+  background-color: var(--bground);
   font-family: 'Work Sans', sans-serif;
 }
 
