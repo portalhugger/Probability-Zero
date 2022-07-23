@@ -402,17 +402,17 @@
 
                     <p id="hMatterScore">500g (0.0/s) hypermatter available for assembly.</p>
 
-                    <button id="assembleButton" class="generalButton" onclick="genParts()">Assemble<br><span style="font-weight: normal; font-size: 90%;">cost: 100 hypermatter</span><br><span style="font-weight: normal; font-size: 90%;">construct spare parts</span></button>
+                    <button id="assembleButton" class="generalButton" onclick="genParts(1)">Assemble<br><span style="font-weight: normal; font-size: 90%;">cost: 100 hypermatter</span><br><span style="font-weight: normal; font-size: 90%;">construct spare parts</span></button>
 
                     <p></p>
 
                     <p id="spareScore">0 (0.0/s) spare parts available for disassembly.</p>
 
-                    <button id="disassembleButton" class="generalButton">Disassemble<br><span style="font-weight: normal; font-size: 90%;">cost: 1 spare part</span><br><span style="font-weight: normal; font-size: 90%;">recover microchips</span></button>
+                    <button id="disassembleButton" class="generalButton" onclick="genMChips(1)">Disassemble<br><span style="font-weight: normal; font-size: 90%;">cost: 1 spare part</span><br><span style="font-weight: normal; font-size: 90%;">recover microchips</span></button>
 
-                    <hr></hr>
+                    <hr style="margin-bottom: 0px;"></hr>
 
-                    <h2>UPGRADES</h2>
+                    <h3>Upgrades</h2>
 
                     <div style="width: 66%; margin: auto;">
                         <p id="mChipsScore">0 (0.0/s) microchips available for upgrades.</p>
@@ -444,7 +444,34 @@
 
             <div id="scanrTab" class="tabContainer function" style="display: none">
                 <div id="scanrWindow">
-                        SCAnR placeholder
+                    <h2>Schochastic Causality Arborization Radar</h2>
+
+                    <p id="fUniScore">1 (0.0/s) unscanned functional universe detected</p>
+                    <p id="iRayScore">1 (0.0/s) interreal ray available</p>
+
+                    <button id="scanButton" class="generalButton" onclick="genFData(1)">Scan Universe<br><span style="font-weight: normal; font-size: 90%;">cost: 1 interreal ray;</span><br><span style="font-weight: normal; font-size: 90%;">1 unscanned functional universe</span><br><span style="font-weight: normal; font-size: 90%;">generate 1 functionality data</span></button>
+
+                    <div class="scanrVisualBox">
+                        <p>[glitchy liminal universe visualizer]</p>
+
+                        <p id="scanStatusScore"><b>STATUS:</b> Inactive</p>
+                    </div>
+
+                    <hr style="margin-bottom: 0px;"></hr>
+
+                    <h3>Functions</h2>
+
+                    <div style="width: 50%; margin: auto;">
+                        <p id="fDataScore">0 (0.0/s) functionality data retrieved</p>
+
+                        <div id="functionWindow" style="width: auto; display: inline-grid; grid-template-columns: auto auto auto auto; gap: 4px;">
+                            <button id="bUpgradeTermButton" class="generalButton basicUpgrade" onclick="bUpgradeTerm(1)">Basic Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 1 microchips</span><br><span style="font-weight: normal; font-size: 90%;">gain 20 computations</span></button>
+                        </div>
+    
+                        <br>
+                        <p></p>
+    
+                        <button id="maxUpgradeButton" class="generalButton">Max All</button>                    
                 </div>
             </div>
 
