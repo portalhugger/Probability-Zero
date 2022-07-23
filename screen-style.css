@@ -162,7 +162,7 @@ blockquote, div.blockquote {
 .progressBar {
   border: 1px var(--bmground) solid;
   background-color: var(--mground);
-  width: 33vh;
+  width: 22vw;
   margin: auto;
   height: 3vh;
 }
@@ -188,4 +188,8 @@ blockquote, div.blockquote {
 .aegisBox {
   width: max-content;
   margin: auto;
+}
+
+@media (max-width: 707px) {
+
 }
