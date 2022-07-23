@@ -79,7 +79,6 @@ h6 {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  white-space: nowrap;
   border: none;
   font-family: 'Fira Code', monospace;
   padding: 0.5% 1%;
@@ -100,9 +99,8 @@ h6 {
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  white-space: nowrap;
   font-family: 'Work Sans', sans-serif;
-  padding: 2px 5px;
+  padding: 8px;
   font-weight: 600;
   font-size: 110%;
   margin: 2px;
@@ -162,9 +160,9 @@ blockquote, div.blockquote {
 }
 
 .progressBar {
-  border: 1px var(--mground) solid;
+  border: 1px var(--bmground) solid;
   background-color: var(--mground);
-  width: 20vh;
+  width: 33vh;
   margin: auto;
   height: 3vh;
 }
