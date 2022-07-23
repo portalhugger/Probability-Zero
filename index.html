@@ -15,10 +15,7 @@
 
             <p>Chance to reconstitute a valid Prime-Timeline:</p>
             <p id="primeChance" style="margin-top: -1vh;" id="probability">1 in 7.7e77777 per activation</p>
-            <p></p>
-            <p id="uniScore">0 universes generated since IFRAME's initialization.</p>
-
-            <br>
+            <p id="uniScore">0 (0.0/s) universes generated since IFRAME's initialization.</p>
 
             <div style="height: 1vh;">
             </div>
@@ -32,7 +29,7 @@
                 <button class="generalButton tabLink" onclick="openTab(event,'makeTab')">MAKe</button>
                 <button class="generalButton tabLink" onclick="openTab(event,'scanrTab')">SCAnR</button>
                 <button class="generalButton tabLink" onclick="openTab(event,'aegisTab')">AEGIS</button>
-                <button class="generalButton tabLink" onclick="openTab(event,'reconTab')">ChARM</button>
+                <button class="generalButton tabLink" onclick="openTab(event,'charmTab')">ChARM</button>
             </div>
   
             <p></p>
@@ -54,9 +51,9 @@
                         <button class="fileButton fileLink" onclick="openFile(event,'decryptedFile2')">log_42.txt</button>
 
                         <button class="fileButton fileLink" onclick="openFile(event,'corruptedFile')">[deleted]</button>
-                        <button class="fileButton fileLink" onclick="openFile(event,'restoredFile1')">sink.png</button>
+                        <button class="fileButton fileLink" onclick="openFile(event,'restoredFile1')">keystone.png</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'corruptedFile')">[deleted](1)</button>
-                        <button class="fileButton fileLink" onclick="openFile(event,'restoredFile2')">keystone.png</button>
+                        <button class="fileButton fileLink" onclick="openFile(event,'restoredFile2')">sink.png</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'corruptedFile')">[deleted](2)</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'restoredFile2')">radar.png</button>
 
@@ -148,11 +145,11 @@
                         </div>
 
                         <div id="restoredFile1" class="notation function1" style="display: none;">
-                            STATS schematic
+                            LUCK schematic
                         </div>
 
                         <div id="restoredFile2" class="notation function1" style="display: none;">
-                            LUCK schematic
+                            STATS schematic
                         </div>
 
                         <div id="restoredFile3" class="notation function1" style="display: none;">
@@ -218,11 +215,7 @@
 
                 <br>
 
-                <div id="statsWindow" style="display: inline-grid; grid-template-columns: auto auto auto; gap: 3vw; text-align: center;">
-                    <div style="width: 30vw;">
-                        (causality fabrication gif)
-                    </div>
-                
+                <div id="statsWindow" style="display: inline-grid; grid-template-columns: auto auto auto; gap: 3vw; text-align: center;">                
                     <div class="numpad">
                         <button class="padButton" onclick="num1Press()">1</button>
                         <button class="padButton" onclick="num2Press()">2</button>
@@ -238,14 +231,15 @@
                         <button class="padButton" onclick="enterPress()">ENTER</button>
                     </div>
 
+                    <div style="width: auto;">
+                        (causality fabrication gif)
+                    </div>
+
                     <div id="modulesWindow" style="align-items: center; justify-content: center; width: auto;">
                         <div style="display: grid;">
                             <button id="activateM1Button" class="generalButton moduleButton" onclick="activateM1()">Activate Repair Module<br><span style="font-weight: normal; font-size: 90%;">requires: 50 causal fabric</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">compress causal fabric into 1000 hypermatter; unlock MAKe</span></button>
-                            <br>
                             <button id="activateM2Button" class="generalButton moduleButton" onclick="activateM2()">Activate Observation Module<br><span style="font-weight: normal; font-size: 90%;">requires: high # universes generated</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">observe generated universes for 1 interreal ray; unlock SCAnR</span></button>
-                            <br>
                             <button id="activateM3Button" class="generalButton moduleButton" onclick="activateM3()">Activate Stability Module<br><span style="font-weight: normal; font-size: 90%;">requires: 20 functionality data</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">unlock AEGIS</span></button>
-                            <br>
                             <button id="activateM3Button" class="generalButton prototypeButton" onclick="activateM4()">Activate Reconstruction Module<br><span style="font-weight: normal; font-size: 90%;">requires: max # of possible hypervolume</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">gain 1 retrocausal ray; unlock ChARM</span></button>
                         </div>
                     </div>
@@ -274,18 +268,102 @@
                 <br>
 
                 <div id="researchList" class="notation" style="width: 66%; margin: auto;">
-                    <div style="display: inline-grid; grid-template-columns: auto auto auto; gap: 1em;">
-                        <button id="res1Button" class="generalButton" onclick="learnRes1()">Basic Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 10 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>It begins...</i></span></button>
+                    <button id="basicProgButton" class="generalButton" style="width: 33%; align-content: center; justify-content: center;" onclick="learnBasicProg()">Basic Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 10 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>It begins...</i></span></button>
+
+                    <p></p>
+
+                    <div style="display: inline-grid; grid-template-columns: auto auto auto auto; gap: 1vw;">
+                        <button id="cryptoButton" class="generalButton" onclick="learnCrypto()">Cryptography<br><span style="font-weight: normal; font-size: 90%;">cost: 100 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="basicUpgradeTermButton" class="generalButton" onclick="learnBasicUpgradeTerm()">Basic Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 300 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="advProgButton" class="generalButton" onclick="learnAdvProg()">Advanced Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 500 research</span><br><span style="font-weight: normal; font-size: 90%;">requires: 200 computational resources</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="basicUpgradeLuckButton" class="generalButton" onclick="learnBasicUpgradeLuck()">Basic Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">cost: 750 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="basicUpgradeStatsButton" class="generalButton" onclick="learnBasicUpgradeStats()">Basic Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 1000 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="enhProgButton" class="generalButton" onclick="learnEnhProg()">Enhanced Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 5000 research</span><br><span style="font-weight: normal; font-size: 90%;">requires: 1 total functionality data</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="advUpgradeTermButton" class="generalButton" onclick="learnAdvUpgradeTerm()">Advanced Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 2e4 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="advUpgradeLuckButton" class="generalButton" onclick="learnAdvUpgradeLuck()">Advanced Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">cost: 3e4 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="advUpgradeStatsButton" class="generalButton" onclick="learnAdvUpgradeStats()">Advanced Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 4e5 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="basicUpgradeScanrButton" class="generalButton" onclick="learnBasicUpgradeScanr()">Basic Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">cost: 4000 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="advUpgradeScanrButton" class="generalButton" onclick="learnAdvUpgradeScanr()">Advanced Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">cost: 1e13 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="convProgButton" class="generalButton" onclick="learnConvProg()">Convergent Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 1e16 research</span><br><span style="font-weight: normal; font-size: 90%;">requires: 1 Total Functionality Data</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="enhUpgradeTermButton" class="generalButton" onclick="learnEnhUpgradeTerm()">Enhanced Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 5e17 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="enhUpgradeLuckButton" class="generalButton" onclick="learnEnhUpgradeLuck()">Enhanced Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">cost: 5e17 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="enhUpgradeStatsButton" class="generalButton" onclick="learnEnhUpgradeStats()">Enhanced Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 5e17 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
+                        <button id="enhUpgradeScanrButton" class="generalButton" onclick="learnEnhUpgradeScanr()">Enhanced Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">cost: 1e64 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
                     </div>
                 </div>
             </div>
 
             <div id="autoTab" class="tabContainer function" style="display: none">
-                <div id="automationWindow">
-                        automation placeholder
+                <button id="programButton" class="generalButton holdButton">Program<br><span style="font-weight: normal; font-size: 90%;">click and hold to work on a selected program</span></button>
+
+                <p>insert dropdown menu</p>
+
+                <p></p>
+
+                <div id="programProgress" class="progressBar">
+                    <p></p>
+                </div>
+
+                <p></p>
+                <p></p>
+
+                <div id="programList" class="notation" style="width: 66%; margin: auto; text-align: left;">
+                    <div style="text-align: center;">
+                        <h2>PROGRAMS</h2> <p>0% of 100 max computations in use</p>
+                    </div>
+
+                    <div style="width: 100%; display: inline-grid; grid-template-columns: auto auto;">
+                        <p id="autoClickerScore"><b><u>Auto-Clicker v1</u></b>: Attempts to activate the LUCK every 30 seconds</p>
+                        <div class="compAssignBox">
+                            <button id="subAutoClickerCompsButton" class="tinyButton">-</button> <p id="autoClickerCompsScore">0%</p> <button id="addAutoClickerCompsButton" class="tinyButton">+</button>
+                        </div>
+
+                        <p id="decryptionScore"><b><u>Decryption v1</u></b>: Decrypts hidden files</p>
+                        <div class="compAssignBox">
+                            <button id="subDecryptionCompsButton" class="tinyButton">-</button> <p id="decryptionCompsScore">0%</p> <button id="addDecryptionCompsButton" class="tinyButton">+</button>
+                        </div>
+
+                        <p id="autoStudyScore"><b><u>Auto-Study v1</u></b>: Produces 0.1/sec research</p>
+                        <div class="compAssignBox">
+                            <button id="subAutoStudyCompsButton" class="tinyButton">-</button> <p id="autoStudyCompsScore">0%</p> <button id="addAutoStudyCompsButton" class="tinyButton">+</button>
+                        </div>
+
+                        <p id="restoreScore"><b><u>Restoration v1</u></b>: Restores corrupted files</p>
+                        <div class="compAssignBox">
+                            <button id="subRestoreCompsButton" class="tinyButton">-</button> <p id="restoreCompsScore">0%</p> <button id="addRestkreCompsButton" class="tinyButton">+</button>
+                        </div>
+
+                        <p id="restoreScore"><b><u>Restoration v1</u></b>: Restores corrupted files</p>
+                        <div class="compAssignBox">
+                            <button id="subRestoreCompsButton" class="tinyButton">-</button> <p id="restoreCompsScore">0%</p> <button id="addRestkreCompsButton" class="tinyButton">+</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+            <div id="makeTab" class="tabContainer function" style="display: none">
+                <div id="makeWindow">
+                        MAKe placeholder
+                </div>
+            </div>
+
+            <div id="scanrTab" class="tabContainer function" style="display: none">
+                <div id="scanrWindow">
+                        SCAnR placeholder
+                </div>
+            </div>
+
+            <div id="aegisTab" class="tabContainer function" style="display: none">
+                <div id="aegisWindow">
+                        AEGIS placeholder
+                </div>
+            </div>
+
+            <div id="charmTab" class="tabContainer function" style="display: none">
+                <div id="charmWindow">
+                        ChARM placeholder
+                </div>
+            </div>
         </div>
     </div>
 
