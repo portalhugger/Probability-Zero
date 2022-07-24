@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --bground: #eee;
-  --bmground: #ccc;
-  --mground: #aaa;
-  --fmground: #666;
-  --fground: #222;
+  --bground: #efe;
+  --bmground: #bcb;
+  --mground: #899;
+  --fmground: #576;
+  --fground: #232;
 }
 
 body {
@@ -41,11 +41,19 @@ h6 {
 .notation {
     border-left: solid 3px var(--fmground);
     border-right: solid 3px var(--fmground);
-    padding: 25px 25px 25px 25px;
+    padding: 25px;
     box-shadow: 0px 0px 3px var(--fmground);
     width: 100%;
     margin: auto;
     background: var(--bmground);
+}
+
+.jotting {
+  padding: 1vh 2vh;
+  width: auto;
+  margin: auto;
+  background-color: var(--bmground);
+  border: double 4px var(--fground);
 }
 
 .generalButton {
@@ -85,12 +93,14 @@ h6 {
   padding: 0.5% 0.5%;
   margin: 2px;
   background-color: var(--bmground);
-  transition-property: background-color;
-  transition-duration: 0.33s;
+  outline: 1px var(--bmground) solid;
+  transition-property: background-color, outline;
+  transition-duration: 0.1s;
 }
 
 .fileButton:hover, .fileSelected {
   background-color: var(--bground);
+  outline: 1px var(--fground) solid;
 }
 
 .tinyButton {
@@ -192,5 +202,7 @@ blockquote, div.blockquote {
 }
 
 @media (max-width: 707px) {
-
+  .mobileGrid {
+    grid-template-columns: auto;
+  }
 }
