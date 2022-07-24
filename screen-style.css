@@ -4,10 +4,12 @@
 
 :root {
   --bground: #efe;
-  --bmground: #bcb;
-  --mground: #899;
+  --bmground: #cdc;
+  --mground: #798;
   --fmground: #576;
   --fground: #232;
+
+  --accent: #c56;
 }
 
 body {
@@ -34,15 +36,14 @@ h6 {
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
     text-transform: uppercase;
-    color: var(--fmground);
+    color: var(--accent);
     letter-spacing: unset;
 }
 
 .notation {
-    border-left: solid 3px var(--fmground);
-    border-right: solid 3px var(--fmground);
-    padding: 25px;
-    box-shadow: 0px 0px 3px var(--fmground);
+    border-left: solid 3px var(--accent);
+    border-right: solid 3px var(--accent);
+    padding: 20px;
     width: 100%;
     margin: auto;
     background: var(--bmground);
@@ -71,13 +72,18 @@ h6 {
   margin: 2px;
   background-color: var(--bmground);
   border: 2px solid var(--fmground);
-  transition-property: background-color, border;
-  transition-duration: 0.33s;
+  transition-property: background-color, border-color;
+  transition-duration: 0.2s;
 }
 
-.generalButton:hover, .tabSelected, .toggledOn {
+.generalButton:hover, .toggledOn {
   background-color: var(--bground);
-  border: 2px solid var(--fground);
+  border-color: var(--fground);
+}
+
+.tabLink:hover, .tabSelected {
+  background-color: var(--bground);
+  border-color: var(--accent);
 }
 
 .fileButton {
@@ -111,10 +117,10 @@ h6 {
   text-align: center;
   cursor: pointer;
   font-family: 'Work Sans', sans-serif;
-  padding: 8px;
+  padding: 2px 6px;
   font-weight: 600;
   font-size: 110%;
-  margin: 2px;
+  margin: 0.5em;
   background-color: var(--bground);
   border: 2px solid var(--fmground);
   transition-property: background-color, border;
@@ -173,17 +179,23 @@ blockquote, div.blockquote {
 .progressBar {
   border: 1px var(--bmground) solid;
   background-color: var(--mground);
-  width: 22vw;
+  width: 33%;
   margin: auto;
   height: 3vh;
 }
 
 .programBox {
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: row wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background-color: var(--bmground);
+  border-left: 4px solid var(--mground);
+  padding: 0.2em 1em;
+  margin: 20px;
+  text-align: left;
 }
 
 .compAssignBox {
@@ -194,6 +206,11 @@ blockquote, div.blockquote {
   justify-content: center;
   align-items: center;
   margin-left: auto;
+}
+
+.funiVisualBox {
+  border: 2px solid var(--fground);
+  background-color: var(--fmground);
 }
 
 .aegisBox {
