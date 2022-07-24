@@ -235,14 +235,14 @@
                         <button class="padButton" onclick="enterPress()">RETURN</button>
                     </div>
 
-                    <div style="width: 500px;">
-                        <p>[causality fabrication gif]</p>
+                    <div style="width: fit-content;">
+                        <canvas id="luckVisual" class="luckVisualBox" width="400px" height="300px"></canvas>
 
                         <p>STATS is fabricating causality from macroquantum fluctuations...</p>
                     </div>
 
-                    <div id="modulesWindow" style="align-items: center; justify-content: center; width: 500px;">
-                        <div style="display: grid;">
+                    <div id="modulesWindow" style="align-items: center; justify-content: center; width: 444px; margin-left: 2vw">
+                        <div style="display: grid;"">
                             <button id="activateM1Button" class="generalButton moduleButton" onclick="activateM1()">Activate Repair Module<br><span style="font-weight: normal; font-size: 90%;">requires: 50 causal fabric</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">compress causal fabric into 1000 hypermatter; unlock MAKe</span></button>
                             <button id="activateM2Button" class="generalButton moduleButton" onclick="activateM2()">Activate Observation Module<br><span style="font-weight: normal; font-size: 90%;">requires: high # universes generated</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">observe generated universes for 1 interreal ray; unlock SCAnR</span></button>
                             <button id="activateM3Button" class="generalButton moduleButton" onclick="activateM3()">Activate Stability Module<br><span style="font-weight: normal; font-size: 90%;">requires: 20 functionality data</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">unlock AEGIS</span></button>
@@ -469,30 +469,28 @@
             </div>
 
             <div id="scanrTab" class="tabContainer function" style="display: none">
-                <div id="scanrWindow">
-                    <h2>Schochastic Causality Arborization Radar</h2>
+                <h2>Schochastic Causality Arborization Radar</h2>
 
-                    <p id="fUniScore">1 (0.0/s) unscanned functional universe detected</p>
-                    <p id="iRayScore">1 (0.0/s) interreal ray available</p>
-
-                    <button id="scanButton" class="generalButton" onclick="genFData(1)">Scan Universe<br><span style="font-weight: normal; font-size: 90%;">cost: 1 interreal ray;</span><br><span style="font-weight: normal; font-size: 90%;">1 unscanned functional universe</span><br><span style="font-weight: normal; font-size: 90%;">generate 1 functionality data</span></button>
-
-                    <div class="scanrVisualBox">
+                <div id="scanrWindow" style="width: 75%; margin: auto; display: flex; flex-direction: row;">
+                    <div width="min-content" style="margin-right: auto;">
+                        <p id="fUniScore">1 (0.0/s) unscanned functional universe detected</p>
+                        <p id="iRayScore">1 (0.0/s) interreal ray available</p>
+    
+                        <button id="scanButton" class="generalButton" onclick="genFData(1)">Scan Universe<br><span style="font-weight: normal; font-size: 90%;">cost: 1 interreal ray;</span><br><span style="font-weight: normal; font-size: 90%;">1 unscanned functional universe</span><br><span style="font-weight: normal; font-size: 90%;">generate 1 functionality data</span></button>
+                    
                         <p></p>
-
-                        <canvas id="funiVisual" class="funiVisualBox" width="500px" height="400px"></canvas>
+                        
+                        <canvas id="scanrVisual" class="scanrVisualBox" width="500px" height="400px"></canvas>
 
                         <p id="scanStatusScore"><b>Scanned universe status:</b> N/A</p>
                     </div>
+                    
+                    <div id="functionWindow" class="blockquote" style="height: fit-content; width: auto; margin: 4%;">
+                        <h3>Functions</h2>
 
-                    <hr style="margin-bottom: 0px;"></hr>
-
-                    <h3>Functions</h2>
-
-                    <div style="width: 50%; margin: auto;">
                         <p id="fDataScore">0 (0.0/s) functionality data retrieved</p>
 
-                        <div id="functionWindow" style="width: auto; display: inline-grid; grid-template-columns: auto auto auto; gap: 4px;">
+                        <div style="width: auto; display: inline-grid; grid-template-columns: auto auto auto; gap: 4px;">
                             <button id="function1Button" class="generalButton funButton">F1<br><span style="font-weight: normal; font-size: 90%;">requires: 1 total FD</span><br><span style="font-weight: normal; font-size: 90%;">Research Tab is no longer reset by Repair Module</span></button>
                             <button id="function2Button" class="generalButton funButton">F2<br><span style="font-weight: normal; font-size: 90%;">requires: 2 total FD</span><br><span style="font-weight: normal; font-size: 90%;">Files, Automation Tabs are no longer reset by Repair Module</span></button>
                             <button id="function3Button" class="generalButton funButton">F3<br><span style="font-weight: normal; font-size: 90%;">requires: 3 total FD</span><br><span style="font-weight: normal; font-size: 90%;">Basic Upgrades are no longer reset by Repair Module</span></button>

@@ -5,7 +5,7 @@
 :root {
   --bground: #efe;
   --bmground: #cdc;
-  --mground: #798;
+  --mground: #898;
   --fmground: #576;
   --fground: #232;
 
@@ -150,12 +150,14 @@ blockquote, div.blockquote {
 }
 
 .numpad {
-  width: auto;
-  height: auto;
+  width: 333px;
+  height: 400px;
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;
-  margin: 1vw;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: 2vw;
 }
 
 .padButton {
@@ -164,16 +166,19 @@ blockquote, div.blockquote {
   justify-content: center;
   flex: 1 0 33.3333%;
   background-color: var(--bmground);
-  color: var(--fmground);
+  color: var(--fground);
   border: 1px solid var(--bground);
   box-sizing: border-box;
   font-family: 'Fira Code', monospace;
-  font-size: 125%;
+  font-size: 150%;
   transition-property: background-color;
   transition-duration: 0.1s;
 }
 .padButton:hover {
   background-color: var(--mground);
+}
+.padButton:active {
+  background-color: var(--accent);
 }
 
 .progressBar {
@@ -208,9 +213,10 @@ blockquote, div.blockquote {
   margin-left: auto;
 }
 
-.funiVisualBox {
+.luckVisualBox, .scanrVisualBox {
   border: 2px solid var(--fground);
   background-color: var(--fmground);
+  margin: 1em;
 }
 
 .aegisBox {
