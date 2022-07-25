@@ -14,9 +14,9 @@
             <p></p>
 
             <p><b>Chance to reconstitute a valid Prime-Timeline:</b></p>
-            <p id="primeChance" style="margin-top: -1vh;" id="probability">1 in 7.7e77777 per activation</p>
-            <p id="uniScore">0 (0.0/s) universes generated since IFRAME's initialization.</p>
-            <p id="softcapScore"><b>Warning! Acceleration of causal failure is softcapping universe generation by 1.1e666x!</b></p>
+            <p id="primeChance" class="scoreLabel" style="margin-top: -1vh;" id="probability">1 in 7.7e77777 per activation</p>
+            <p id="uniScore" style="margin-top: -1vh;">0 (0.0/s) universes generated since IFRAME's initialization.</p>
+            <p id="softcapScore" style="margin-top: -1vh;"><b>Warning! Acceleration of causal failure is softcapping universe generation by 1.1e666x!</b></p>
 
             <div style="height: 1vh;">
             </div>
@@ -35,9 +35,9 @@
   
             <p></p>
 
-            <div id="filesTab" class="tabContainer function">
-                <div id="fileWindow" style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; width: auto; margin: auto; text-align: center;">
-                    <div id="fileList" class="blockquote" style="display: flex; flex-direction: column; justify-content: center; width: min-content; margin: 1em; padding: 10px; height: fit-content;">
+            <div id="filesTab" class="tabContainer function" style="align-content: center;">
+                <div id="fileWindow" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; width: fit-content; margin: auto;">
+                    <div id="fileList" class="blockquote" style="display: flex; flex-direction: column; justify-content: center; width: min-content; max-height: 68vh; overflow-y: auto; padding: 10px; height: fit-content;">
                         <button class="fileButton fileLink fileSelected" onclick="openFile(event,'introFile')">PROCEDURES.doc</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'guideFile')">MANUAL.doc</button>
 
@@ -56,7 +56,7 @@
                         <button class="fileButton fileLink" onclick="openFile(event,'corruptedFile')">[deleted](1)</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'restoredFile2')">sink.png</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'corruptedFile')">[deleted](2)</button>
-                        <button class="fileButton fileLink" onclick="openFile(event,'restoredFile2')">radar.png</button>
+                        <button class="fileButton fileLink" onclick="openFile(event,'restoredFile3')">radar.png</button>
 
                         <button class="fileButton fileLink" onclick="openFile(event,'unstableFile')">[unstable]</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'stableFile1')">development_notes_13.txt</button>
@@ -70,129 +70,129 @@
                         <button class="fileButton fileLink" onclick="openFile(event,'tracedFile5')">SCP-7000_original.doc</button>
                     </div>
 
-                    <div id="fileViewer" style="width: 50%;">
+                    <div id="fileViewer" class="notation" style="width: fit-content; margin: 1em; max-width: 50%; max-height: 67vh; overflow-x: hidden; overflow-y: auto;">
                         <p></p>
 
                     <!-- Initial Files -->
 
-                        <div id="introFile" class="notation function1">
-                            <p><b>DESIGNATION:</b> SCP-7000<br><b>CLASS:</b> Metapollyon<sup><strong><a href="#footnote-1">[1]</a></strong></sup></p>
+                        <div id="introFile" class="function1">
+                            <p><span class="bt">DESIGNATION:</span> SCP-7000<br><span class="bt">CLASS:</span> Metapollyon<sup><strong><a href="#footnote-1">[1]</a></strong></sup></p>
 
                             <hr></hr>
     
                             <div style="text-align: left">
-                                <p><b><u>CONTAINMENT PROCEDURES</u></b>: SCP-7000 maintains a near-omniversal causality failure, and is<sup><strong><a href="#footnote-2">[2]</a></strong></sup> currently subject to <a href="https://scp-wiki.wikidot.com/scp-3125">inverted containment protocols</a>; prior to total annihilation, SCP Foundation Temporal Anomalies Department Iteration-Prime compactified all remaining realities into the <b>Infinitely-Fortified Reality for Annihilated Multiverse Events</b> (IFRAME), a single reinforced pocket-universe impervious to structural collapse. Due to limited causal resources, its interior consists of very few elements:</p>
+                                <p><span class="bt">CONTAINMENT PROCEDURES</span>: SCP-7000<sup><strong><a href="#footnote-2">[2]</a></strong></sup> maintains an omniversal failure of standard causality, and is currently subject to <a href="https://scp-wiki.wikidot.com/scp-3125">inverted containment protocols</a>; prior to total annihilation, SCP Foundation Temporal Anomalies Department Iteration-Prime compactified all remaining universes, <a href="https://wanderers-library.wikidot.com">hyper-nexuses</a>, and other <a href="https://scp-wiki.wikidot.com/welcome-to-delta-t">extracausal spaces</a> into the Infinitely-Fortified Reality for Annihilated Multiverse Events (IFRAME), a single reinforced pocket-universe impervious to structural collapse. Due to severely limited resources, its contents are restricted to</p>
     
                                 <ul>
-                                    <li>a closed structure resembling Temporal Site-01's research offices, containing;</li>
-                                    <li>the <b>Liminal Universe Creation Keystone</b> (LUCK) Mk. VII, which generates a single randomized universe upon activation;</li>
-                                    <li>the <b>Scranton-Tarioux Autonomous Topological Sink</b> (STATS), which indefinitely maintains the IFRAME's existence;</li>
-                                    <li>D-7000, a member of Foundation personnel augmented with comprehensive static immortality;</li>
-                                    <li>One low-grade computer terminal, upon which this file is stored.</li>
+                                    <li>a closed structure resembling Temporal Site-01's research offices, harboring;</li>
+                                    <li>the Liminal Universe Creation Keystone (LUCK), which generates a single randomized universe upon activation;</li>
+                                    <li>the Scranton-Tarioux Autonomous Topological Sink (STATS), which indefinitely maintains the IFRAME's existence;</li>
+                                    <li>one low-grade computer terminal, upon which this file is stored;</li>
+                                    <li>D-7000, a member of Foundation personnel augmented with comprehensive static immortality.</li>
                                 </ul>
     
-                                <p>D-7000 is to repeatedly generate randomized universes (and maintain related equipment as necessary) until, if at all possible, a variation of the Prime-Timeline is generated with immunity to SCP-7000's effect.</p>
+                                <p>D-7000 is to repeatedly generate randomized universes (and maintain related equipment, as necessary) until, if at all possible, a variation of the Prime-Timeline is generated with immunity to SCP-7000's effect. If the LUCK is capable of generating such a universe, is kept continuously active, containment of SCP-7000 will be achieved within 10 x 10<sup>77777</sup> seconds.</sup></p>
     
-                                <p><b><u>DESCRIPTION</u></b>: </p>
+                                <p><span class="bt">DESCRIPTION</span>: SCP-7000 designates an arbitrary ongoing Meta-ZK-Class ("End of Causality") Event necessitating activation of the IFRAME.</p>
                         
-                                <p style="text-align: center"><b>[remaining data lost]</b></p>
+                                <p style="font-family: 'Fira Code', monospace; text-align: center"><i>[DATA LOST]</i></p>
     
                                 <hr></hr>
     
-                                <blockquote class="footnoteblock" style="font-size: 90%">
+                                <div style="font-family: 'Work Sans', sans-serif; font-size: 90%">
                                     <p id="footnote-1"><strong>1.</strong> Anomaly is uncontainable on a multiversal scale and is actively causing the end of all worlds.</p>
-                                    <p id="footnote-2"><strong>2.</strong> As SCP-7000 may or may not transcend standard notions of causality, its existence is technically uncertain. This document's use of the SCP-7000 designation may or may not reinforce the hypothetical anomaly it references, possibly necessitating the interjection of uncertainty into any authoritative statement regarding its potential properties. The presence of said uncertainty (or lack thereof) is not necessarily indicative of any particular anomaly's existence.</p>
-                                </blockquote>
+                                    <p style="margin-top: -8px; margin-bottom: -8px;" id="footnote-2"><strong>2.</strong> As SCP-7000 may or may not transcend standard notions of causality, its existence is technically uncertain. This document's use of the SCP-7000 designation may or may not reinforce the hypothetical anomaly it references, possibly necessitating the interjection of uncertainty into any authoritative statement regarding its potential properties. The presence of said uncertainty (or lack thereof) is not necessarily indicative of any particular anomaly's existence.</p>
+                                </div>
                             </div>
                         </div>
 
-                        <div id="guideFile" class="notation function1" style="display: none;">
+                        <div id="guideFile" class="function1" style="display: none;">
                             IFRAME manual
                         </div>
 
                     <!-- Manual Addenda -->
 
-                        <div id="moduleFile1" class="notation function1" style="display: none;">
+                        <div id="moduleFile1" class="function1" style="display: none;">
                             repair module
                         </div>
 
-                        <div id="moduleFile2" class="notation function1" style="display: none;">
+                        <div id="moduleFile2" class="function1" style="display: none;">
                             observation module
                         </div>
 
-                        <div id="moduleFile3" class="notation function1" style="display: none;">
+                        <div id="moduleFile3" class="function1" style="display: none;">
                             stabilization module
                         </div>
 
-                        <div id="moduleFile4" class="notation function1" style="display: none;">
+                        <div id="moduleFile4" class="function1" style="display: none;">
                             reconstruction module
                         </div>
 
                     <!-- Encrypted Files -->
 
-                        <div id="encryptedFile" class="notation function1" style="display: none;">
+                        <div id="encryptedFile" class="function1" style="display: none;">
                             cannot be displayed due to encryption
                         </div>
 
-                        <div id="decryptedFile1" class="notation function1" style="display: none;">
+                        <div id="decryptedFile1" class="function1" style="display: none;">
                             d-7000 message
                         </div>
 
-                        <div id="decryptedFile2" class="notation function1" style="display: none;">
+                        <div id="decryptedFile2" class="function1" style="display: none;">
                             d-7000 log
                         </div>
 
                     <!-- Corrupted Files -->
 
-                        <div id="corruptedFile" class="notation function1" style="display: none;">
+                        <div id="corruptedFile" class="function1" style="display: none;">
                             can only partially be displayed due to corruption
                         </div>
 
-                        <div id="restoredFile1" class="notation function1" style="display: none;">
+                        <div id="restoredFile1" class="function1" style="display: none;">
                             LUCK schematic
                         </div>
 
-                        <div id="restoredFile2" class="notation function1" style="display: none;">
+                        <div id="restoredFile2" class="function1" style="display: none;">
                             STATS schematic
                         </div>
 
-                        <div id="restoredFile3" class="notation function1" style="display: none;">
+                        <div id="restoredFile3" class="function1" style="display: none;">
                             SCAnR schematic
                         </div>
 
                     <!-- Unstable Files -->
 
-                        <div id="unstableFile" class="notation function1" style="display: none;">
+                        <div id="unstableFile" class="function1" style="display: none;">
                             File cannot be displayed due to causal instability
                         </div>
 
-                        <div id="stableFile1" class="notation function1" style="display: none;">
+                        <div id="stableFile1" class="function1" style="display: none;">
                             temporal researcher log
                         </div>
 
-                        <div id="stableFile2" class="notation function1" style="display: none;">
+                        <div id="stableFile2" class="function1" style="display: none;">
                             ChARM prototype blueprint
                         </div>
 
                     <!-- Reconstructed Files-->
 
-                        <div id="tracedFile1" class="notation function1" style="display: none;">
+                        <div id="tracedFile1" class="function1" style="display: none;">
                             placeholder1
                         </div>
                     
-                        <div id="tracedFile2" class="notation function1" style="display: none;">
+                        <div id="tracedFile2" class="function1" style="display: none;">
                             placeholder2
                         </div>
 
-                        <div id="tracedFile3" class="notation function1" style="display: none;">
+                        <div id="tracedFile3" class="function1" style="display: none;">
                             placeholder3
                         </div>
 
-                        <div id="tracedFile4" class="notation function1" style="display: none;">
+                        <div id="tracedFile4" class="function1" style="display: none;">
                             placeholder4
                         </div>
 
-                        <div id="tracedFile5" class="notation function1" style="display: none;">
+                        <div id="tracedFile5" class="function1" style="display: none;">
                             true scp-7000 document
                         </div>
                     
@@ -209,6 +209,7 @@
                     <button id="genUniButton" class="generalButton" onclick="genUni()">Generate Universe<br><span style="font-weight: normal; font-size: 90%;">cost: 1 causal fabric</span></button>
 
                     <br>
+                    <p></p>
 
                     <button id="refineGenButton" class="generalButton" onclick="refineGen()">Refine Generation<br><span style="font-weight: normal; font-size: 90%;">cost: 1 trace data</span><br><span style="font-weight: normal; font-size: 90%;">Significantly refines LUCK's accuracy.</span></button>
                 </div>
@@ -241,8 +242,8 @@
                         <p>STATS is fabricating causality from macroquantum fluctuations...</p>
                     </div>
 
-                    <div id="modulesWindow" style="align-items: center; justify-content: center; width: 444px; margin-left: 2vw">
-                        <div style="display: grid;"">
+                    <div id="modulesWindow" style="align-items: center; justify-content: center; width: 400px; margin-left: 2vw">
+                        <div style="display: grid;">
                             <button id="activateM1Button" class="generalButton moduleButton" onclick="activateM1()">Activate Repair Module<br><span style="font-weight: normal; font-size: 90%;">requires: 50 causal fabric</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">compress causal fabric into 1000 hypermatter; unlock MAKe</span></button>
                             <button id="activateM2Button" class="generalButton moduleButton" onclick="activateM2()">Activate Observation Module<br><span style="font-weight: normal; font-size: 90%;">requires: high # universes generated</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">observe generated universes for 1 interreal ray; unlock SCAnR</span></button>
                             <button id="activateM3Button" class="generalButton moduleButton" onclick="activateM3()">Activate Stability Module<br><span style="font-weight: normal; font-size: 90%;">requires: 20 functionality data</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">unlock AEGIS</span></button>
@@ -265,20 +266,22 @@
             </div>
 
             <div id="researchTab" class="tabContainer function" style="display: none">
-                <button id="studyButton" class="generalButton toggledOn">Study IFRAME<br><span style="font-weight: normal; font-size: 90%;">remains active while Research Tab is open</span></button>
+                <button id="studyButton" class="generalButton toggledOn">Study IFRAME<br><span style="font-weight: normal; font-size: 90%;">generates research while Research tab is open</span></button>
 
                 <p></p>
                 
-                <p id="researchScore">0 (0.0/s) research generated from studying.</p>
-
-                <br>
-
                 <div id="researchList" class="notation" style="width: 66%; margin: auto;">
+                    <h2>Studies</h2>
+
+                    <p id="researchScore">0 (0.0/s) research available for studies.</p>
+
+                    <hr></hr>
+
                     <button id="basicProgButton" class="generalButton" style="width: 33%; align-content: center; justify-content: center;" onclick="learnBasicProg()">Basic Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 10 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>It begins...</i></span></button>
 
                     <p></p>
 
-                    <div class="mobileGrid" style="display: inline-grid; grid-template-columns: auto auto auto auto; gap: 1vw;">
+                    <div class="mobileGrid" style="display: inline-grid; grid-template-columns: auto auto auto auto; gap: 4px;">
                         <button id="cryptoButton" class="generalButton" onclick="learnCrypto()">Cryptography<br><span style="font-weight: normal; font-size: 90%;">cost: 100 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
                         <button id="learnBUpgradeTermButton" class="generalButton" onclick="learnBasicUpgradeTerm()">Basic Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 300 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
                         <button id="advProgButton" class="generalButton" onclick="learnAdvProg()">Advanced Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 500 research</span><br><span style="font-weight: normal; font-size: 90%;">requires: 200 computational resources</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
@@ -300,155 +303,156 @@
             </div>
 
             <div id="autoTab" class="tabContainer function" style="display: none">
-                <p></p>
-
-                <p>[insert dropdown menu]</p>
-
-                <button id="programButton" class="generalButton holdButton">Program<br><span style="font-weight: normal; font-size: 90%;">click and hold to program selected algorithm</span></button>
-
-                <p></p>
-
-                <div id="programProgress" class="progressBar">
-                </div>
-
-                <hr style="margin-bottom: 0px;"></hr>
-
-                <h3>Algorithms</h3>
-
-                <div style="text-align: center;">
-                    <p>0% of 100 (0.0/s) max computations in use</p>
-                </div>
-
-                <div id="programList" class="blockquote" style="width: 66%; margin: auto; display: flex; flex-direction: column; align-items: center;">
-                    <div id="autoClickerWindow" class="programBox">
-                        <p style="width: 66%; margin-right: 40px;" id="autoClickerScore"><b><u>Auto-Clicker v1</u></b>: attempts to activate the LUCK every (3000/assigned computations) seconds</p>
-                        <div id="autoClickerProgress" class="progressBar">
-                        </div>
-                        <div class="compAssignBox">
-                            <button id="subAutoClickerCompsButton" class="tinyButton">- </button> <p id="autoClickerCompsScore">0%</p> <button id="addAutoClickerCompsButton" class="tinyButton">+ </button>
+                <div id="autoWindow" style="width: 80%; margin: auto; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                    <div style="width: fit-content; margin: auto; margin-right: 1vw;">
+                        <p>[insert dropdown menu]</p>
+    
+                        <button id="programButton" class="generalButton holdButton">Program<br><span style="font-weight: normal; font-size: 90%;">hold to program selected algorithm</span></button>
+    
+                        <p></p>
+    
+                        <div id="programProgress" class="progressBar" style="width: 100%">
                         </div>
                     </div>
+    
+                    <div id="programList" class="blockquote" style="max-height: 68vh; overflow-x: hidden; overflow-y: auto; height: fit-content; width: auto; max-width: 60%; margin-left: 1vw; display: flex; flex-direction: column; align-items: center;">
+                        <h2>Algorithms</h2>
+    
+                        <p style="margin-top: -1vh;">0% of 100 (0.0/s) max computations assigned</p>
+    
+                        <hr></hr>
 
-                    <div id="autoClickerBox" class="programBox">
-                        <p style="width: 66%; margin-right: 40px;" id="decryptionScore"><b><u>Decryption v1</u></b>: decrypts hidden files</p>
-                        <div id="decryptionProgress" class="progressBar">
+                        <div id="autoClickerWindow" class="programBox">
+                            <p style="width: 66%; margin-right: 40px;" id="autoClickerScore"><b><u>Auto-Clicker v1</u></b>: attempts to activate the LUCK every (3000/assigned computations) seconds</p>
+                            <div id="autoClickerProgress" class="progressBar">
+                            </div>
+                            <div class="compAssignBox">
+                                <button id="subAutoClickerCompsButton" class="tinyButton">- </button> <p id="autoClickerCompsScore">0%</p> <button id="addAutoClickerCompsButton" class="tinyButton">+ </button>
+                            </div>
                         </div>
-                        <div class="compAssignBox">
-                            <button id="subDecryptionCompsButton" class="tinyButton">- </button> <p id="decryptionCompsScore">0%</p> <button id="addDecryptionCompsButton" class="tinyButton">+ </button>
+    
+                        <div id="autoClickerBox" class="programBox">
+                            <p style="width: 66%; margin-right: 40px;" id="decryptionScore"><b><u>Decryption v1</u></b>: decrypts hidden files</p>
+                            <div id="decryptionProgress" class="progressBar">
+                            </div>
+                            <div class="compAssignBox">
+                                <button id="subDecryptionCompsButton" class="tinyButton">- </button> <p id="decryptionCompsScore">0%</p> <button id="addDecryptionCompsButton" class="tinyButton">+ </button>
+                            </div>
                         </div>
-                    </div>
-
-                    <div id="autoStudyBox" class="programBox">
-                        <p style="width: 66%; margin-right: 40px;" id="autoStudyScore"><b><u>Auto-Study v1</u></b>: studies automatically, producing 0.005/sec research per assigned computation</p>
-                        <div id="autoStudyProgress" class="progressBar">
+    
+                        <div id="autoStudyBox" class="programBox">
+                            <p style="width: 66%; margin-right: 40px;" id="autoStudyScore"><b><u>Auto-Study v1</u></b>: studies automatically, producing 0.005/sec research per assigned computation</p>
+                            <div id="autoStudyProgress" class="progressBar">
+                            </div>
+                            <div class="compAssignBox">
+                                <button id="subAutoStudyCompsButton" class="tinyButton">- </button> <p id="autoStudyCompsScore">0%</p> <button id="addAutoStudyCompsButton" class="tinyButton">+ </button>
+                            </div>
                         </div>
-                        <div class="compAssignBox">
-                            <button id="subAutoStudyCompsButton" class="tinyButton">- </button> <p id="autoStudyCompsScore">0%</p> <button id="addAutoStudyCompsButton" class="tinyButton">+ </button>
+    
+                        <div id="restoreBox" class="programBox">
+                            <p style="width: 66%; margin-right: 40px;" id="restoreScore"><b><u>Restoration v1</u></b>: restores corrupted files</p>
+                            <div id="restoreProgress" class="progressBar">
+                            </div>
+                            <div class="compAssignBox">
+                                <button id="subRestoreCompsButton" class="tinyButton">- </button> <p id="restoreCompsScore">0%</p> <button id="addRestoreCompsButton" class="tinyButton">+ </button>
+                            </div>
                         </div>
-                    </div>
-
-                    <div id="restoreBox" class="programBox">
-                        <p style="width: 66%; margin-right: 40px;" id="restoreScore"><b><u>Restoration v1</u></b>: restores corrupted files</p>
-                        <div id="restoreProgress" class="progressBar">
+    
+                        <div id="optimizeBox" class="programBox">
+                            <p style="width: 66%; margin-right: 40px;" id="optimizeScore"><b><u>Optimization v1</u></b>: optimizes programs of the same or lower version (in unlock order), replacing them with its next respective version.</p>
+                            <div id="optimizeProgress" class="progressBar">
+                            </div>
+                            <div class="compAssignBox">
+                                <button id="subOptiCompsButton" class="tinyButton">- </button> <p id="optiCompsScore">0%</p> <button id="addOptiCompsButton" class="tinyButton">+ </button>
+                            </div>
                         </div>
-                        <div class="compAssignBox">
-                            <button id="subRestoreCompsButton" class="tinyButton">- </button> <p id="restoreCompsScore">0%</p> <button id="addRestoreCompsButton" class="tinyButton">+ </button>
+    
+                        <div id="restoreBox" class="programBox">
+                            <p style="width: 66%; margin-right: 40px;" id="autoProgramScore"><b><u>Auto-Program v1</u></b>: automatically programs unlocked programs at 0.1% per assigned computation of normal rate</p>
+                            <div id="autoProgramProgress" class="progressBar">
+                            </div>
+                            <div class="compAssignBox">
+                                <button id="subAutoProgramCompsButton" class="tinyButton">- </button> <p id="autoProgramCompsScore">0%</p> <button id="addAutoProgramCompsButton" class="tinyButton">+ </button>
+                            </div>
                         </div>
-                    </div>
-
-                    <div id="optimizeBox" class="programBox">
-                        <p style="width: 66%; margin-right: 40px;" id="optimizeScore"><b><u>Optimization v1</u></b>: optimizes programs of the same or lower version (in unlock order), replacing them with its next respective version.</p>
-                        <div id="optimizeProgress" class="progressBar">
+    
+                        <div id="designBox" class="programBox">
+                            <p style="width: 66%; margin-right: 40px;" id="designScore"><b><u>Design v1</u></b>: unlocks Advanced Upgrades</p>
+                            <div id="designProgress" class="progressBar">
+                            </div>
+                            <div class="compAssignBox">
+                                <button id="subDesignCompsButton" class="tinyButton">- </button> <p id="designCompsScore">0%</p> <button id="addDesignCompsButton" class="tinyButton">+ </button>
+                            </div>
                         </div>
-                        <div class="compAssignBox">
-                            <button id="subOptiCompsButton" class="tinyButton">- </button> <p id="optiCompsScore">0%</p> <button id="addOptiCompsButton" class="tinyButton">+ </button>
+    
+                        <div id="synthBox" class="programBox">
+                            <p style="width: 66%; margin-right: 40px;" id="synthScore"><b><u>Synthesis v1</u></b>: increase chance to generate functional universe based on total functionality data multiplied by computations</p>
+                            <div id="synthProgress" class="progressBar">
+                            </div>
+                            <div class="compAssignBox">
+                                <button id="subSynthCompsButton" class="tinyButton">- </button> <p id="synthCompsScore">0%</p> <button id="addSynthCompsButton" class="tinyButton">+ </button>
+                            </div>
                         </div>
-                    </div>
-
-                    <div id="restoreBox" class="programBox">
-                        <p style="width: 66%; margin-right: 40px;" id="autoProgramScore"><b><u>Auto-Program v1</u></b>: automatically programs unlocked programs at 0.1% per assigned computation of normal rate</p>
-                        <div id="autoProgramProgress" class="progressBar">
+    
+                        <div id="autoUpgradeBox" class="programBox">
+                            <p style="width: 66%; margin-right: 40px;" id="autoUpgradeScore"><b><u>Auto-Upgrade v1</u></b>: converts 0.1% per computation of hypermatter gain to microchips, purchases Basic Upgrades automatically</p>
+                            <div id="autoUpgradeProgress" class="progressBar">
+                            </div>
+                            <div class="compAssignBox">
+                                <button id="subAutoUpgradeCompsButton" class="tinyButton">- </button> <p id="autoUpgradeCompsScore">0%</p> <button id="addAutoUpgradeCompsButton" class="tinyButton">+ </button>
+                            </div>
                         </div>
-                        <div class="compAssignBox">
-                            <button id="subAutoProgramCompsButton" class="tinyButton">- </button> <p id="autoProgramCompsScore">0%</p> <button id="addAutoProgramCompsButton" class="tinyButton">+ </button>
+    
+                        <div id="chronoBox" class="programBox">
+                            <p style="width: 66%; margin-right: 40px;" id="chronoScore"><b><u>Chronolocation v1</u></b>: isolate unstable files to oblique possibilities</p>
+                            <div id="chronoProgress" class="progressBar">
+                            </div>
+                            <div class="compAssignBox">
+                                <button id="subChronoCompsButton" class="tinyButton">- </button> <p id="chronoCompsScore">0%</p> <button id="addChronoCompsButton" class="tinyButton">+ </button>
+                            </div>
                         </div>
-                    </div>
-
-                    <div id="designBox" class="programBox">
-                        <p style="width: 66%; margin-right: 40px;" id="designScore"><b><u>Design v1</u></b>: unlocks Advanced Upgrades</p>
-                        <div id="designProgress" class="progressBar">
+    
+                        <div id="redesignBox" class="programBox">
+                            <p style="width: 66%; margin-right: 40px;" id="redesignScore"><b><u>Redesign v1</u></b>: unlocks Enhanced Upgrades</p>
+                            <div id="redesignProgress" class="progressBar">
+                            </div>
+                            <div class="compAssignBox">
+                                <button id="subRedesignCompsButton" class="tinyButton">- </button> <p id="redesignCompsScore">0%</p> <button id="addRedesignCompsButton" class="tinyButton">+ </button>
+                            </div>
                         </div>
-                        <div class="compAssignBox">
-                            <button id="subDesignCompsButton" class="tinyButton">- </button> <p id="designCompsScore">0%</p> <button id="addDesignCompsButton" class="tinyButton">+ </button>
-                        </div>
-                    </div>
-
-                    <div id="synthBox" class="programBox">
-                        <p style="width: 66%; margin-right: 40px;" id="synthScore"><b><u>Synthesis v1</u></b>: increase chance to generate functional universe based on total functionality data multiplied by computations</p>
-                        <div id="synthProgress" class="progressBar">
-                        </div>
-                        <div class="compAssignBox">
-                            <button id="subSynthCompsButton" class="tinyButton">- </button> <p id="synthCompsScore">0%</p> <button id="addSynthCompsButton" class="tinyButton">+ </button>
-                        </div>
-                    </div>
-
-                    <div id="autoUpgradeBox" class="programBox">
-                        <p style="width: 66%; margin-right: 40px;" id="autoUpgradeScore"><b><u>Auto-Upgrade v1</u></b>: converts 0.1% per computation of hypermatter gain to microchips, purchases Basic Upgrades automatically</p>
-                        <div id="autoUpgradeProgress" class="progressBar">
-                        </div>
-                        <div class="compAssignBox">
-                            <button id="subAutoUpgradeCompsButton" class="tinyButton">- </button> <p id="autoUpgradeCompsScore">0%</p> <button id="addAutoUpgradeCompsButton" class="tinyButton">+ </button>
-                        </div>
-                    </div>
-
-                    <div id="chronoBox" class="programBox">
-                        <p style="width: 66%; margin-right: 40px;" id="chronoScore"><b><u>Chronolocation v1</u></b>: isolate unstable files to oblique possibilities</p>
-                        <div id="chronoProgress" class="progressBar">
-                        </div>
-                        <div class="compAssignBox">
-                            <button id="subChronoCompsButton" class="tinyButton">- </button> <p id="chronoCompsScore">0%</p> <button id="addChronoCompsButton" class="tinyButton">+ </button>
-                        </div>
-                    </div>
-
-                    <div id="redesignBox" class="programBox">
-                        <p style="width: 66%; margin-right: 40px;" id="redesignScore"><b><u>Redesign v1</u></b>: unlocks Enhanced Upgrades</p>
-                        <div id="redesignProgress" class="progressBar">
-                        </div>
-                        <div class="compAssignBox">
-                            <button id="subRedesignCompsButton" class="tinyButton">- </button> <p id="redesignCompsScore">0%</p> <button id="addRedesignCompsButton" class="tinyButton">+ </button>
-                        </div>
-                    </div>
-
+                    </div>    
                 </div>
             </div>
 
             <div id="makeTab" class="tabContainer function" style="display: none">
-                <div id="makeWindow">
-                    <h2>Matter Assembly Kaleidoscope</h2>
+                <h2>Matter Assembly Kaleidoscope</h2>
 
-                    <p id="hMatterScore">500g (0.0/s) hypermatter available for assembly.</p>
+                <div id="makeWindow" style="width: 80%; margin: auto; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                    <div style="width: fit-content; margin: auto; margin-right: 1vw;">
+                        <p id="hMatterScore">500g (0.0/s) hypermatter available for assembly.</p>
+    
+                        <button id="assembleButton" class="generalButton" onclick="genParts(1)">Assemble<br><span style="font-weight: normal; font-size: 90%;">cost: 100 hypermatter</span><br><span style="font-weight: normal; font-size: 90%;">construct spare parts</span></button>
+    
+                        <p></p>
+    
+                        <p id="spareScore">0 (0.0/s) spare parts available for disassembly.</p>
+    
+                        <button id="disassembleButton" class="generalButton" onclick="genMChips(1)">Disassemble<br><span style="font-weight: normal; font-size: 90%;">cost: 1 spare part</span><br><span style="font-weight: normal; font-size: 90%;">recover microchips</span></button>    
+                    </div>
+                    
+                    <div id="upgradeWindow" class="blockquote" style="height: fit-content; width: auto; max-width: 66%; margin-left: 1vw;">
+                        <h2>Upgrades</h2>
 
-                    <button id="assembleButton" class="generalButton" onclick="genParts(1)">Assemble<br><span style="font-weight: normal; font-size: 90%;">cost: 100 hypermatter</span><br><span style="font-weight: normal; font-size: 90%;">construct spare parts</span></button>
-
-                    <p></p>
-
-                    <p id="spareScore">0 (0.0/s) spare parts available for disassembly.</p>
-
-                    <button id="disassembleButton" class="generalButton" onclick="genMChips(1)">Disassemble<br><span style="font-weight: normal; font-size: 90%;">cost: 1 spare part</span><br><span style="font-weight: normal; font-size: 90%;">recover microchips</span></button>
-
-                    <hr style="margin-bottom: 0px;"></hr>
-
-                    <h3>Upgrades</h2>
-
-                    <div style="width: 66%; margin: auto;">
                         <p id="mChipsScore">0 (0.0/s) microchips available for upgrades.</p>
+
+                        <hr></hr>
 
                         <div id="upgradeWindow" style="width: auto; display: inline-grid; grid-template-columns: auto auto auto auto; gap: 4px;">
                             <button id="bUpgradeTermButton" class="generalButton basicUpgrade" onclick="bUpgradeTerm(1)">Basic Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 1 microchips</span><br><span style="font-weight: normal; font-size: 90%;">gain 20 computations</span></button>
                             <button id="bUpgradeLuckButton" class="generalButton basicUpgrade" onclick="bUpgradeLuck(1)">Basic Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">cost: 1 microchips</span><br><span style="font-weight: normal; font-size: 90%;">increase universe gain by 0.1% (compounding)</span></button>
                             <button id="bUpgradeStatsButton" class="generalButton basicUpgrade" onclick="bUpgradeStats(1)">Basic Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 10 microchips</span><br><span style="font-weight: normal; font-size: 90%;">decrease IFRAME's global tickrate by 1%</span></button>
                             <button id="bUpgradeScanrButton" class="generalButton basicUpgrade" onclick="bUpgradeScanr(1)">Basic Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">cost: 10000 microchips</span><br><span style="font-weight: normal; font-size: 90%;">increase functionality data gain by 10% (compounding)</span></button>
-    
+        
                             <button id="advUpgradeTermButton" class="generalButton toggledOn advancedUpgrade">Advanced Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">each second, gain 0.1% of total computations per 1% of unallocated computations</span></button>
                             <button id="advUpgradeLuckButton" class="generalButton toggledOn advancedUpgrade">Advanced Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">LUCK activation cooldown eliminated</span></button>
                             <button id="advUpgradeStatsButton" class="generalButton toggledOn advancedUpgrade">Advanced Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">causal fabric gain is exponentiated based on hypermatter gain</span></button>
@@ -459,44 +463,47 @@
                             <button id="enhUpgradeStatsButton" class="generalButton toggledOn enhancedUpgrade">Enhanced Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">Advanced Upgrade: STATS's effect is multiplied by hypervolume gain</span></button>
                             <button id="enhUpgradeScanrButton" class="generalButton toggledOn enhancedUpgrade">Enhanced Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">Observation Module activates continuously, generating 1 interreal ray per second for each 1e20 total universes generated</span></button>
                         </div>
-    
+        
                         <br>
                         <p></p>
-    
+        
                         <button id="maxUpgradeButton" class="generalButton">Max All</button>
-                    </div>
+                    </div>    
                 </div>
             </div>
 
             <div id="scanrTab" class="tabContainer function" style="display: none">
-                <h2>Schochastic Causality Arborization Radar</h2>
+                <h2>Stochastic Causality Arborization Radar</h2>
 
-                <div id="scanrWindow" style="width: 75%; margin: auto; display: flex; flex-direction: row;">
-                    <div width="min-content" style="margin-right: auto;">
+                <div id="scanrWindow" style="width: 80%; margin: auto; display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                    <div style="width: fit-content; margin: auto; margin-right: 1vw;">
                         <p id="fUniScore">1 (0.0/s) unscanned functional universe detected</p>
-                        <p id="iRayScore">1 (0.0/s) interreal ray available</p>
+                        <p id="iRayScore" style="margin-top: -1em;">1 (0.0/s) interreal ray available</p>
     
                         <button id="scanButton" class="generalButton" onclick="genFData(1)">Scan Universe<br><span style="font-weight: normal; font-size: 90%;">cost: 1 interreal ray;</span><br><span style="font-weight: normal; font-size: 90%;">1 unscanned functional universe</span><br><span style="font-weight: normal; font-size: 90%;">generate 1 functionality data</span></button>
                     
                         <p></p>
                         
-                        <canvas id="scanrVisual" class="scanrVisualBox" width="500px" height="400px"></canvas>
+                        <canvas id="scanrVisual" class="scanrVisualBox" width="400px" height="300px"></canvas>
 
                         <p id="scanStatusScore"><b>Scanned universe status:</b> N/A</p>
                     </div>
                     
-                    <div id="functionWindow" class="blockquote" style="height: fit-content; width: auto; margin: 4%;">
-                        <h3>Functions</h2>
+                    <div id="functionWindow" class="blockquote" style="height: fit-content; width: auto; margin-left: 1vw;">
+                        <h2>Functions</h2>
 
                         <p id="fDataScore">0 (0.0/s) functionality data retrieved</p>
 
-                        <div style="width: auto; display: inline-grid; grid-template-columns: auto auto auto; gap: 4px;">
+                        <hr></hr>
+
+                        <div style="width: auto; display: inline-grid; grid-template-columns: auto auto auto; gap: 6px; align-content: center;">
                             <button id="function1Button" class="generalButton funButton">F1<br><span style="font-weight: normal; font-size: 90%;">requires: 1 total FD</span><br><span style="font-weight: normal; font-size: 90%;">Research Tab is no longer reset by Repair Module</span></button>
                             <button id="function2Button" class="generalButton funButton">F2<br><span style="font-weight: normal; font-size: 90%;">requires: 2 total FD</span><br><span style="font-weight: normal; font-size: 90%;">Files, Automation Tabs are no longer reset by Repair Module</span></button>
                             <button id="function3Button" class="generalButton funButton">F3<br><span style="font-weight: normal; font-size: 90%;">requires: 3 total FD</span><br><span style="font-weight: normal; font-size: 90%;">Basic Upgrades are no longer reset by Repair Module</span></button>
                             <button id="function4Button" class="generalButton funButton">F4<br><span style="font-weight: normal; font-size: 90%;">requires: 5 total FD</span><br><span style="font-weight: normal; font-size: 90%;">Advanced Upgrades are no longer reset by Repair Module</span></button>
                             <button id="function5Button" class="generalButton funButton">F5<br><span style="font-weight: normal; font-size: 90%;">requires: 8 total FD</span><br><span style="font-weight: normal; font-size: 90%;">Repair Module activates continuously, converting 0.1% of causal fabric gain to hypermatter gain</span></button>
                             <button id="function6Button" class="generalButton funButton">F6<br><span style="font-weight: normal; font-size: 90%;">requires: 20 total FD</span><br><span style="font-weight: normal; font-size: 90%;">unlock Basic Upgrades: SCAnR</span></button>
+                            <p></p>
                             <button id="function7Button" class="generalButton funButton">F7<br><span style="font-weight: normal; font-size: 90%;">requires: 100 total FD</span><br><span style="font-weight: normal; font-size: 90%;">unlock Convergent Programming</span></button>
                         </div>
                     </div>
@@ -529,8 +536,9 @@
             </div>
 
             <div id="charmTab" class="tabContainer function" style="display: none">
-                <div id="charmWindow">
+                <h2>Chronological Authority Reconstruction Matrix</h2>
 
+                <div id="charmWindow">
 
                 </div>
             </div>

@@ -1,0 +1,24 @@
+Shamrock (Default)
+
+  --bground: #efe;
+  --bmground: #cdc;
+  --mground: #9a9;
+  --fmground: #576;
+  --fground: #232;
+
+  --accent: #c56;
+
+----
+
+Hemlock (Darkmode)
+
+  --bground: #122;
+  --bmground: #344;
+  --mground: #687;
+  --fmground: #8a9;
+  --fground: #cdc;
+
+  --accent: #c56;
+
+----
+

@@ -5,7 +5,7 @@
 :root {
   --bground: #efe;
   --bmground: #cdc;
-  --mground: #898;
+  --mground: #9a9;
   --fmground: #576;
   --fground: #232;
 
@@ -16,15 +16,23 @@ body {
   background-color: var(--bground);
   text-align: center;
   font-family: 'Inter', sans-serif;
-  font-size: 0.94em;
+  font-size: 0.95em;
   color: var(--fground);
   font-weight: normal;
+  max-height: 100vh;
+  max-width: 100vw;
 }
 
 hr {
-  margin: 3%;
+  width: 75%;
+  margin: 2.5% auto;
   border: none;
-  border-top: 2px var(--fmground) solid;
+  border-top: 2px var(--mground) solid;
+}
+
+blockquote hr,
+div.blockquote hr {
+  margin: 1%;
 }
 
 h1,
@@ -35,26 +43,25 @@ h5,
 h6 {
     font-family: 'Work Sans', sans-serif;
     font-weight: 800;
+    color: var(--fmground);
     text-transform: uppercase;
-    color: var(--accent);
     letter-spacing: unset;
 }
 
 .notation {
-    border-left: solid 3px var(--accent);
-    border-right: solid 3px var(--accent);
+    border-left: solid 4px var(--fmground);
+    border-right: solid 4px var(--fmground);
     padding: 20px;
-    width: 100%;
+    width: 95%;
     margin: auto;
+    color: var(--fground);
     background: var(--bmground);
 }
 
-.jotting {
-  padding: 1vh 2vh;
-  width: auto;
-  margin: auto;
-  background-color: var(--bmground);
-  border: double 4px var(--fground);
+.bt {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .generalButton {
@@ -74,11 +81,20 @@ h6 {
   border: 2px solid var(--fmground);
   transition-property: background-color, border-color;
   transition-duration: 0.2s;
+  border-radius: 5px;
+  color: var(--fground);
 }
 
 .generalButton:hover, .toggledOn {
   background-color: var(--bground);
   border-color: var(--fground);
+}
+
+.notation .generalButton {
+  background-color: var(--bground);
+}
+.notation .generalButton:hover {
+  background-color: var(--bmground);
 }
 
 .tabLink:hover, .tabSelected {
@@ -92,21 +108,23 @@ h6 {
   overflow: hidden;
   text-decoration: none;
   text-align: center;
+  align-content: center;
   cursor: pointer;
   border: none;
   font-family: 'Fira Code', monospace;
-  height: 2vh;
-  padding: 0.5% 0.5%;
+  font-weight: 600;
+  min-height: 20px;
+  padding: 2px;
   margin: 2px;
   background-color: var(--bmground);
-  outline: 1px var(--bmground) solid;
-  transition-property: background-color, outline;
-  transition-duration: 0.1s;
+  height: fit-content;
+  font-size: 90%;
+  color: var(--fmground);
 }
 
 .fileButton:hover, .fileSelected {
   background-color: var(--bground);
-  outline: 1px var(--fground) solid;
+  outline: 3px var(--fmground) double;
 }
 
 .tinyButton {
@@ -125,6 +143,8 @@ h6 {
   border: 2px solid var(--fmground);
   transition-property: background-color, border;
   transition-duration: 0.33s;
+  border-radius: 2px;
+  color: var(--fground);
 }
 .tinyButton:hover {
   background-color: var(--mground);
@@ -138,9 +158,8 @@ h6 {
 
 blockquote, div.blockquote {
   background-color: var(--bmground);
-  border: solid 1px var(--fmground);
   box-shadow: none;
-  padding: 1em;
+  padding: 1.5em;
   margin: 0.5em;
 }
 
@@ -167,22 +186,23 @@ blockquote, div.blockquote {
   flex: 1 0 33.3333%;
   background-color: var(--bmground);
   color: var(--fground);
-  border: 1px solid var(--bground);
+  border: 2px solid var(--bground);
   box-sizing: border-box;
   font-family: 'Fira Code', monospace;
   font-size: 150%;
-  transition-property: background-color;
-  transition-duration: 0.1s;
+  transition-property: background-color, color;
+  transition-duration: 0.2s
 }
 .padButton:hover {
   background-color: var(--mground);
 }
 .padButton:active {
   background-color: var(--accent);
+  color: var(--bmground);
 }
 
 .progressBar {
-  border: 1px var(--bmground) solid;
+  border: 2px var(--fmground) solid;
   background-color: var(--mground);
   width: 33%;
   margin: auto;
@@ -190,17 +210,21 @@ blockquote, div.blockquote {
 }
 
 .programBox {
-  width: 80%;
-  margin: auto;
+  width: 90%;
+  margin-top: 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   background-color: var(--bmground);
-  border-left: 4px solid var(--mground);
-  padding: 0.2em 1em;
-  margin: 20px;
+  border-left: 8px solid var(--fmground);
+  padding: 2px 16px;
   text-align: left;
+}
+
+.programBox p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .compAssignBox {
@@ -210,18 +234,45 @@ blockquote, div.blockquote {
   flex-wrap: none;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
+  margin: 1vw;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .luckVisualBox, .scanrVisualBox {
   border: 2px solid var(--fground);
   background-color: var(--fmground);
-  margin: 1em;
+  margin: auto;
+  margin-left: 1em;
 }
 
 .aegisBox {
   width: max-content;
   margin: auto;
+}
+
+.scoreLabel {
+  font-family: 'Fira Code';
+  font-size: 120%;
+  letter-spacing: 1px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-left: 2px solid var(--fmground);
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--fmground);
+   border-left: 2px solid var(--fmground);
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: var(--mground);
 }
 
 @media (max-width: 707px) {
