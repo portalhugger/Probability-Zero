@@ -15,7 +15,7 @@
 
             <p><b>Chance to reconstitute a valid Prime-Timeline:</b></p>
             <p id="primeChance" class="scoreLabel" style="margin-top: -1vh;" id="probability">1 in 7.7e77777 per activation</p>
-            <p id="uniScore" style="margin-top: -1vh;">0 (0.0/s) universes generated since IFRAME's initialization.</p>
+            <p id="uniScore" class="scoreLabel" style="margin-top: -1vh;">0 (0.0/s) universes generated</p>
             <p id="softcapScore" style="margin-top: -1vh;"><b>Warning! Acceleration of causal failure is softcapping universe generation by 1.1e666x!</b></p>
 
             <div style="height: 1vh;">
@@ -33,8 +33,6 @@
                 <button class="generalButton tabLink" onclick="openTab(event,'charmTab')">ChARM</button>
             </div>
   
-            <p></p>
-
             <div id="filesTab" class="tabContainer function" style="align-content: center;">
                 <div id="fileWindow" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; width: fit-content; margin: auto;">
                     <div id="fileList" class="blockquote" style="display: flex; flex-direction: column; justify-content: center; width: min-content; max-height: 68vh; overflow-y: auto; padding: 10px; height: fit-content;">
@@ -71,8 +69,6 @@
                     </div>
 
                     <div id="fileViewer" class="notation" style="width: fit-content; margin: 1em; max-width: 50%; max-height: 67vh; overflow-x: hidden; overflow-y: auto;">
-                        <p></p>
-
                     <!-- Initial Files -->
 
                         <div id="introFile" class="function1">
@@ -99,9 +95,9 @@
     
                                 <hr></hr>
     
-                                <div style="font-family: 'Work Sans', sans-serif; font-size: 90%">
-                                    <p id="footnote-1"><strong>1.</strong> Anomaly is uncontainable on a multiversal scale and is actively causing the end of all worlds.</p>
-                                    <p style="margin-top: -8px; margin-bottom: -8px;" id="footnote-2"><strong>2.</strong> As SCP-7000 may or may not transcend standard notions of causality, its existence is technically uncertain. This document's use of the SCP-7000 designation may or may not reinforce the hypothetical anomaly it references, possibly necessitating the interjection of uncertainty into any authoritative statement regarding its potential properties. The presence of said uncertainty (or lack thereof) is not necessarily indicative of any particular anomaly's existence.</p>
+                                <div style="font-family: 'Work Sans', sans-serif; font-size: 90%; width: 96%; padding: 16px; padding-left: 12px; margin: auto; border-left: 4px solid #565;">
+                                    <p style="margin-top: -10px;" id="footnote-1"><strong>1.</strong> Anomaly is uncontainable on a multiversal scale and is actively causing the end of all worlds.</p>
+                                    <p style="margin-top: -10px; margin-bottom: -10px;" id="footnote-2"><strong>2.</strong> As SCP-7000 may or may not transcend standard notions of causality, its existence is technically uncertain. This document's use of the SCP-7000 designation may or may not reinforce the hypothetical anomaly it references, possibly necessitating the interjection of uncertainty into any authoritative statement regarding its potential properties. The presence of said uncertainty (or lack thereof) is not necessarily indicative of any particular anomaly's existence.</p>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +200,7 @@
                 <div class="luckWindow">
                     <h2>Liminal Universe Creation Keystone Mk. VII</h2>
 
-                    <p id="fabricScore">0 (0.0/s) causal fabric stored</p>
+                    <p class="scoreLabel" id="fabricScore">0 (0.0/s) causal fabric stored</p>
 
                     <button id="genUniButton" class="generalButton" onclick="genUni()">Generate Universe<br><span style="font-weight: normal; font-size: 90%;">cost: 1 causal fabric</span></button>
 
@@ -218,9 +214,7 @@
             <div id="statsTab" class="tabContainer function" style="display: none">
                 <h2>Scranton-Tarioux Autonomous Topological Sink</h2>
 
-                <br>
-
-                <div id="statsWindow" class="mobileGrid" style="display: inline-grid; grid-template-columns: auto auto auto; text-align: center;">                
+                <div id="statsWindow" class="mobileGrid" style="display: flex; flex-direction: row; align-items: center; justify-content: center; text-align: center;">                
                     <div class="numpad">
                         <button class="padButton" onclick="num1Press()">1</button>
                         <button class="padButton" onclick="num2Press()">2</button>
@@ -242,7 +236,7 @@
                         <p>STATS is fabricating causality from macroquantum fluctuations...</p>
                     </div>
 
-                    <div id="modulesWindow" style="align-items: center; justify-content: center; width: 400px; margin-left: 2vw">
+                    <div id="modulesWindow" style="align-items: center; justify-content: center; height: fit-content; width: auto; margin-right: auto; margin-left: 2vw">
                         <div style="display: grid;">
                             <button id="activateM1Button" class="generalButton moduleButton" onclick="activateM1()">Activate Repair Module<br><span style="font-weight: normal; font-size: 90%;">requires: 50 causal fabric</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">compress causal fabric into 1000 hypermatter; unlock MAKe</span></button>
                             <button id="activateM2Button" class="generalButton moduleButton" onclick="activateM2()">Activate Observation Module<br><span style="font-weight: normal; font-size: 90%;">requires: high # universes generated</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">observe generated universes for 1 interreal ray; unlock SCAnR</span></button>
@@ -266,6 +260,8 @@
             </div>
 
             <div id="researchTab" class="tabContainer function" style="display: none">
+                <p></p>
+
                 <button id="studyButton" class="generalButton toggledOn">Study IFRAME<br><span style="font-weight: normal; font-size: 90%;">generates research while Research tab is open</span></button>
 
                 <p></p>
@@ -273,9 +269,7 @@
                 <div id="researchList" class="notation" style="width: 66%; margin: auto;">
                     <h2>Studies</h2>
 
-                    <p id="researchScore">0 (0.0/s) research available for studies.</p>
-
-                    <hr></hr>
+                    <p class="scoreLabel" style="margin-top: -1vh;" id="researchScore">0 (0.0/s) research available for studies.</p>
 
                     <button id="basicProgButton" class="generalButton" style="width: 33%; align-content: center; justify-content: center;" onclick="learnBasicProg()">Basic Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 10 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>It begins...</i></span></button>
 
@@ -318,7 +312,7 @@
                     <div id="programList" class="blockquote" style="max-height: 68vh; overflow-x: hidden; overflow-y: auto; height: fit-content; width: auto; max-width: 60%; margin-left: 1vw; display: flex; flex-direction: column; align-items: center;">
                         <h2>Algorithms</h2>
     
-                        <p style="margin-top: -1vh;">0% of 100 (0.0/s) max computations assigned</p>
+                        <p class="scoreLabel" style="margin-top: -1vh;">0% of 100 (0.0/s) max computations assigned</p>
     
                         <hr></hr>
 
@@ -443,9 +437,7 @@
                     <div id="upgradeWindow" class="blockquote" style="height: fit-content; width: auto; max-width: 66%; margin-left: 1vw;">
                         <h2>Upgrades</h2>
 
-                        <p id="mChipsScore">0 (0.0/s) microchips available for upgrades.</p>
-
-                        <hr></hr>
+                        <p class="scoreLabel" style="margin-top: -1vh;" id="mChipsScore">0 (0.0/s) microchips available for upgrades.</p>
 
                         <div id="upgradeWindow" style="width: auto; display: inline-grid; grid-template-columns: auto auto auto auto; gap: 4px;">
                             <button id="bUpgradeTermButton" class="generalButton basicUpgrade" onclick="bUpgradeTerm(1)">Basic Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 1 microchips</span><br><span style="font-weight: normal; font-size: 90%;">gain 20 computations</span></button>
@@ -492,9 +484,7 @@
                     <div id="functionWindow" class="blockquote" style="height: fit-content; width: auto; margin-left: 1vw;">
                         <h2>Functions</h2>
 
-                        <p id="fDataScore">0 (0.0/s) functionality data retrieved</p>
-
-                        <hr></hr>
+                        <p class="scoreLabel" style="margin-top: -1vh;" id="fDataScore">0 (0.0/s) functionality data retrieved</p>
 
                         <div style="width: auto; display: inline-grid; grid-template-columns: auto auto auto; gap: 6px; align-content: center;">
                             <button id="function1Button" class="generalButton funButton">F1<br><span style="font-weight: normal; font-size: 90%;">requires: 1 total FD</span><br><span style="font-weight: normal; font-size: 90%;">Research Tab is no longer reset by Repair Module</span></button>
@@ -515,21 +505,21 @@
                     <h2>Autonomous Emergency Generator of Interrealized Stability</h2>
 
                     <div id="hVolumeWindow" class="notation aegisBox">
-                        <p id="hVolumeScore">AEGIS is harnessing 90% of all causal fabric gain to manifest stable hypervolume of radius 0 AU (0.0/s)</p>
+                        <p class="scoreLabel" id="hVolumeScore">AEGIS is harnessing 90% of all causal fabric gain to manifest stable hypervolume of radius 0 AU (0.0/s)</p>
                         <p id="fabricAmpScore">causal fabric gain is exponentiated by 1.00 based on functional universes</p>
                     </div>
                     
                     <br>
 
                     <div id="mStabWindow" class="notation aegisBox">
-                        <p id="mStabScore">AEGIS is harnessing 90% of all hypermatter gain to induce 0 metastability (0.0/s)</p>
+                        <p class="scoreLabel" id="mStabScore">AEGIS is harnessing 90% of all hypermatter gain to induce 0 metastability (0.0/s)</p>
                         <p id="hMatterAmpScore">hypermatter is exponentiated by 1.00 based on metastability</p>
                     </div>
 
                     <br>
 
                     <div id="pStabWindow" class="notation aegisBox">
-                        <p id="pStabScore">AEGIS is harnessing 90% of all functionality data gain to imagine 0 patastability (0.0/s)</p>
+                        <p class="scoreLabel" id="pStabScore">AEGIS is harnessing 90% of all functionality data gain to imagine 0 patastability (0.0/s)</p>
                         <p id="mStabAmpScore">metastability is exponentiated by 1.00 based on patastability</p>
                     </div>
                 </div>
