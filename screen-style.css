@@ -32,8 +32,7 @@ blockquote, div.blockquote {
   background-color: var(--bmground);
   box-shadow: none;
   padding: 0.5em 1.5em;
-  margin: 0.5em;
-  margin-top: 1em;
+  margin: 0.5em 1em;
 }
 
 h1,
@@ -148,6 +147,7 @@ div.blockquote .generalButton:hover,
   height: fit-content;
   font-size: 90%;
   color: var(--fmground);
+  width: 98%;
 }
 
 .fileButton:hover, .fileSelected {
@@ -179,11 +179,6 @@ div.blockquote .generalButton:hover,
   border: 2px solid var(--fground);
 }
 
-.tabContainer {
-  border: none;
-  padding: 3.5px 0px;
-}
-
 .numpad {
   width: auto;
   height: 420px;
@@ -191,9 +186,7 @@ div.blockquote .generalButton:hover,
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;
-  margin-top: 0px;
-  margin-left: auto;
-  margin-right: 2vw;
+  margin: 1vw;
 }
 
 .padButton {
@@ -291,10 +284,4 @@ div.blockquote .generalButton:hover,
 
 ::-webkit-scrollbar-track {
   background: var(--bground);
-}
-
-@media (max-width: 707px) {
-  .mobileGrid {
-    grid-template-columns: auto;
-  }
 }
