@@ -49,6 +49,14 @@ h6 {
     letter-spacing: unset;
 }
 
+h2 {
+  color: var(--fground);
+}
+
+h1:hover {
+  color: var(--accent);
+}
+
 .notation {
     border-left: solid 4px var(--fmground);
     border-right: solid 4px var(--fmground);
