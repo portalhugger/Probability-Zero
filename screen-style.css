@@ -6,10 +6,10 @@
   --bground: #efe;
   --bmground: #cdc;
   --mground: #9a9;
-  --fmground: #676;
-  --fground: #232;
+  --fmground: #576;
+  --fground: #233;
 
-  --accent: #b46;
+  --accent: #c34;
 }
 
 body {
@@ -198,7 +198,7 @@ div.blockquote .generalButton:hover,
   justify-content: center;
   flex: 1 0 33.3333%;
   background-color: var(--bmground);
-  color: var(--fground);
+  color: var(--fmground);
   border: 2px solid var(--bground);
   box-sizing: border-box;
   font-family: 'Fira Code', monospace;

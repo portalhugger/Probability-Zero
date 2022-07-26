@@ -3,10 +3,10 @@ Shamrock (Default)
   --bground: #efe;
   --bmground: #cdc;
   --mground: #9a9;
-  --fmground: #676;
-  --fground: #232;
+  --fmground: #576;
+  --fground: #233;
 
-  --accent: #b46;
+  --accent: #c34;
 
 ----
 
