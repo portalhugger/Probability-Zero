@@ -6,7 +6,7 @@ Shamrock (Default)
   --fmground: #676;
   --fground: #232;
 
-  --accent: #c56;
+  --accent: #b46;
 
 ----
 
