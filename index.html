@@ -275,7 +275,7 @@
 
                     <p></p>
 
-                    <div class="mobileGrid" style="display: inline-grid; grid-template-columns: auto auto auto auto; gap: 4px;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(230px, 100%), 1fr)); gap: 4px;">
                         <button id="cryptoButton" class="generalButton" onclick="learnCrypto()">Cryptography<br><span style="font-weight: normal; font-size: 90%;">cost: 100 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
                         <button id="learnBUpgradeTermButton" class="generalButton" onclick="learnBasicUpgradeTerm()">Basic Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 300 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
                         <button id="advProgButton" class="generalButton" onclick="learnAdvProg()">Advanced Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 500 research</span><br><span style="font-weight: normal; font-size: 90%;">requires: 200 computational resources</span><br><span style="font-weight: normal; font-size: 90%;"><i>placeholder</i></span></button>
@@ -300,7 +300,7 @@
                 <p></p>
 
                 <div id="autoWindow" style="width: 80%; margin: auto; display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;">
-                    <div style="width: fit-content; min-width: 333px; margin: auto; margin-right: 1vw;">
+                    <div style="width: fit-content; min-width: 333px; margin: auto; padding: 20px;">
                         <p>[insert dropdown menu]</p>
     
                         <button id="programButton" class="generalButton holdButton">Program<br><span style="font-weight: normal; font-size: 90%;">hold to program selected algorithm</span></button>
@@ -311,7 +311,7 @@
                         </div>
                     </div>
     
-                    <div id="programList" class="blockquote" style="max-height: 72vh; overflow-x: hidden; overflow-y: auto; height: fit-content; width: auto; max-width: 66%; margin-right: auto; margin-left: 1vw; display: flex; flex-direction: column; align-items: center;">
+                    <div id="programList" class="blockquote" style="max-height: 72vh; overflow-x: hidden; overflow-y: auto; height: fit-content; width: auto; max-width: 66%; margin: auto; display: flex; flex-direction: column; align-items: center;">
                         <h2>Algorithms</h2>
     
                         <p class="scoreLabel" style="margin-top: -1vh;">0% of 100 (0.0/s) max computations assigned</p>
@@ -423,8 +423,8 @@
             <div id="makeTab" class="tabContainer function" style="display: none">
                 <h1>Matter Assembly Kaleidoscope</h1>
 
-                <div id="makeWindow" style="width: 80%; margin: auto; margin-top: -2vh; display: flex; flex-direction: row; align-items: center; justify-content: center;">
-                    <div style="width: fit-content; margin-left: auto; margin-right: 1vw;">
+                <div id="makeWindow" style="width: 80%; margin: auto; display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;">
+                    <div style="width: fit-content; margin: auto; padding: 20px;">
                         <p id="hMatterScore">500g (0.0/s) hypermatter available for assembly.</p>
     
                         <button id="assembleButton" class="generalButton" onclick="genParts(1)">Assemble<br><span style="font-weight: normal; font-size: 90%;">cost: 100 hypermatter</span><br><span style="font-weight: normal; font-size: 90%;">construct spare parts</span></button>
@@ -436,14 +436,14 @@
                         <button id="disassembleButton" class="generalButton" onclick="genMChips(1)">Disassemble<br><span style="font-weight: normal; font-size: 90%;">cost: 1 spare part</span><br><span style="font-weight: normal; font-size: 90%;">recover microchips</span></button>    
                     </div>
                     
-                    <div id="upgradeWindow" class="blockquote" style="height: fit-content; width: auto; max-width: 66%; margin-left: 1vw;">
+                    <div id="upgradeWindow" class="blockquote" style="height: fit-content; width: auto; max-width: 66%; margin: auto;">
                         <h2>Upgrades</h2>
 
                         <p class="scoreLabel" style="margin-top: -1vh;" id="mChipsScore">0 (0.0/s) microchips available for upgrades.</p>
 
                         <button id="maxUpgradeButton" class="generalButton" style="margin-bottom: 6px;">Max All</button>
 
-                        <div id="upgradeWindow" style="width: auto; display: inline-grid; grid-template-columns: auto auto auto auto; gap: 4px;">
+                        <div id="upgradeWindow" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); gap: 4px;">
                             <button id="bUpgradeTermButton" class="generalButton basicUpgrade" onclick="bUpgradeTerm(1)">Basic Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 1 microchips</span><br><span style="font-weight: normal; font-size: 90%;">gain 20 computations</span></button>
                             <button id="bUpgradeLuckButton" class="generalButton basicUpgrade" onclick="bUpgradeLuck(1)">Basic Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">cost: 1 microchips</span><br><span style="font-weight: normal; font-size: 90%;">increase universe gain by 0.1% (compounding)</span></button>
                             <button id="bUpgradeStatsButton" class="generalButton basicUpgrade" onclick="bUpgradeStats(1)">Basic Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 10 microchips</span><br><span style="font-weight: normal; font-size: 90%;">decrease IFRAME's global tickrate by 1%</span></button>

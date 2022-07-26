@@ -4,7 +4,7 @@
 
 :root {
   --bground: #efe;
-  --bmground: #cdc;
+  --bmground: #ced;
   --mground: #9a9;
   --fmground: #576;
   --fground: #233;
@@ -97,6 +97,10 @@ h1:hover {
 .generalButton:hover, .toggledOn {
   background-color: var(--bground);
   border-color: var(--fground);
+}
+
+.tabContainer .generalButton {
+  min-width: min(200px, 100%);
 }
 
 .toggledOn {
