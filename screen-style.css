@@ -186,7 +186,7 @@ div.blockquote .generalButton:hover,
   display: flex;
   flex-flow: row wrap;
   box-sizing: border-box;
-  margin: 1vw;
+  margin: 1vh;
 }
 
 .padButton {
@@ -215,27 +215,17 @@ div.blockquote .generalButton:hover,
 .progressBar {
   border: 2px var(--fmground) solid;
   background-color: var(--mground);
-  width: 33%;
+  width: min(333px, 100%);
   margin: auto;
   height: 3vh;
 }
 
 .programBox {
-  width: 90%;
-  margin-top: 12px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--bmground);
+  width: auto;
+  margin: 12px auto;
   border-left: 8px solid var(--fmground);
   padding: 2px 16px;
   text-align: left;
-}
-
-.programBox p {
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 
 .compAssignBox {
@@ -245,9 +235,7 @@ div.blockquote .generalButton:hover,
   flex-wrap: none;
   justify-content: center;
   align-items: center;
-  margin: 1vw;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin: auto;
 }
 
 .luckVisualBox, .scanrVisualBox {

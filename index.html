@@ -36,8 +36,8 @@
             <div id="filesTab" class="tabContainer function">
                 <div id="fileWindow" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; width: fit-content; margin: auto;">
                     <div id="fileList" class="blockquote" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: min(min-content, 100%); max-height: 72vh; overflow-y: auto; height: fit-content; margin: min(0.5vw, unset);">
-                        <button class="fileButton fileLink fileSelected" onclick="openFile(event,'introFile')">PROCEDURES.doc</button>
-                        <button class="fileButton fileLink" onclick="openFile(event,'guideFile')">MANUAL.doc</button>
+                        <button class="fileButton fileLink fileSelected" onclick="openFile(event,'introFile')">7000.doc</button>
+                        <button class="fileButton fileLink" onclick="openFile(event,'guideFile')">HANDBOOK.doc</button>
 
                         <button class="fileButton fileLink" onclick="openFile(event,'moduleFile1')">REPAIR.doc</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'moduleFile2')">OBSERVATION.doc</button>
@@ -65,10 +65,10 @@
                         <button class="fileButton fileLink" onclick="openFile(event,'tracedFile2')">file_fragment_2.doc</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'tracedFile3')">file_fragment_3.doc</button>
                         <button class="fileButton fileLink" onclick="openFile(event,'tracedFile4')">file_fragment_4.doc</button>
-                        <button class="fileButton fileLink" onclick="openFile(event,'tracedFile5')">SCP-7000_original.doc</button>
+                        <button class="fileButton fileLink" onclick="openFile(event,'tracedFile5')">7000_reconstructed.doc</button>
                     </div>
 
-                    <div id="fileViewer" class="blockquote" style="width: fit-content; max-width: max(50vw, 500px); max-height: 72vh; overflow-x: hidden; overflow-y: auto; margin: min(0.5vw, unset);">
+                    <div id="fileViewer" class="blockquote" style="width: fit-content; max-width: max(52vw, 500px); max-height: 72vh; overflow-x: hidden; overflow-y: auto; margin: min(0.5vw, unset);">
                     <!-- Initial Files -->
 
                         <div id="introFile" class="function1">
@@ -214,7 +214,7 @@
                 <h1>Scranton-Tarioux Autonomous Topological Sink</h1>
 
                 <div id="statsWindow" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center;">
-                    <div id="modulesWindow" style="align-items: center; justify-content: center; height: fit-content; width: auto; margin: 0.5vw;">
+                    <div id="modulesWindow" style="align-items: center; justify-content: center; height: fit-content; width: auto; margin: 1vh;">
                         <div style="display: grid;">
                             <button id="activateM1Button" class="generalButton moduleButton" onclick="activateM1()">Activate Repair Module<br><span style="font-weight: normal; font-size: 90%;">requires: 50 causal fabric</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">compress causal fabric into 1000 hypermatter; unlock MAKe</span></button>
                             <button id="activateM2Button" class="generalButton moduleButton" onclick="activateM2()">Activate Observation Module<br><span style="font-weight: normal; font-size: 90%;">requires: high # universes generated</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">observe generated universes for 1 interreal ray; unlock SCAnR</span></button>
@@ -223,7 +223,7 @@
                         </div>
                     </div>
 
-                    <div style="width: fit-content; margin: 0.5vw;">
+                    <div style="width: fit-content; margin: 1vh;">
                         <canvas id="luckVisual" class="luckVisualBox" width="max(400px, 100%)" height="300px"></canvas>
 
                         <p>STATS is fabricating causality from macroquantum fluctuations...</p>
@@ -289,7 +289,7 @@
                         <button id="learnAdvUpgradeStatsButton" class="generalButton" onclick="learnAdvUpgradeStats()">Advanced Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 4e5 research</span></button>
                         <button id="learnBUpgradeScanrButton" class="generalButton" onclick="learnBasicUpgradeScanr()">Basic Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">cost: 4000 research</span></button>
                         <button id="learnAdvUpgradeScanrButton" class="generalButton" onclick="learnAdvUpgradeScanr()">Advanced Upgrade: SCAnR<br><span style="font-weight: normal; font-size: 90%;">cost: 1e13 research</span></button>
-                        <button id="convProgButton" class="generalButton" onclick="learnConvProg()">Convergent Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 1e16 research</span><br><span style="font-weight: normal; font-size: 90%;">requires: 1 Total Functionality Data</span></button>
+                        <button id="convProgButton" class="generalButton" onclick="learnConvProg()">Convergent Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 1e16 research</span></button>
                         <button id="learnEnhUpgradeTermButton" class="generalButton" onclick="learnEnhUpgradeTerm()">Enhanced Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 5e17 research</span></button>
                         <button id="learnEnhUpgradeLuckButton" class="generalButton" onclick="learnEnhUpgradeLuck()">Enhanced Upgrade: LUCK<br><span style="font-weight: normal; font-size: 90%;">cost: 5e17 research</span></button>
                         <button id="learnEnhUpgradeStatsButton" class="generalButton" onclick="learnEnhUpgradeStats()">Enhanced Upgrade: STATS<br><span style="font-weight: normal; font-size: 90%;">cost: 5e17 research</span></button>
@@ -303,121 +303,133 @@
 
                 <div id="autoWindow" style="width: 80%; margin: auto; display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;">
                     <div style="width: fit-content; min-width: 333px; margin: auto; padding: 20px;">
-                        <p>[insert dropdown menu]</p>
+                        <select name="unprogrammedAlgorithms" id="unprogrammedAlgorithms">
+                            <option value="autoClicker">Auto-Clicker</option>
+                            <option value="decryption">Decryption</option>
+                            <option value="autoStudy">Auto-Study</option>
+                            <option value="restoration">Restoration</option>
+                            <option value="optimization">Optimization</option>
+
+                        </select>
+                        
+                        <br>
+
+                        <button id="programButton" class="generalButton holdButton" style="margin: 1vh;">Program<br><span style="font-weight: normal; font-size: 90%;">hold to program selected algorithm</span></button>
     
-                        <button id="programButton" class="generalButton holdButton">Program<br><span style="font-weight: normal; font-size: 90%;">hold to program selected algorithm</span></button>
-    
-                        <p></p>
+                        <br>
     
                         <div id="programProgress" class="progressBar" style="width: 100%">
                         </div>
                     </div>
     
-                    <div id="programList" class="blockquote" style="max-height: 72vh; overflow-x: hidden; overflow-y: auto; height: fit-content; width: auto; max-width: 66%; margin: auto; display: flex; flex-direction: column; align-items: center;">
+                    <div id="programList" class="blockquote" style="max-height: 72vh; overflow-x: hidden; overflow-y: auto; height: fit-content; min-width: min(500px, 100%); max-width: max(60vw, 500px); margin: auto;">
                         <h2>Algorithms</h2>
     
                         <p class="scoreLabel" style="margin-top: -1vh;">0% of 100 (0.0/s) total computations assigned</p>
     
                         <hr></hr>
 
-                        <div id="autoClickerWindow" class="programBox">
-                            <p style="width: 66%; margin-right: 40px;" id="autoClickerScore"><b><u>Auto-Clicker v1</u></b>: attempts to activate the LUCK every (3000/assigned computations) seconds</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: 1vh; height: fit-content;">
+                            <div id="autoClickerBox" class="programBox">
+                                <p id="autoClickerScore"><b><u>Auto-Clicker v1</u></b>: attempts to activate the LUCK every (3000/assigned computations) seconds</p>
+                            </div>
                             <div id="autoClickerProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subAutoClickerCompsButton" class="tinyButton">- </button> <p id="autoClickerCompsScore">0%</p> <button id="addAutoClickerCompsButton" class="tinyButton">+ </button>
                             </div>
-                        </div>
-    
-                        <div id="autoClickerBox" class="programBox">
-                            <p style="width: 66%; margin-right: 40px;" id="decryptionScore"><b><u>Decryption v1</u></b>: decrypts hidden files</p>
+
+                            <div id="decryptionBox" class="programBox">
+                                <p id="decryptionScore"><b><u>Decryption v1</u></b>: decrypts hidden files</p>
+                            </div>
                             <div id="decryptionProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subDecryptionCompsButton" class="tinyButton">- </button> <p id="decryptionCompsScore">0%</p> <button id="addDecryptionCompsButton" class="tinyButton">+ </button>
                             </div>
-                        </div>
-    
-                        <div id="autoStudyBox" class="programBox">
-                            <p style="width: 66%; margin-right: 40px;" id="autoStudyScore"><b><u>Auto-Study v1</u></b>: studies automatically, producing 0.005/sec research per assigned computation</p>
+                            
+                            <div id="autoStudyBox" class="programBox">
+                                <p id="autoStudyScore"><b><u>Auto-Study v1</u></b>: studies automatically, producing 0.005/sec research per assigned computation</p>
+                            </div>
                             <div id="autoStudyProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subAutoStudyCompsButton" class="tinyButton">- </button> <p id="autoStudyCompsScore">0%</p> <button id="addAutoStudyCompsButton" class="tinyButton">+ </button>
                             </div>
-                        </div>
-    
-                        <div id="restoreBox" class="programBox">
-                            <p style="width: 66%; margin-right: 40px;" id="restoreScore"><b><u>Restoration v1</u></b>: restores corrupted files</p>
+
+                            <div id="restoreBox" class="programBox">
+                                <p id="restoreScore"><b><u>Restoration v1</u></b>: restores corrupted files</p>
+                            </div>
                             <div id="restoreProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subRestoreCompsButton" class="tinyButton">- </button> <p id="restoreCompsScore">0%</p> <button id="addRestoreCompsButton" class="tinyButton">+ </button>
                             </div>
-                        </div>
-    
-                        <div id="optimizeBox" class="programBox">
-                            <p style="width: 66%; margin-right: 40px;" id="optimizeScore"><b><u>Optimization v1</u></b>: optimizes programs of the same or lower version (in unlock order), replacing them with its next respective version.</p>
+        
+                            <div id="optimizeBox" class="programBox">
+                                <p id="optimizeScore"><b><u>Optimization v1</u></b>: optimizes programs of the same or lower version (in unlock order), replacing them with its next respective version.</p>
+                            </div>
                             <div id="optimizeProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subOptiCompsButton" class="tinyButton">- </button> <p id="optiCompsScore">0%</p> <button id="addOptiCompsButton" class="tinyButton">+ </button>
                             </div>
-                        </div>
-    
-                        <div id="restoreBox" class="programBox">
-                            <p style="width: 66%; margin-right: 40px;" id="autoProgramScore"><b><u>Auto-Program v1</u></b>: automatically programs unlocked programs at 0.1% per assigned computation of normal rate</p>
+        
+                            <div id="autoProgramBox" class="programBox">
+                                <p id="autoProgramScore"><b><u>Auto-Program v1</u></b>: automatically programs unlocked programs at 0.1% per assigned computation of normal rate</p>
+                            </div>
                             <div id="autoProgramProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subAutoProgramCompsButton" class="tinyButton">- </button> <p id="autoProgramCompsScore">0%</p> <button id="addAutoProgramCompsButton" class="tinyButton">+ </button>
                             </div>
-                        </div>
-    
-                        <div id="designBox" class="programBox">
-                            <p style="width: 66%; margin-right: 40px;" id="designScore"><b><u>Design v1</u></b>: unlocks Advanced Upgrades</p>
+        
+                            <div id="designBox" class="programBox">
+                                <p id="designScore"><b><u>Design v1</u></b>: unlocks Advanced Upgrades</p>
+                            </div>
                             <div id="designProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subDesignCompsButton" class="tinyButton">- </button> <p id="designCompsScore">0%</p> <button id="addDesignCompsButton" class="tinyButton">+ </button>
                             </div>
-                        </div>
-    
-                        <div id="synthBox" class="programBox">
-                            <p style="width: 66%; margin-right: 40px;" id="synthScore"><b><u>Synthesis v1</u></b>: increase chance to generate functional universe based on total functionality data multiplied by computations</p>
+
+                            <div id="synthBox" class="programBox">
+                                <p id="synthScore"><b><u>Synthesis v1</u></b>: increase chance to generate functional universe based on total functionality data multiplied by computations</p>
+                            </div>
                             <div id="synthProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subSynthCompsButton" class="tinyButton">- </button> <p id="synthCompsScore">0%</p> <button id="addSynthCompsButton" class="tinyButton">+ </button>
                             </div>
-                        </div>
-    
-                        <div id="autoUpgradeBox" class="programBox">
-                            <p style="width: 66%; margin-right: 40px;" id="autoUpgradeScore"><b><u>Auto-Upgrade v1</u></b>: converts 0.1% per computation of hypermatter gain to microchips, purchases Basic Upgrades automatically</p>
+        
+                            <div id="autoUpgradeBox" class="programBox">
+                                <p id="autoUpgradeScore"><b><u>Auto-Upgrade v1</u></b>: converts 0.1% per computation of hypermatter gain to microchips, purchases Basic Upgrades automatically</p>
+                            </div>
                             <div id="autoUpgradeProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subAutoUpgradeCompsButton" class="tinyButton">- </button> <p id="autoUpgradeCompsScore">0%</p> <button id="addAutoUpgradeCompsButton" class="tinyButton">+ </button>
                             </div>
-                        </div>
-    
-                        <div id="chronoBox" class="programBox">
-                            <p style="width: 66%; margin-right: 40px;" id="chronoScore"><b><u>Chronolocation v1</u></b>: isolate unstable files to oblique possibilities</p>
+        
+                            <div id="chronoBox" class="programBox">
+                                <p id="chronoScore"><b><u>Chronolocation v1</u></b>: isolate unstable files to oblique possibilities</p>
+                            </div>
                             <div id="chronoProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subChronoCompsButton" class="tinyButton">- </button> <p id="chronoCompsScore">0%</p> <button id="addChronoCompsButton" class="tinyButton">+ </button>
                             </div>
-                        </div>
-    
-                        <div id="redesignBox" class="programBox">
-                            <p style="width: 66%; margin-right: 40px;" id="redesignScore"><b><u>Redesign v1</u></b>: unlocks Enhanced Upgrades</p>
+        
+                            <div id="redesignBox" class="programBox">
+                                <p id="redesignScore"><b><u>Redesign v1</u></b>: unlocks Enhanced Upgrades</p>
+                            </div>
                             <div id="redesignProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subRedesignCompsButton" class="tinyButton">- </button> <p id="redesignCompsScore">0%</p> <button id="addRedesignCompsButton" class="tinyButton">+ </button>
                             </div>
                         </div>
+                        
                     </div>    
                 </div>
             </div>
