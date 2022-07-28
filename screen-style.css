@@ -50,6 +50,7 @@ h6 {
     color: var(--fmground);
     text-transform: uppercase;
     letter-spacing: unset;
+    margin: auto 1em;
 }
 
 h1:hover {
@@ -100,6 +101,9 @@ h1:hover {
   border-color: var(--fground);
 }
 
+.tabContainer {
+  margin-top: -10px;
+}
 .tabContainer .generalButton {
   min-width: min(200px, 100%);
 }
@@ -244,13 +248,13 @@ div.blockquote .generalButton:hover,
 .luckVisualBox, .scanrVisualBox {
   border: 2px solid var(--fground);
   background-color: var(--fmground);
-  margin: auto;
-  margin-left: 1em;
+  margin: 1vh;
 }
 
 .aegisBox {
   width: auto;
-  margin: auto;
+  margin-left: 24px;
+  margin-right: 8px;
 }
 
 .scoreLabel {
@@ -277,4 +281,8 @@ div.blockquote .generalButton:hover,
 
 ::-webkit-scrollbar-track {
   background: var(--bground);
+}
+
+.vivaldi-picture-in-picture-button {
+  display: none;
 }

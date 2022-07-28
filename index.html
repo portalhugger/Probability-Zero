@@ -17,7 +17,7 @@
             <p id="primeChance" class="scoreLabel" style="margin: -8px;">1 in 7.7e77777 per activation</p>
             <p id="uniScore" class="scoreLabel">0 (0.0/s) universes generated</p>
 
-            <div style="width: 100%; text-align: center; margin: 16px;">
+            <div style="width: 100%; text-align: center; margin: 12px;">
                 <button class="generalButton tabLink tabSelected" onclick="openTab(event,'filesTab')">Files</button>
                 <button class="generalButton tabLink" onclick="openTab(event,'luckTab')">LUCK</button>
                 <button class="generalButton tabLink" onclick="openTab(event,'statsTab')">STATS</button>
@@ -196,12 +196,14 @@
             </div>
 
             <div id="luckTab" class="tabContainer function" style="display: none">
-                <div class="luckWindow">
+                <div class="luckWindow" style="width: 95vw; margin: auto;">
                     <h1>Liminal Universe Creation Keystone Mk. VII</h1>
 
                     <p class="scoreLabel" id="fabricScore">0 (0.0/s) causal fabric extrapolated</p>
 
                     <button id="genUniButton" class="generalButton" onclick="genUni()">Generate Universe<br><span style="font-weight: normal; font-size: 90%;">cost: 1 causal fabric</span></button>
+
+                    <hr style="width: 500px;"></hr>
 
                     <p class="scoreLabel" id="tDataScore">0 (0.0/s) trace data reconstructed</p>
 
@@ -223,9 +225,12 @@
                     </div>
 
                     <div style="width: fit-content; margin: 1vh;">
-                        <canvas id="luckVisual" class="luckVisualBox" width="max(400px, 100%)" height="300px"></canvas>
-
-                        <p>STATS is extrapolating causal fabric from macroquantum fluctuations...</p>
+                        <video style="max-width: 366px; height: min-content; margin: 1vh auto; filter: invert(0.25) sepia(100%) hue-rotate(100deg); border: 4px #232 solid;" muted autoplay loop>
+                            <source src="https://i.imgur.com/IKHu0Ey.mp4" type="video/mp4" />
+                            STATS animation
+                        </video>
+                        <br>
+                        <p>Extrapolating causal fabric from macroquantum fluctuations...</p>
                     </div>
                     
                     <div class="numpad">
@@ -248,14 +253,18 @@
 
                 <h2>Options</h2>
 
-                <div style="width: 80%; margin: auto; align-content: center;">
-                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(230px, 100%), 1fr)); gap: 4px;">
+                <p></p>
+
+                <div style="width: 100vw; align-items: center;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(230px, 100%), 1fr)); gap: 4px; margin: auto; max-width: 1000px;">
                         <button class="generalButton" onclick="manualSave()">SAVE GAME</button>
                         <button class="generalButton" onclick="resetSave()">HARD RESET</button>
                         <button class="generalButton">TOGGLE LIGHT/DARKMODE</button>
                         <button class="generalButton">EXPORT SAVE</button>
-                        <button class="generalButton">TOGGLE AUDIO</button> <!-- this should probably just have an icon label, not text -->
-    
+                        <button class="generalButton">EXPORT SAVE</button>
+                        <button class="generalButton">EXPORT SAVE</button>
+
+
                     </div>
                 </div>
             </div>
@@ -270,7 +279,9 @@
                 <div id="researchList" class="notation" style="width: 66%; margin: auto;">
                     <h2>Studies</h2>
 
-                    <p class="scoreLabel" style="margin-top: -1vh;" id="researchScore">0 (0.0/s) research available for studies.</p>
+                    <p class="scoreLabel" id="researchScore">0 (0.0/s) research available for studies.</p>
+
+                    <hr></hr>
 
                     <button id="basicProgButton" class="generalButton" style="width: 33%; align-content: center; justify-content: center;" onclick="learnBasicProg()">Basic Programming<br><span style="font-weight: normal; font-size: 90%;">cost: 10 research</span><br><span style="font-weight: normal; font-size: 90%;"><i>It begins...</i></span></button>
 
@@ -321,10 +332,10 @@
                         </div>
                     </div>
     
-                    <div id="programList" class="blockquote" style="max-height: 72vh; overflow-x: hidden; overflow-y: auto; height: fit-content; max-width: max(60vw, 100%); margin: 1vh;">
+                    <div id="programList" class="blockquote" style="max-height: 72vh; overflow-x: hidden; overflow-y: auto; height: fit-content; max-width: max(60vw, 100%); margin: 1vh; padding: 20px;">
                         <h2>Algorithms</h2>
     
-                        <p class="scoreLabel" style="margin-top: -1vh;">0% of 100 (0.0/s) total computations assigned</p>
+                        <p class="scoreLabel">0% of 100 (0.0/s) total computations assigned</p>
     
                         <hr></hr>
 
@@ -437,7 +448,7 @@
                 <h1>Matter Assembly Kaleidoscope</h1>
 
                 <div id="makeWindow" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center;">
-                    <div style="height: fit-content; width: min(350px, 100%); margin: 1vw; padding: 20px;">
+                    <div style="height: fit-content; width: min(366px, 100%); margin: auto 1vw;">
                         <p id="hMatterScore" class="scoreLabel">500g (0.0/s) hypermatter available for assembly.</p>
     
                         <button id="assembleButton" class="generalButton" onclick="genParts(1)">Assemble<br><span style="font-weight: normal; font-size: 90%;">cost: 100 hypermatter</span><br><span style="font-weight: normal; font-size: 90%;">construct spare parts</span></button>
@@ -449,12 +460,12 @@
                         <button id="disassembleButton" class="generalButton" onclick="genMChips(1)">Disassemble<br><span style="font-weight: normal; font-size: 90%;">cost: 1 spare part</span><br><span style="font-weight: normal; font-size: 90%;">recover microchips</span></button>    
                     </div>
                     
-                    <div id="upgradeWindow" class="blockquote" style="height: fit-content; width: auto; max-width: 60%; margin: 1vw;">
+                    <div id="upgradeWindow" class="blockquote" style="height: fit-content; width: auto; max-width: 60%; margin: 1vh; padding: 20px;">
                         <h2>Upgrades</h2>
 
-                        <p class="scoreLabel" style="margin-top: -1vh;" id="mChipsScore">0 (0.0/s) microchips available for upgrades.</p>
+                        <p class="scoreLabel" id="mChipsScore">0 (0.0/s) microchips available for upgrades.</p>
 
-                        <button id="maxUpgradeButton" class="generalButton" style="margin-bottom: 6px;">Max All</button>
+                        <hr></hr>
 
                         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); gap: 4px;">
                             <button id="bUpgradeTermButton" class="generalButton basicUpgrade" onclick="bUpgradeTerm(1)">Basic Upgrade: Terminal<br><span style="font-weight: normal; font-size: 90%;">cost: 1 microchips</span><br><span style="font-weight: normal; font-size: 90%;">gain 20 computations</span></button>
@@ -480,23 +491,27 @@
                 <h1>Stochastic Causality Arborization Radar</h1>
 
                 <div id="scanrWindow" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center;">
-                    <div style="width: fit-content; margin: 1vh;">
+                    <div style="height: fit-content; width: min(400px, 100%); margin: 1vh 1vw;">
                         <p id="fUniScore" class="scoreLabel">1 (0.0/s) unscanned functional universe detected</p>
-                        <p id="iRayScore" class="scoreLabel" style="margin-top: -1em;">1 (0.0/s) interreal ray available</p>
+                        <p id="iRayScore" class="scoreLabel">1 (0.0/s) interreal ray available</p>
     
                         <button id="scanButton" class="generalButton" onclick="genFData(1)">Scan Universe<br><span style="font-weight: normal; font-size: 90%;">cost: 1 interreal ray;</span><br><span style="font-weight: normal; font-size: 90%;">1 unscanned functional universe</span><br><span style="font-weight: normal; font-size: 90%;">generate 1 functionality data</span></button>
                     
                         <p></p>
                         
-                        <canvas id="scanrVisual" class="scanrVisualBox" width="max(400px, 100%)" height="300px"></canvas>
+                        <video style="width: min(444px, 100%); height: min-content;" muted autoplay loop>
+                            <source src="https://i.imgur.com/uFNbaZz.mp4" type="video/mp4" />
+                        </video>
 
                         <p id="scanStatusScore" class="scoreLabel"><b>Scanned universe status:</b> N/A</p>
                     </div>
                     
-                    <div id="functionWindow" class="blockquote" style="height: fit-content; width: auto; margin: 1vh; max-width: 50%;">
+                    <div id="functionWindow" class="blockquote" style="height: fit-content; width: auto; max-width: 50%; margin: auto 1vw; padding: 20px;">
                         <h2>Functions</h2>
 
-                        <p class="scoreLabel" style="margin-top: -1vh;" id="fDataScore">0 (0.0/s) functionality data retrieved</p>
+                        <p class="scoreLabel" id="fDataScore">0 (0.0/s) functionality data retrieved</p>
+
+                        <hr></hr>
 
                         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr)); gap: 4px;">
                             <button id="function1Button" class="generalButton funButton">F1<br><span style="font-weight: normal; font-size: 90%;">requires: 1 total FD</span><br><span style="font-weight: normal; font-size: 90%;">Research Tab is no longer reset by Repair Module</span></button>
@@ -514,6 +529,8 @@
             <div id="aegisTab" class="tabContainer function" style="display: none">
                 <div id="aegisWindow">
                     <h1>Autonomous Emergency Generator of Interrealized Stability</h1>
+
+                    <p></p>
 
                     <div id="hVolumeWindow" class="notation aegisBox">
                         <p class="scoreLabel" id="hVolumeScore">AEGIS is harnessing 90% of all causal fabric gain to manifest stable hypervolume of radius 0 (0.0/s) AU</p>
@@ -540,8 +557,8 @@
                 <h1>Chronological Authority Reconstruction Matrix</h1>
 
                 <div id="charmWindow" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center;">
-                    <div style="height: fit-content; width: min(350px, 100%); margin: 1vw; padding: 20px;">
-                        <p id="rRayScore" class="scoreLabel" style="margin-top: -1em;">1 (0.0/s) retrocausal ray available</p>
+                    <div style="height: fit-content; width: min(400px, 100%); margin: 1vh 1vw;">
+                        <p id="rRayScore" class="scoreLabel">1 (0.0/s) retrocausal ray available</p>
     
                         <button id="reconButton" class="generalButton" onclick="genTData(1)">Reconstruct<br><span style="font-weight: normal; font-size: 90%;">cost: 1 retrocausal ray;</span><br><span style="font-weight: normal; font-size: 90%;">generate 1 trace data</span></button>
                     </div>
