@@ -11,7 +11,7 @@
 <body>
     <div id="filesTab" class="tabContainer function">
         <div id="fileWindow" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; width: fit-content; margin: auto;">
-            <div id="fileList" class="blockquote" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: min(min-content, 100%); max-height: 72vh; overflow-y: auto; height: fit-content; margin: min(0.5vw, unset);">
+            <div id="fileList" class="blockquote" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: min(min-content, 100%); max-height: 72vh; overflow-x: hidden; overflow-y: auto; height: fit-content; margin: min(0.5vw, unset);">
                 <button class="fileButton fileLink fileSelected" onclick="openFile(event,'introFile')">7000.doc</button>
                 <button class="fileButton fileLink" onclick="openFile(event,'guideFile')">HANDBOOK.doc</button>
 
@@ -44,16 +44,16 @@
                 <button class="fileButton fileLink" onclick="openFile(event,'tracedFile5')">7000_reconstructed.doc</button>
             </div>
 
-            <div id="fileViewer" class="blockquote" style="width: fit-content; max-width: max(52vw, 500px); max-height: 72vh; overflow-x: hidden; overflow-y: auto; margin: min(0.5vw, unset);">
+            <div id="fileViewer" class="blockquote" style="width: fit-content; max-width: max(50vw, 500px); max-height: 72vh; overflow-x: hidden; overflow-y: auto; margin: min(0.5vw, unset); border-top: #576 4px dotted;">
             <!-- Initial Files -->
 
                 <div id="introFile" class="function1">
-                    <p><span class="bt">DESIGNATION:</span> SCP-7000<br><span class="bt">CLASS:</span> Metapollyon<sup><span class="bt">1</span></sup></p>
+                    <p><span class="bt">DESIGNATION:</span> SCP-7000<br><span class="bt">CLASS:</span> Metapollyon<sup><span class="bt" style="color: #e25;">1</span></sup></p>
 
                     <hr></hr>
 
                     <div style="text-align: left">
-                        <p><span class="bt">CONTAINMENT PROCEDURES</span>: SCP-7000<sup><span class="bt">2</span></strong></sup> maintains an omniversal failure of standard causality, and is currently subject to <a href="https://scp-wiki.wikidot.com/scp-3125">inverted containment protocols</a>; prior to total annihilation, SCP Foundation Temporal Anomalies Department Iteration-Prime compactified all remaining universes, <a href="https://wanderers-library.wikidot.com">hyper-nexuses</a>, and other <a href="https://scp-wiki.wikidot.com/welcome-to-delta-t">extracausal spaces</a> into the Infinitely-Fortified Reality for Annihilated Multiverse Events (IFRAME), a single reinforced pocket-universe impervious to structural collapse. Due to severely limited resources, its physio-informational size is minimized; its contents are restricted to</p>
+                        <p><span class="bt">CONTAINMENT PROCEDURES</span>: SCP-7000<sup><span class="bt" style="color: #e25;">2</span></strong></sup> maintains an omniversal failure of standard causality, and is currently subject to <a href="https://scp-wiki.wikidot.com/scp-3125">inverted containment protocols</a>; prior to total annihilation, SCP Foundation Temporal Anomalies Department Iteration-Prime compactified all remaining universes, <a href="https://wanderers-library.wikidot.com">hyper-nexuses</a>, and other <a href="https://scp-wiki.wikidot.com/welcome-to-delta-t">extracausal spaces</a> into the Infinitely-Fortified Reality for Annihilated Multiverse Events (IFRAME), a single reinforced pocket-universe impervious to structural collapse. Due to severely limited resources, the IFRAME's physical/informational size is minimized; its contents are restricted to</p>
 
                         <ul>
                             <li>a single ontokinetically-sealed room resembling Temporal Site-01's Directorial Office, harboring</li>
@@ -63,23 +63,26 @@
                             <li>D-7000, a member of Foundation personnel augmented with comprehensive static immortality.</li>
                         </ul>
 
-                        <p>D-7000 is to repeatedly generate randomized universes (and maintain related equipment, as necessary) until, if at all possible, a variation of the Prime-Timeline is generated with immunity to SCP-7000's effect. Assuming the LUCK is capable of generating such a universe, and is kept continuously active, containment of SCP-7000 will be achieved within ~10x10<sup>77777</sup> seconds.</sup></p>
+                        <p>D-7000 is to repeatedly generate randomized universes (and maintain related equipment)<sup><span class="bt" style="color: #e25;">3</span></sup> until, if at all possible, a variation of the Prime-Timeline is generated with immunity to SCP-7000's effect. Assuming the LUCK is capable of generating such a universe, containment of SCP-7000 will be achieved within 10<sup>77777</sup> activations.</sup></p>
 
-                        <p><span class="bt">DESCRIPTION</span>: SCP-7000 designates an arbitrary ongoing Meta-ZK-Class ("End of Causality") Event necessitating activation of the IFRAME.</p>
+                        <p><span class="bt">DESCRIPTION</span>: SCP-7000 designates an arbitrary ongoing Meta-ZK-Class ("End of Causality") Event necessitating activation of the IFRAME. This event is precipitated by </p>
                 
                         <p style="font-family: 'Fira Code', monospace; text-align: center"><i>[DATA LOST]</i></p>
 
                         <hr></hr>
 
-                        <div style="font-family: 'Work Sans', sans-serif; font-size: 90%; width: 96%; padding: 16px; padding-left: 12px; margin: auto; margin-bottom: 10px; border-left: 4px solid #565;">
-                            <p style="margin-top: -10px;" id="footnote-1"><strong>1.</strong> Anomaly is uncontainable on a multiversal scale and is actively causing the end of all worlds.</p>
-                            <p style="margin-top: -10px; margin-bottom: -10px;" id="footnote-2"><strong>2.</strong> As SCP-7000 may or may not transcend standard notions of causality, its existence is technically uncertain. This document's use of the SCP-7000 designation may or may not reinforce the hypothetical anomaly it references, possibly necessitating the interjection of uncertainty into any authoritative statement regarding its potential properties. The presence of said uncertainty (or lack thereof) is not necessarily indicative of any particular anomaly's existence.</p>
+                        <div style="font-family: 'Work Sans', sans-serif; font-size: 88%; width: 96%; padding: 20px; padding-left: 12px; margin: auto; margin-bottom: 10px; border-left: 4px solid #576; background: #bdc;">
+                            <p style="margin-top: -10px;"><span class="bt" style="color: #e25;">1.</span> Anomaly is uncontainable on a multiversal scale and is actively causing the end of all worlds.</p>
+                            <p style="margin-top: -10px;"><span class="bt" style="color: #e25;">2.</span> As SCP-7000 may or may not transcend standard notions of causality, its existence is technically uncertain. This document's use of the SCP-7000 designation may or may not reinforce the hypothetical anomaly it references, possibly necessitating the interjection of uncertainty into any authoritative statement regarding its potential properties. The presence of said uncertainty (or lack thereof) is not necessarily indicative of any particular anomaly's existence.</p>
+                            <p style="margin-top: -10px; margin-bottom: -10px;"><span class="bt" style="color: #e25;">3.</span> (see HANDBOOK.txt for operational procedures)</p>
                         </div>
                     </div>
                 </div>
 
                 <div id="guideFile" class="function1" style="display: none;">
-                    IFRAME manual
+                    <h2>IFRAME Operational Procedures</h2>
+                    <p><i></i></p>
+
                 </div>
 
             <!-- Manual Addenda -->

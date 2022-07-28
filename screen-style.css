@@ -48,22 +48,19 @@ h6 {
     letter-spacing: unset;
 }
 
-h2 {
-  color: var(--fground);
-}
-
 h1:hover {
   color: var(--accent);
 }
 
 .notation {
-    border-left: solid 4px var(--fmground);
-    border-right: solid 4px var(--fmground);
+    border-left: solid 6px var(--mground);
+    border-right: solid 6px var(--mground);
     padding: 20px;
     width: 95%;
     margin: auto;
     color: var(--fground);
     background: var(--bmground);
+    line-break: normal;
 }
 
 .bt {
@@ -83,7 +80,7 @@ h1:hover {
   font-family: 'Work Sans', sans-serif;
   padding: 8px;
   font-weight: 600;
-  font-size: 110%;
+  font-size: 112%;
   margin: 3px;
   background-color: var(--bmground);
   border: 2px solid var(--fmground);
@@ -91,6 +88,7 @@ h1:hover {
   transition-duration: 0.2s;
   border-radius: 5px;
   color: var(--fground);
+  max-width: 95vw;
 }
 
 .generalButton:hover, .toggledOn {
@@ -141,8 +139,8 @@ div.blockquote .generalButton:hover,
   font-family: 'Fira Code', monospace;
   font-weight: 600;
   min-height: 20px;
-  padding: 2px;
-  margin: 2px;
+  padding: auto 2em;
+  margin: 3px 1em;
   background-color: var(--bmground);
   height: fit-content;
   font-size: 90%;
@@ -152,7 +150,7 @@ div.blockquote .generalButton:hover,
 
 .fileButton:hover, .fileSelected {
   background-color: var(--bground);
-  outline: 3px var(--fmground) double;
+  outline: 2px var(--accent) solid;
 }
 
 .tinyButton {
@@ -163,15 +161,15 @@ div.blockquote .generalButton:hover,
   text-align: center;
   cursor: pointer;
   font-family: 'Work Sans', sans-serif;
-  padding: 2px 6px;
-  font-weight: 600;
-  font-size: 110%;
+  padding: 0.25em 1em 0.25em 0.5em;
+  font-weight: 700;
+  font-size: 120%;
   margin: 0.5em;
   background-color: var(--bground);
   border: 2px solid var(--fmground);
   transition-property: background-color, border;
   transition-duration: 0.33s;
-  border-radius: 2px;
+  border-radius: 3px;
   color: var(--fground);
 }
 .tinyButton:hover {
@@ -236,6 +234,7 @@ div.blockquote .generalButton:hover,
   justify-content: center;
   align-items: center;
   margin: auto;
+  text-align: center;
 }
 
 .luckVisualBox, .scanrVisualBox {
@@ -246,7 +245,7 @@ div.blockquote .generalButton:hover,
 }
 
 .aegisBox {
-  width: max-content;
+  width: auto;
   margin: auto;
 }
 
