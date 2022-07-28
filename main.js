@@ -15,8 +15,8 @@ window.onload = function() {loadSave()}
 // main game loop -- runs 20 times per second
 
 var MainGameLoop = window.setInterval(function() {
-  document.getElementById("fabricScore").innerHTML = "Causal fabric: " + (Math.round(gameData.fabric * 10) / 10),
-  document.getElementById("uniTotalScore").innerHTML = "Universes generated: " + Math.round(gameData.uniTotal)
+  document.getElementById("fabricScore").innerHTML = (Math.round(gameData.fabric * 10) / 10) + " (0.0/s) causal fabric extrapolated",
+  document.getElementById("uniScore").innerHTML = Math.round(gameData.uniTotal) + " (0.0/s) universes generated"
 }, 50)
 
 // other loops
