@@ -19,6 +19,8 @@ body {
   font-size: 0.95em;
   color: var(--fground);
   font-weight: normal;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 hr {
