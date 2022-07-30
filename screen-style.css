@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
+@import url("https://scp-wiki.wdfiles.com/local--code/component:mapping-source/1");
+
 :root {
   --bground: #efe;
   --bmground: #ced;
@@ -51,6 +53,25 @@ h6 {
     text-transform: uppercase;
     letter-spacing: unset;
     margin: auto 1em;
+}
+
+.subtitlemap {
+  margin-top: -4px;
+  letter-spacing: 0px;
+  filter: opacity(0.75);
+  font-size: 0.4vmin;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+}
+
+.image {
+  max-width: 100%;
+  border-width: 0px;
+  margin: 0px;
+}
+
+.iframeIcon {
+  filter: invert(1);
 }
 
 h1:hover {
@@ -249,12 +270,6 @@ div.blockquote .generalButton:hover,
   border: 2px solid var(--fground);
   background-color: var(--fmground);
   margin: 1vh;
-}
-
-.aegisBox {
-  width: auto;
-  margin-left: 24px;
-  margin-right: 8px;
 }
 
 .scoreLabel {
