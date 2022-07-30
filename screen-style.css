@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
-
-@import url("https://scp-wiki.wdfiles.com/local--code/component:mapping-source/1");
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
 
 :root {
   --bground: #efe;
@@ -47,31 +46,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 800;
-    color: var(--fmground);
-    text-transform: uppercase;
-    letter-spacing: unset;
-    margin: auto 1em;
-}
-
-.subtitlemap {
-  margin-top: -4px;
-  letter-spacing: 0px;
-  filter: opacity(0.75);
-  font-size: 0.4vmin;
   font-family: 'Work Sans', sans-serif;
   font-weight: 800;
-}
-
-.image {
-  max-width: 100%;
-  border-width: 0px;
-  margin: 0px;
-}
-
-.iframeIcon {
-  filter: invert(1);
+  color: var(--fmground);
+  text-transform: uppercase;
+  letter-spacing: unset;
+  margin: auto 1em;
 }
 
 h1:hover {
@@ -273,9 +253,9 @@ div.blockquote .generalButton:hover,
 }
 
 .scoreLabel {
-  font-family: 'Fira Code';
+  font-family: 'Fira Code', monospace;
   font-size: 120%;
-  letter-spacing: 0px;
+  letter-spacing: 1px;
   margin: 8px;
   line-height: min-content;
 }
@@ -300,4 +280,193 @@ div.blockquote .generalButton:hover,
 
 .vivaldi-picture-in-picture-button {
   display: none;
+}
+
+/* JERDEN MAPPING COMPONENT STUFF */
+
+/* DEFAULT VALUES */
+
+div[style*="$size"] {
+    height: 1.5vmin;
+    width: 1.5vmin;
+}
+
+div[class*="$textclass"] {
+    display: none;
+}
+
+/* ICON SUBTITLES */
+
+.image {
+  max-width: 100%;
+  border-width: 0px;
+  margin: 0px;
+}
+
+.iframeIcon {
+  filter: invert(0.85) sepia(0.8) hue-rotate(100deg);
+}
+
+.subtitlemap {
+    position: absolute;
+    color: #3d3d3d;
+    pointer-events: none;
+    font-size: 1vmin !important;
+    font-style: italic;
+    transition: 0.3s font-size;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    max-width: none !important;
+    text-align: center;
+    margin-top: -4px;
+    letter-spacing: 0px;
+    filter: opacity(0.75);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+}
+
+.enlarge:hover .subtitlemap {
+    font-size: 0.4vmin !important;
+    transition: 0.15s font-size;
+}
+
+/* LEGENDS */
+
+.mainmap .subtitle {
+    position: absolute;
+    background-color: #e2e2e2;
+    border: solid 1px;
+    bottom: 0;
+}
+
+.mainmap .subtitle table.wiki-content-table {
+    margin: .5vmin;
+    min-width: 10vmin;
+    width: fit-content;
+}
+
+.mainmap .subtitle tr {
+    border-bottom: solid 1px gray;
+}
+
+.mainmap .subtitle tr td {
+    font-size: 0.8em;
+    font-weight: bold;
+    border: 0 !important;
+    padding: .25vmin;
+}
+
+.mainmap .subtitle tr:first-child td:first-child:hover {
+   transform: scale(1);
+}
+
+.mainmap .subtitle tr td:first-child {
+    max-width: 3vmin;
+    width: 3vmin;
+    transition: all .2s;
+}
+
+.mainmap .subtitle tr td:first-child:hover {
+   transform: scale(5);
+   z-index: 2;
+}
+
+.mainmap .subtitle tr td:nth-child(2) {
+    text-align: right;
+}
+
+/* ICON NUMBER */
+
+.numbermap {
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-shadow: -0.1px 0 white, 0 0.1px white, 0.1px 0 white, 0 -0.11px white;
+    color: #202020;
+    font-size: 0.3vmin;
+}
+
+.numbermap p {
+    height: 100%;
+    display: inline-block;
+    transform: translatey(40%);
+}
+
+/* MAPS */
+
+.mainmap {
+   display: table;
+   height: auto;
+   width: auto;
+   position: relative;
+   border: var(--fground) 8px solid;
+   background-color: #233;
+}
+
+.secmap {
+   height: 0vw;
+   width: 0vw;
+   max-width: none !important;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 10;
+   opacity: 0;
+   transition: all 0.3s;
+}
+
+.maparea {
+   position: absolute;
+   z-index: 1;
+}
+
+.maparea:hover + .secmap {
+   height: 75vmin;
+   width: 75vmin;
+   opacity: 1;
+   transition: all 0.3s;
+}
+
+.secmap:hover {
+   height: 25vmin;
+   width: 25vmin;
+   opacity: 1;
+   transition: all 0.3s;
+   z-index: 2;
+}
+
+/* ENLARGE ICONS */
+
+.enlarge {
+    height: 1.5vmin;
+    width: 1.5vmin;
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s;
+    position: absolute;
+}
+
+.secmap .enlarge {
+    pointer-events: none;
+}
+
+.secmap:hover .enlarge {
+    pointer-events: auto;
+}
+
+.enlarge:hover {
+   transform: translate(-50%, -50%) scale(7.5);
+   z-index: 2;
+}
+
+.enlarge p {
+   margin: 0;
 }
