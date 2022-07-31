@@ -182,7 +182,7 @@ document
 //refine universe generation
 function refineGen(x) {}
 
-//module activation
+//module
 
 function activateM(x) {}
 
@@ -203,6 +203,20 @@ function clrPress() {
 }
 
 function enterPress() {
+
+var tbInput = document.getElementById('tbInput');  
+if (tbInput == 1234567) {
+}
+
+else if (tbInput == 777777) {}
+else if (tbInput == 000000) {}
+else if (tbInput == 696969) {}
+
+else {
+
+console.log("invalid password");
+
+}
   
 
 clrPress();
