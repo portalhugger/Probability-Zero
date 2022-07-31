@@ -2,7 +2,6 @@
 
 var gameData = {
   probability: (7.7 * 10) ^ 77777, // displayed as 7.7e77777
-  primeChance: 1/probability,
   universes: 0,
   uniTotal: 0,
   fabric: 0,
@@ -21,7 +20,6 @@ var gameData = {
   scanSpeed: 0.04,
   asmSpeed: 1,
   dasmSpeed: 1,
-
 };
 
 // on startup
@@ -54,12 +52,14 @@ function genFabric() {
 }
 
 function genUni() {
+  if (gameData.fabric == null) {}
   if (gameData.fabric >= 0.99) {
     (gameData.fabric -= 1), (gameData.uniTotal += 1);
   }
   if (gameData.uniTotal >= 10) {
     document.getElementById('researchTabButton').style.display = 'inline-block';
   }
+  
 }
 
 // saving
@@ -78,7 +78,8 @@ function loadSave() {
   if (savegame !== null) {
     gameData = savegame;
     if (gameData.researchUnlock == 1) {
-      document.getElementById('researchTabButton').style.display = 'inline-block';
+      document.getElementById('researchTabButton').style.display =
+        'inline-block';
     }
   }
 }
@@ -142,12 +143,15 @@ function openFile(evt, fileName) {
 // cooldown functions / listeners
 
 function cooldown(coolSpeed, id) {
-  document.getElementById(id).disabled = true;
-  document.getElementById(id).classList.add("disabledButton");
-  setTimeout(function () {
-    document.getElementById(id).disabled = false;
-    document.getElementById(id).classList.remove("disabledButton");
-  }, 100000 * coolSpeed);
+  if (coolSpeed == null) {
+  } else {
+    document.getElementById(id).disabled = true;
+    document.getElementById(id).classList.add('disabledButton');
+    setTimeout(function () {
+      document.getElementById(id).disabled = false;
+      document.getElementById(id).classList.remove('disabledButton');
+    }, 100000 * coolSpeed);
+  }
 }
 
 document
@@ -158,10 +162,14 @@ document
   .addEventListener('click', () => cooldown(gameData.genSpeed, 'genUniButton'));
 document
   .getElementById('assembleButton')
-  .addEventListener('click', () => cooldown(gameData.asmSpeed, 'assembleButton'));
+  .addEventListener('click', () =>
+    cooldown(gameData.asmSpeed, 'assembleButton')
+  );
 document
   .getElementById('disassembleButton')
-  .addEventListener('click', () => cooldown(gameData.dasmSpeed, 'disassembleButton'));
+  .addEventListener('click', () =>
+    cooldown(gameData.dasmSpeed, 'disassembleButton')
+  );
 document
   .getElementById('reconButton')
   .addEventListener('click', () => cooldown(gameData.luckSpeed, 'reconButton'));
@@ -192,7 +200,6 @@ function clearPress() {}
 
 function enterPress() {}
 
-
 // learning functions
 
 function learnBasicProg() {}
@@ -219,7 +226,6 @@ function bUpgradeLuck() {}
 function bUpgradeStats() {}
 function bUpgradeScanr() {}
 
-
 // reset modification functions
 
 function researchResetToggle() {}
@@ -230,13 +236,9 @@ function fabricMatterConverter() {}
 function upgradeScanUnlock() {}
 function convergeUnlock() {}
 
-
-
-
 // generation functions
 
 function genFData(x) {}
 function genParts(x) {}
 function genMChips(x) {}
 function genTData(x) {}
-
