@@ -205,20 +205,19 @@ function clrPress() {
 function enterPress() {
 
 var tbInput = document.getElementById('tbInput');  
-if tbInput == 1234567 {
+if (tbInput == 1234567) {
 }
 
-else if tbInput == 777777 {}
-else if tbInput == 000000 {}
-else if tbInput == 696969 {}
+else if (tbInput == 777777) {}
+else if (tbInput == 000000) {}
+else if (tbInput == 696969) {}
 
 else {
 
 console.log("invalid password");
 
 }
-
-}   
+  
 
 clrPress();
   
