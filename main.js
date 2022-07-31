@@ -20,6 +20,7 @@ var gameData = {
   scanSpeed: 0.3,
   asmSpeed: .01,
   dasmSpeed: .01
+  
 };
 
 // on startup
@@ -125,6 +126,9 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += ' tabSelected';
 }
 
+// file stuff
+
+
 function openFile(evt, fileName) {
   var i, x, fileLinks;
   x = document.getElementsByClassName('function1');
@@ -141,7 +145,8 @@ function openFile(evt, fileName) {
   document.getElementById(fileName).style.display = 'block';
   evt.currentTarget.className += ' fileSelected';
 }
-// cooldown functions / listeners
+
+// cooldown functions, listeners
 
 function cooldown(coolSpeed, id) {
   if (coolSpeed == null) {
@@ -175,6 +180,9 @@ document
   .getElementById('reconButton')
   .addEventListener('click', () => cooldown(gameData.luckSpeed, 'reconButton'));
 
+
+
+
 //refine universe generation
 function refineGen(x) {}
 
@@ -195,11 +203,26 @@ function activateM4() {}
 
 //handling number pad
 
-function numPress(x) {}
+function numPress(x) {
+  
+ var tbInput = document.getElementById('tbInput');
+    tbInput.value = tbInput.value + x;
+  
+}
 
-function clearPress() {}
+function clrPress() {
+  
+    var tbInput = document.getElementById("tbInput");
+    tbInput.value = "";
+  
+}
 
-function enterPress() {}
+function enterPress() {
+  
+
+clrPress();
+  
+}
 
 // learning functions
 
@@ -244,3 +267,5 @@ function genFData(x) {}
 function genParts(x) {}
 function genMChips(x) {}
 function genTData(x) {}
+
+
