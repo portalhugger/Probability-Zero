@@ -2,14 +2,26 @@
 
 var gameData = {
   probability: (7.7 * 10) ^ 77777, // displayed as 7.7e77777
+  primeChance: 1/probability,
+  universes: 0,
   uniTotal: 0,
   fabric: 0,
   fabricTotal: 0,
+  researchPoints: 0,
   researchUnlock: 0,
+  computation: 0,
+  hyperMatter: 0,
+  spareParts: 0,
+  microchips: 0,
+  functionData: 0,
+  hyperVolume: 0,
+  interRay: 0,
+  metastability: 0,
   genSpeed: 0.1,
   scanSpeed: 0.04,
   asmSpeed: 1,
   dasmSpeed: 1,
+
 };
 
 // on startup
@@ -73,14 +85,24 @@ function loadSave() {
 
 function resetSave() {
   (gameData.probability = (7.7 * 10) ^ 77777),
+    (gameData.universes = 0),
     (gameData.uniTotal = 0),
     (gameData.fabric = 0),
     (gameData.fabricTotal = 0),
+    (gameData.researchPoints = 0),
     (gameData.researchUnlock = 0),
-    (genSpeed = 0.1),
-    (scanSpeed = 0.04),
-    (asmSpeed = 1),
-    (dasmSpeed = 1),
+    (gameData.computation = 0),
+    (gameData.hyperMatter = 0),
+    (gameData.spareParts = 0),
+    (gameData.microchips = 0),
+    (gameData.functionData = 0),
+    (gameData.hyperVolume = 0),
+    (gameData.interRay = 0),
+    (gameData.metastability = 0),
+    (gameData.genSpeed = 0.1),
+    (gameData.scanSpeed = 0.04),
+    (gameData.asmSpeed = 1),
+    (gameData.dasmSpeed = 1),
     (document.getElementById('researchTabButton').style.display = 'none');
   manualSave();
 }
@@ -117,7 +139,7 @@ function openFile(evt, fileName) {
   document.getElementById(fileName).style.display = 'block';
   evt.currentTarget.className += ' fileSelected';
 }
-// cooldown function
+// cooldown functions / listeners
 
 function cooldown(coolSpeed, id) {
   document.getElementById(id).disabled = true;
@@ -165,3 +187,56 @@ function activateM4() {}
 //handling number pad
 
 function numPress(x) {}
+
+function clearPress() {}
+
+function enterPress() {}
+
+
+// learning functions
+
+function learnBasicProg() {}
+function learnCrypto() {}
+function learnBasicUpgradeTerm() {}
+function learnAdvProg() {}
+function learnBasicUpgradeLuck() {}
+function learnEnhProg() {}
+function learnAdvUpgradeTerm() {}
+function learnAdvUpgradeLuck() {}
+function learnAdvUpgradeStats() {}
+function learnBasicUpgradeScanr() {}
+function learnAdvUpgradeScanr() {}
+function learnConvProg() {}
+function learnEnhUpgradeTerm() {}
+function learnEnhUpgradeLuck() {}
+function learnEnhUpgradeStats() {}
+function learnEnhUpgradeScanr() {}
+
+// upgrade functions
+
+function bUpgradeTerm() {}
+function bUpgradeLuck() {}
+function bUpgradeStats() {}
+function bUpgradeScanr() {}
+
+
+// reset modification functions
+
+function researchResetToggle() {}
+function fileAutoResetToggle() {}
+function bUpgradeResetToggle() {}
+function aUpgradeResetToggle() {}
+function fabricMatterConverter() {}
+function upgradeScanUnlock() {}
+function convergeUnlock() {}
+
+
+
+
+// generation functions
+
+function genFData(x) {}
+function genParts(x) {}
+function genMChips(x) {}
+function genTData(x) {}
+
