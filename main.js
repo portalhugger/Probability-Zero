@@ -19,7 +19,7 @@ var gameData = {
   genSpeed: 0.1,
   scanSpeed: 0.3,
   asmSpeed: .01,
-  dasmSpeed: .01,
+  dasmSpeed: .01
 };
 
 // on startup
@@ -52,7 +52,7 @@ function genFabric() {
 }
 
 function genUni() {
-  if (gameData.fabric == null) {}
+  if (gameData.fabric == 0) {}
   if (gameData.fabric >= 0.99) {
     (gameData.fabric -= 1), (gameData.uniTotal += 1);
   }
@@ -82,6 +82,7 @@ function loadSave() {
         'inline-block';
     }
   }
+ else  {  document.getElementById('researchTabButton').style.display = 'none'; }
 }
 
 function resetSave() {
