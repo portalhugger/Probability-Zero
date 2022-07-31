@@ -17,7 +17,7 @@
             <p id="primeChance" class="scoreLabel" style="margin: -8px;">1 in 7.7e77777 per activation</p>
             <p id="uniScore" class="scoreLabel">0 (0.0/s) universes generated</p>
 
-            <div style="width: 100%; text-align: center; margin: 12px;">
+            <div style="width: 100%; text-align: center; margin: 10px auto;">
                 <button id="filesTabButton" class="generalButton tabLink tabSelected" onclick="openTab(event,'filesTab')">Files</button>
                 <button id="luckTabButton" class="generalButton tabLink" onclick="openTab(event,'luckTab')">LUCK</button>
                 <button id="statsTabButton" class="generalButton tabLink" onclick="openTab(event,'statsTab')">STATS</button>
@@ -120,7 +120,7 @@
                                 <h2 style="margin-bottom: -10px; margin-top: 10px;">IFRAME Employee Handbook</h2>
                                 <p><span class="bt">Clearance L6, L0/7000 Eyes Only</span></p>
         
-                                <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                                <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;" style="filter: opacity(0.66) sepia(1) hue-rotate(90deg);">
                                     <img src="https://i.imgur.com/Nrv99YJ.png" style="width: 14%; margin: 0px;">
                                     <img src="http://scpdsandbox.wdfiles.com/local--files/collab:billith-fishish-flopmind-placeholdermcd/extradim.png" style="width: 14%; margin: 0px;">
                                     <img src="https://scp-wiki.wdfiles.com/local--files/scp-5541/delta-t" style="width: 14%; margin: 0px;">
@@ -246,23 +246,27 @@
                 <h1>Scranton-Tarioux Autonomous Topological Sink</h1>
 
                 <div id="statsWindow" style="display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center;">
-                    <div id="modulesWindow" style="align-items: center; justify-content: center; height: fit-content; width: auto; margin: 1vh;">
+                    <div id="modulesWindow" style="align-items: center; justify-content: center; height: fit-content; width: auto; margin: 10px;">
                         <div style="display: grid;">
                             <button id="activateM1Button" class="generalButton moduleButton" onclick="activateM1()">Activate Repair Module<br><span style="font-weight: normal; font-size: 90%;">requires: 50 causal fabric</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">compress causal fabric into 1000 hypermatter; unlock MAKe</span></button>
                             <button id="activateM2Button" class="generalButton moduleButton" onclick="activateM2()">Activate Observation Module<br><span style="font-weight: normal; font-size: 90%;">requires: high # universes generated</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">observe generated universes for 1 interreal ray; unlock SCAnR</span></button>
                             <button id="activateM3Button" class="generalButton moduleButton" onclick="activateM3()">Activate Stability Module<br><span style="font-weight: normal; font-size: 90%;">requires: 20 functionality data</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">unlock AEGIS</span></button>
-                            <button id="activateM3Button" class="generalButton prototypeButton" onclick="activateM4()">Activate Reconstruction Module<br><span style="font-weight: normal; font-size: 90%;">requires: max # of possible hypervolume</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">gain 1 retrocausal ray; unlock ChARM</span></button>
+                            <button id="activateM3Button" class="generalButton moduleButton" onclick="activateM4()">Activate Reconstruction Module<br><span style="font-weight: normal; font-size: 90%;">requires: max # of possible hypervolume</span><br><span style="font-weight: normal; font-size: 90%;">cost: resets the IFRAME</span><br><span style="font-weight: normal; font-size: 90%;">gain 1 retrocausal ray; unlock ChARM</span></button>
                         </div>
                     </div>
 
-                    <div style="width: fit-content; margin: 1vh;">
-                        <video style="max-width: 366px; height: min-content; margin: 1vh auto; filter: invert(0.25) sepia(100%) hue-rotate(100deg); border: 4px #232 solid;" muted autoplay loop>
+                    <div style="width: min-content; margin: 10px;">
+                        <video style="max-width: min(366px, 95vw); height: min-content; margin: 1vh auto; filter: invert(0.25) sepia(100%) hue-rotate(100deg); border: 4px #232 solid; border-radius: 50%;" muted autoplay loop>
                             <source src="https://i.imgur.com/IKHu0Ey.mp4" type="video/mp4" />
                             STATS animation
                         </video>
                         <br>
+<<<<<<< Updated upstream
                         <p>Extrapolating causal fabric from macroquantum fluctuations...</p>
                         <input id="tbInput" type="text" readonly/>
+=======
+                        <p class="scoreLabel" style="font-size: 100%;">Extrapolating causal fabric from macroquantum fluctuations...</p>
+>>>>>>> Stashed changes
                     </div>
                     
                     <div class="numpad">
@@ -358,11 +362,6 @@
                         <br>
 
                         <button id="programButton" class="generalButton holdButton" style="margin: 1vh;">Program<br><span style="font-weight: normal; font-size: 90%;">hold to program selected algorithm</span></button>
-    
-                        <br>
-    
-                        <div id="programProgress" class="progressBar" style="width: 100%">
-                        </div>
                     </div>
     
                     <div id="programList" class="blockquote" style="max-height: 72vh; overflow-x: hidden; overflow-y: auto; height: fit-content; max-width: max(60vw, 100%); margin: 1vh; padding: 20px;">
@@ -372,11 +371,9 @@
     
                         <hr></hr>
 
-                        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(min(320px, 100%), 1fr)); gap: 1vh; height: fit-content;">
+                        <div id="programWindow" style="display: flex; flex-direction: row; justify-content: center; align-items: center; height: fit-content; flex-wrap: wrap; max-width: 900px;">
                             <div id="autoClickerBox" class="programBox">
                                 <p id="autoClickerScore"><b><u>Auto-Clicker v1</u></b>: attempts to activate the LUCK every (3000/assigned computations) seconds</p>
-                            </div>
-                            <div id="autoClickerProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subAutoClickerCompsButton" class="tinyButton">-</button><p id="autoClickerCompsScore">0%</p><button id="addAutoClickerCompsButton" class="tinyButton">+</button>
@@ -385,16 +382,12 @@
                             <div id="decryptionBox" class="programBox">
                                 <p id="decryptionScore"><b><u>Decryption v1</u></b>: decrypts hidden files</p>
                             </div>
-                            <div id="decryptionProgress" class="progressBar">
-                            </div>
                             <div class="compAssignBox">
                                 <button id="subDecryptionCompsButton" class="tinyButton">- </button> <p id="decryptionCompsScore">0%</p> <button id="addDecryptionCompsButton" class="tinyButton">+ </button>
                             </div>
                             
                             <div id="autoStudyBox" class="programBox">
                                 <p id="autoStudyScore"><b><u>Auto-Study v1</u></b>: studies automatically, producing 0.005/sec research per assigned computation</p>
-                            </div>
-                            <div id="autoStudyProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subAutoStudyCompsButton" class="tinyButton">- </button> <p id="autoStudyCompsScore">0%</p> <button id="addAutoStudyCompsButton" class="tinyButton">+ </button>
@@ -403,16 +396,12 @@
                             <div id="restoreBox" class="programBox">
                                 <p id="restoreScore"><b><u>Restoration v1</u></b>: restores corrupted files</p>
                             </div>
-                            <div id="restoreProgress" class="progressBar">
-                            </div>
                             <div class="compAssignBox">
                                 <button id="subRestoreCompsButton" class="tinyButton">- </button> <p id="restoreCompsScore">0%</p> <button id="addRestoreCompsButton" class="tinyButton">+ </button>
                             </div>
         
                             <div id="optimizeBox" class="programBox">
                                 <p id="optimizeScore"><b><u>Optimization v1</u></b>: optimizes programs of the same or lower version (in unlock order), replacing them with its next respective version.</p>
-                            </div>
-                            <div id="optimizeProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subOptiCompsButton" class="tinyButton">- </button> <p id="optiCompsScore">0%</p> <button id="addOptiCompsButton" class="tinyButton">+ </button>
@@ -421,16 +410,12 @@
                             <div id="autoProgramBox" class="programBox">
                                 <p id="autoProgramScore"><b><u>Auto-Program v1</u></b>: automatically programs unlocked programs at 0.1% per assigned computation of normal rate</p>
                             </div>
-                            <div id="autoProgramProgress" class="progressBar">
-                            </div>
                             <div class="compAssignBox">
                                 <button id="subAutoProgramCompsButton" class="tinyButton">- </button> <p id="autoProgramCompsScore">0%</p> <button id="addAutoProgramCompsButton" class="tinyButton">+ </button>
                             </div>
         
                             <div id="designBox" class="programBox">
                                 <p id="designScore"><b><u>Design v1</u></b>: unlocks Advanced Upgrades</p>
-                            </div>
-                            <div id="designProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subDesignCompsButton" class="tinyButton">- </button> <p id="designCompsScore">0%</p> <button id="addDesignCompsButton" class="tinyButton">+ </button>
@@ -439,16 +424,12 @@
                             <div id="synthBox" class="programBox">
                                 <p id="synthScore"><b><u>Synthesis v1</u></b>: increase chance to generate functional universe based on total functionality data multiplied by computations</p>
                             </div>
-                            <div id="synthProgress" class="progressBar">
-                            </div>
                             <div class="compAssignBox">
                                 <button id="subSynthCompsButton" class="tinyButton">- </button> <p id="synthCompsScore">0%</p> <button id="addSynthCompsButton" class="tinyButton">+ </button>
                             </div>
         
                             <div id="autoUpgradeBox" class="programBox">
                                 <p id="autoUpgradeScore"><b><u>Auto-Upgrade v1</u></b>: converts 0.1% per computation of hypermatter gain to microchips, purchases Basic Upgrades automatically</p>
-                            </div>
-                            <div id="autoUpgradeProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subAutoUpgradeCompsButton" class="tinyButton">- </button> <p id="autoUpgradeCompsScore">0%</p> <button id="addAutoUpgradeCompsButton" class="tinyButton">+ </button>
@@ -457,16 +438,12 @@
                             <div id="chronoBox" class="programBox">
                                 <p id="chronoScore"><b><u>Chronolocation v1</u></b>: isolate unstable files to oblique possibilities</p>
                             </div>
-                            <div id="chronoProgress" class="progressBar">
-                            </div>
                             <div class="compAssignBox">
                                 <button id="subChronoCompsButton" class="tinyButton">- </button> <p id="chronoCompsScore">0%</p> <button id="addChronoCompsButton" class="tinyButton">+ </button>
                             </div>
         
                             <div id="redesignBox" class="programBox">
                                 <p id="redesignScore"><b><u>Redesign v1</u></b>: unlocks Enhanced Upgrades</p>
-                            </div>
-                            <div id="redesignProgress" class="progressBar">
                             </div>
                             <div class="compAssignBox">
                                 <button id="subRedesignCompsButton" class="tinyButton">- </button> <p id="redesignCompsScore">0%</p> <button id="addRedesignCompsButton" class="tinyButton">+ </button>
@@ -532,10 +509,12 @@
                     
                         <p></p>
                         
-                        <video style="width: min(444px, 100%); height: min-content; filter: brightness(140%); border: #576 4px solid;" muted autoplay loop>
-                            <source src="https://i.imgur.com/uFNbaZz.mp4" type="video/mp4" />
-                        </video>
-
+                        <div id="scanrVisualBox" style="display: none; width: min(444px, 100%); height: min-content; filter: brightness(140%); border: #576 4px solid;" >
+                            <video style="width: 100%; height: auto; margin-bottom: -4px;" muted autoplay loop>
+                                <source src="https://i.imgur.com/uFNbaZz.mp4" type="video/mp4" />
+                            </video>
+                        </div>
+                        
                         <p id="scanStatusScore" class="scoreLabel"><b>Scanned universe status:</b> N/A</p>
                     </div>
                     
@@ -600,17 +579,17 @@
                         <img src="https://scp-wiki.wdfiles.com/local--files/scp-6488/pixels.gif" style="filter: blur(12px) grayscale(1) invert(0.25) sepia(1) brightness(1.3) hue-rotate(220deg) brightness(0.4);" height="100%" width="100%" alt="pixels.gif" class="image">
 
                         <div id="iframeCharm" class="enlarge iframeIcon" style="left: 50%; top: 50%; height: 2.5vmin; width: 2.5vmin;">
-                            <video style="height: 100%; width: 100%; filter: invert(0.75) sepia(100%) hue-rotate(100deg); border: 1px #232 solid;" muted autoplay loop>
+                            <video style="height: 100%; width: 100%; filter: invert(0.75) sepia(100%) hue-rotate(100deg); border: 1px #232 solid; border-radius: 50%;" muted autoplay loop>
                                 <source src="https://i.imgur.com/IKHu0Ey.mp4" type="video/mp4" />
                                 STATS animation
                             </video>
                             <div class="subtitlemap" style="font-size: 0.3vmin;"><p style="margin-left: 0.2vmin;">IFRAME</p></div>
                         </div>
 
-                        <div id="funiverseCharm1" class="enlarge" style="left: 30%; top: 20%; height: 2.5vmin; width: 2.5vmin;">
+                        <div id="funiverse1Charm" class="enlarge" style="display: none; left: 30%; top: 20%; height: 2.5vmin; width: 2.5vmin;">
                             <video style="height: 100%; width: 100%; filter: brightness(125%);" muted autoplay loop>
                                 <source src="https://i.imgur.com/uFNbaZz.mp4" type="video/mp4" />
-                                scanr animation
+                                animation
                             </video>
                         </div>
                         
@@ -625,7 +604,7 @@
         </div>
     </div>
     
-    <p id="softcapScore" class="scoreLabel" style="z-index: -3; position: fixed; bottom: 0; padding-right: 3vw; width: 100%; font-size: min(5vw, 125%);"><b>Warning! Acceleration of causal failure is softcapping universe generation by 1.1e666x!</b></p>
+    <p id="softcapScore" class="scoreLabel" style="text-align: center; width: 100%; font-size: min(5vw, 125%); margin-top: 20px;"><b>Warning! Acceleration of causal failure is softcapping universe generation by 1.1e666x!</b></p>
 
     <script src="main.js" charset="utf-8" type="text/javascript"></script>
 </body>

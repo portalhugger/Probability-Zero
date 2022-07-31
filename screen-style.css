@@ -4,6 +4,7 @@
 
 :root {
   --bground: #efe;
+  --bbmground: #dfe;
   --bmground: #ced;
   --bmmground: #bdc;
   --mground: #9a9;
@@ -13,6 +14,7 @@
   --accent: #d34;
   --baccent: #a02;
 
+  --coolAnimSpeed: 10s;
 }
 
 body {
@@ -24,8 +26,9 @@ body {
   font-weight: normal;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: 0px;
-  margin: 0px;
+  padding: 0px 10px;
+  margin: 0px auto;
+  max-width: 90vw;
 }
 
 hr {
@@ -70,7 +73,7 @@ h4,
 h5,
 h6 {
   font-family: 'Work Sans', sans-serif;
-  font-weight: 900;
+  font-weight: 800;
   color: var(--fmground);
   text-transform: uppercase;
   letter-spacing: unset;
@@ -94,7 +97,7 @@ h1:hover {
 
 .bt {
   font-family: 'Work Sans', sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -108,7 +111,7 @@ h1:hover {
   cursor: pointer;
   font-family: 'Work Sans', sans-serif;
   padding: 8px;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 112%;
   margin: 3px;
   background-color: var(--bmground);
@@ -144,6 +147,37 @@ h1:hover {
   background-color: var(--bmground);
   border-color: var(--fmground);
 }
+.disabledButton:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  height: 8px;
+  background: var(--fmground);
+  -webkit-animation: cooldown var(--coolAnimSpeed) linear;
+          animation: cooldown var(--coolAnimSpeed) linear;
+}
+@-webkit-keyframes cooldown {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes cooldown {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+#programWindow > * {
+  flex: 1 1 50%;
+}
 
 blockquote .generalButton,
 div.blockquote .generalButton,
@@ -166,6 +200,20 @@ div.blockquote .generalButton:hover,
 .tabLink:hover, .tabSelected {
   background-color: var(--bground);
   border-color: var(--accent);
+}
+.tabLink:hover {
+  color: var(--accent);
+}
+.tabNotification {
+  color: var(--bground);
+  animation-name: notif;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes notif {
+  0% {background-color: var(--accent);}
+  50% {background-color: var(--mground);}
+  100% {background-color: var(--accent);}
 }
 
 .fileButton {
@@ -194,6 +242,10 @@ div.blockquote .generalButton:hover,
   outline: 2px var(--accent) solid;
 }
 
+.moduleButton {
+  max-width: 90%;
+}
+
 .tinyButton {
   user-select: none;
   vertical-align: middle;
@@ -202,16 +254,17 @@ div.blockquote .generalButton:hover,
   text-align: center;
   cursor: pointer;
   font-family: 'Work Sans', sans-serif;
-  padding: 0.25em 1em 0.25em 0.5em;
+  padding: 4px 8px;
   font-weight: 700;
   font-size: 120%;
-  margin: 0.5em;
+  margin: 10px;
   background-color: var(--bground);
   border: 2px solid var(--fmground);
   transition-property: background-color, border;
   transition-duration: 0.33s;
   border-radius: 3px;
   color: var(--fground);
+  min-width: min-content;
 }
 .tinyButton:hover {
   background-color: var(--mground);
@@ -220,6 +273,7 @@ div.blockquote .generalButton:hover,
 
 .numpad {
   width: auto;
+  max-width: 100%;
   height: 420px;
   min-width: 333px;
   display: flex;
@@ -263,6 +317,7 @@ div.blockquote .generalButton:hover,
 
 .programBox {
   width: auto;
+  max-width: 66%;
   margin: 12px auto;
   border-left: 8px solid var(--fmground);
   padding: 2px 16px;
@@ -270,13 +325,13 @@ div.blockquote .generalButton:hover,
 }
 
 .compAssignBox {
-  width: 20%;
+  max-width: 20%;
   display: flex;
   flex-direction: row;
   flex-wrap: none;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 12px;
   text-align: center;
 }
 
@@ -306,7 +361,7 @@ div.blockquote .generalButton:hover,
 }
 
 .blockquote .lightBox {
-  background-color: var(--bground);
+  background-color: var(--bbmground);
   border-left: 4px solid var(--accent);
   border-right: 4px solid var(--accent);
 }
@@ -323,6 +378,7 @@ div.blockquote .generalButton:hover,
 ::-webkit-scrollbar-thumb {
   background: var(--mground);
   cursor: pointer;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
