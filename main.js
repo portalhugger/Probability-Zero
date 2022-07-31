@@ -46,7 +46,7 @@ function genUni() {
     (gameData.fabric -= 1), (gameData.uniTotal += 1);
   }
   if (gameData.uniTotal >= 10) {
-    document.getElementById('researchTab').style.display = 'inline-block';
+    document.getElementById('researchTabButton').style.display = 'inline-block';
   }
 }
 
@@ -66,7 +66,7 @@ function loadSave() {
   if (savegame !== null) {
     gameData = savegame;
     if (gameData.researchUnlock == 1) {
-      document.getElementById('researchTab').style.display = 'inline-block';
+      document.getElementById('researchTabButton').style.display = 'inline-block';
     }
   }
 }
@@ -81,7 +81,7 @@ function resetSave() {
     (scanSpeed = 0.04),
     (asmSpeed = 1),
     (dasmSpeed = 1),
-    (document.getElementById('researchTab').style.display = 'none');
+    (document.getElementById('researchTabButton').style.display = 'none');
   manualSave();
 }
 
@@ -121,8 +121,10 @@ function openFile(evt, fileName) {
 
 function cooldown(coolSpeed, id) {
   document.getElementById(id).disabled = true;
+  document.getElementById(id).classList.add("disabledButton");
   setTimeout(function () {
     document.getElementById(id).disabled = false;
+    document.getElementById(id).classList.remove("disabledButton");
   }, 100000 * coolSpeed);
 }
 
