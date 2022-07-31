@@ -205,6 +205,7 @@ function enterPress() {}
 function learnBasicProg() {}
 function learnCrypto() {}
 function learnBasicUpgradeTerm() {}
+function learnBasicUpgradeStats() {}
 function learnAdvProg() {}
 function learnBasicUpgradeLuck() {}
 function learnEnhProg() {}
