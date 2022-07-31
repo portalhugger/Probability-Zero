@@ -101,9 +101,9 @@ function resetSave() {
     (gameData.interRay = 0),
     (gameData.metastability = 0),
     (gameData.genSpeed = 0.1),
-    (gameData.scanSpeed = 0.04),
-    (gameData.asmSpeed = 1),
-    (gameData.dasmSpeed = 1),
+    (gameData.scanSpeed = 0.3),
+    (gameData.asmSpeed = .01),
+    (gameData.dasmSpeed = .01),
     (document.getElementById('researchTabButton').style.display = 'none');
   manualSave();
 }
