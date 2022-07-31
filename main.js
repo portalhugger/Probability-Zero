@@ -168,14 +168,10 @@ document
   .addEventListener('click', () => cooldown(gameData.genSpeed, 'genUniButton'));
 document
   .getElementById('assembleButton')
-  .addEventListener('click', () =>
-    cooldown(gameData.asmSpeed, 'assembleButton')
-  );
+  .addEventListener('click', () => cooldown(gameData.asmSpeed, 'assembleButton'));
 document
   .getElementById('disassembleButton')
-  .addEventListener('click', () =>
-    cooldown(gameData.dasmSpeed, 'disassembleButton')
-  );
+  .addEventListener('click', () => cooldown(gameData.dasmSpeed, 'disassembleButton'));
 document
   .getElementById('reconButton')
   .addEventListener('click', () => cooldown(gameData.luckSpeed, 'reconButton'));
@@ -186,20 +182,9 @@ document
 //refine universe generation
 function refineGen(x) {}
 
-//activate make tab
-function activateM1() {}
+//module activation
 
-//activate scan tab
-
-function activateM2() {}
-
-//activate aegis tab
-
-function activateM3() {}
-
-//activate charm tab
-
-function activateM4() {}
+function activateM(x) {}
 
 //handling number pad
 
