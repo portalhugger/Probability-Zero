@@ -17,9 +17,9 @@ var gameData = {
   interRay: 0,
   metastability: 0,
   genSpeed: 0.1,
-  scanSpeed: 0.04,
-  asmSpeed: 1,
-  dasmSpeed: 1,
+  scanSpeed: 0.3,
+  asmSpeed: .01,
+  dasmSpeed: .01,
 };
 
 // on startup
