@@ -1,12 +1,14 @@
 Shamrock (Default)
 
   --bground: #efe;
-  --bmground: #cdc;
+  --bmground: #ced;
+  --bmmground: #bdc;
   --mground: #9a9;
   --fmground: #576;
   --fground: #233;
 
-  --accent: #c34;
+  --accent: #d34;
+  --baccent: #a02;
 
 ----
 
@@ -14,11 +16,13 @@ Hemlock (Darkmode)
 
   --bground: #122;
   --bmground: #344;
-  --mground: #687;
-  --fmground: #8a9;
+  --bmmground: #455;
+  --mground: #576;
+  --fmground: #7a9;
   --fground: #cdc;
 
-  --accent: #c56;
+  --accent: #36f;
+  --baccent: #25c;
 
 ----
 
