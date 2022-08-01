@@ -444,10 +444,10 @@ div[class*="$textclass"] {
 /* LEGENDS */
 
 .mainmap .subtitle {
-    position: absolute;
-    background-color: #e2e2e2;
-    border: solid 1px;
-    bottom: 0;
+  position: absolute;
+  background-color: transparent;
+  bottom: 0;
+  color: #eee;
 }
 
 .mainmap .subtitle table.wiki-content-table {
