@@ -217,22 +217,22 @@ function clrPress() {
 
 function enterPress() {
 
-var tbInput = document.getElementById('tbInput');  
-if (tbInput.value == 123456) {
-  document.getElementById(activateM1Button).disabled = false;
-  document.getElementById(activateM1Button).classList.remove('disabledButton');
+var tbInput = document.getElementById("tbInput");  
+if (tbInput.value == 1234567) {
+ 
+  document.getElementById("activateM1Button").classList.remove('disabledButton');
 }
 else if (tbInput.value == 777777) {
-  document.getElementById(activateM2Button).disabled = false;
-  document.getElementById(activateM2Button).classList.remove('disabledButton');
+  document.getElementById("activateM2Button").disabled = false;
+  document.getElementById("activateM2Button").classList.remove('disabledButton');
 }
 else if (tbInput.value == 000000) {
-  document.getElementById(activateM3Button).disabled = false;
-  document.getElementById(activateM3Button).classList.remove('disabledButton');
+  document.getElementById("activateM3Button").disabled = false;
+  document.getElementById("activateM3Button").classList.remove('disabledButton');
 }
 else if (tbInput == 696969) {
-  document.getElementById(activateM4Button).disabled = false;
-  document.getElementById(activateM4Button).classList.remove('disabledButton');
+  document.getElementById("activateM4Button").disabled = false;
+  document.getElementById("activateM4Button").classList.remove('disabledButton');
 }
 
 else {
