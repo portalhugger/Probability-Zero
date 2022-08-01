@@ -8,7 +8,7 @@ var gameData = {
   fabricTotal: 0,
   researchPoints: 0,
   researchUnlock: 0,
-  computation: 0,
+  computation: 100,
   hyperMatter: 0,
   spareParts: 0,
   microchips: 0,
@@ -94,7 +94,7 @@ function resetSave() {
     (gameData.fabricTotal = 0),
     (gameData.researchPoints = 0),
     (gameData.researchUnlock = 0),
-    (gameData.computation = 0),
+    (gameData.computation = 100),
     (gameData.hyperMatter = 0),
     (gameData.spareParts = 0),
     (gameData.microchips = 0),
@@ -179,12 +179,25 @@ document
 
 
 
+//detects if given div ID contains class
+
+
 //refine universe generation
 function refineGen(x) {}
 
 //module
 
-function activateM(x) {}
+function activateM(x) {
+
+if (x==1) {}
+else if (x==2) {}
+else if (x==3) {}
+else if (x==4) {}
+ 
+else {}
+
+
+}
 
 //handling number pad
 
@@ -205,12 +218,22 @@ function clrPress() {
 function enterPress() {
 
 var tbInput = document.getElementById('tbInput');  
-if (tbInput == 1234567) {
+if (tbInput.value == 123456) {
+  document.getElementById(activateM1Button).disabled = false;
+  document.getElementById(activateM1Button).classList.remove('disabledButton');
 }
-
-else if (tbInput == 777777) {}
-else if (tbInput == 000000) {}
-else if (tbInput == 696969) {}
+else if (tbInput.value == 777777) {
+  document.getElementById(activateM2Button).disabled = false;
+  document.getElementById(activateM2Button).classList.remove('disabledButton');
+}
+else if (tbInput.value == 000000) {
+  document.getElementById(activateM3Button).disabled = false;
+  document.getElementById(activateM3Button).classList.remove('disabledButton');
+}
+else if (tbInput == 696969) {
+  document.getElementById(activateM4Button).disabled = false;
+  document.getElementById(activateM4Button).classList.remove('disabledButton');
+}
 
 else {
 
@@ -259,7 +282,7 @@ function aUpgradeResetToggle() {}
 function fabricMatterConverter() {}
 function upgradeScanUnlock() {}
 function convergeUnlock() {}
-
+ 
 // generation functions
 
 function genFData(x) {}
